@@ -330,45 +330,6 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="7291f600-ad0a-43eb-a2d7-fd1d7a1536fd"
-            isDerived="false"
-            sourceEndRoleName="Weather"
-            targetEndRoleName="WeatherRetriever"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="58d7d677-141f-4ec1-a807-9777aff84d8f"
-              LastKnownName="WeatherRetriever"
-              LastKnownLocation="SWDesign.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="97e4901b-f1f4-4dce-8f06-41fc02171aa2"
-                  name="Weather"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f9c9f3ad-e64d-432c-ab7a-ccd5e8f511e3"
-                  name="WeatherRetriever"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="e44c3157-2b4f-4e1c-92b3-70a73233f20f"
             isDerived="false"
             sourceEndRoleName="Weather"
@@ -832,7 +793,49 @@
         name="WeatherRetriever"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4c7cb911-a9ec-4801-86f8-e5b4697a5f60"
+            isDerived="false"
+            sourceEndRoleName="WeatherRetriever"
+            targetEndRoleName="WeatherSaver"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7400ab70-5427-4963-923f-e0bacadfe4f4"
+              LastKnownName="WeatherSaver"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f26335f-4a22-4260-8247-2774cdec1998"
+                  name="WeatherRetriever"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7fbee9c-9970-4fdb-b805-e02f4d69506e"
+                  name="WeatherSaver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -1634,6 +1637,56 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7400ab70-5427-4963-923f-e0bacadfe4f4"
+        name="WeatherSaver"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="a5a52756-a016-491d-9207-0edb63ea559e"
+            isDerived="false"
+            sourceEndRoleName="WeatherSaver"
+            targetEndRoleName="Weather"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="28547497-1222-4444-9ca5-097de31e32de"
+              LastKnownName="Weather"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17e73ce7-bc92-4931-b783-60886d3aaa22"
+                  name="WeatherSaver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3cfe7a36-7278-4a39-990c-81048f75e22b"
+                  name="Weather"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -16,6 +16,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)DataCollection\DataCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enum\SettingsEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookIntegration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookRoute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookViewBusinesses.cs" />
@@ -32,6 +33,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)TreasureHunt\TreasureHunt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Weather\Weather.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Weather\WeatherRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Weather\WeatherSaver.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

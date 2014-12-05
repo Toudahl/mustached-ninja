@@ -136,22 +136,6 @@
       <class Id="b7052360-d0cd-46bf-9382-18f6fc9b9c39" name="Weather" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="28547497-1222-4444-9ca5-097de31e32de" />
         <targetEnds>
-          <association Id="b6f176e2-8bf7-482e-916a-d609bc40ac85" isDerived="false" sourceEndRoleName="Weather" targetEndRoleName="WeatherRetriever" isLeaf="false" isAbstract="false">
-            <classMoniker Id="c836cf64-073e-4e8c-90cf-4757a78504ce" LastKnownName="WeatherRetriever" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="40fa468a-cc85-4ccf-a265-4722943c78b2" name="Weather" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="97e4901b-f1f4-4dce-8f06-41fc02171aa2" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d15827a3-674d-4aac-971e-f3c270a43924" name="WeatherRetriever" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="f9c9f3ad-e64d-432c-ab7a-ccd5e8f511e3" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="7291f600-ad0a-43eb-a2d7-fd1d7a1536fd" />
-          </association>
           <association Id="9a78567f-c73e-421e-b1c9-fd8c499fba38" isDerived="false" sourceEndRoleName="Weather" targetEndRoleName="SaveData" isLeaf="false" isAbstract="false">
             <classMoniker Id="5616b335-c00c-4fa8-af39-26c8fa12ddde" LastKnownName="SaveData" />
             <relationshipOwnedElementsInternal>
@@ -359,6 +343,24 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="c836cf64-073e-4e8c-90cf-4757a78504ce" name="WeatherRetriever" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="58d7d677-141f-4ec1-a807-9777aff84d8f" />
+        <targetEnds>
+          <association Id="604a0093-55cb-4492-bdb5-0b44b076aecc" isDerived="false" sourceEndRoleName="WeatherRetriever" targetEndRoleName="WeatherSaver" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0ee394a9-90b7-4498-8c05-b96fd44efbc5" LastKnownName="WeatherSaver" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="306228ee-f453-4b6d-86c4-2853cf83a581" name="WeatherRetriever" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f26335f-4a22-4260-8247-2774cdec1998" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c9fc135-88e0-4857-b2dc-685346e7fbaf" name="WeatherSaver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f7fbee9c-9970-4fdb-b805-e02f4d69506e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4c7cb911-a9ec-4801-86f8-e5b4697a5f60" />
+          </association>
+        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -374,6 +376,29 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="4ccf1732-98a8-46db-8a08-73933d05c382" name="LoadData" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1d2ca93f-a754-4334-9541-c00cde115a1b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0ee394a9-90b7-4498-8c05-b96fd44efbc5" name="WeatherSaver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7400ab70-5427-4963-923f-e0bacadfe4f4" />
+        <targetEnds>
+          <association Id="45959a0d-411e-4056-89a2-98b8a396161e" isDerived="false" sourceEndRoleName="WeatherSaver" targetEndRoleName="Weather" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b7052360-d0cd-46bf-9382-18f6fc9b9c39" LastKnownName="Weather" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49a8f732-a768-4b7f-8d1f-7ba3e9ca6be3" name="WeatherSaver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="17e73ce7-bc92-4931-b783-60886d3aaa22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebd6f5ea-bc62-4d4f-aa12-18dab641f34f" name="Weather" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3cfe7a36-7278-4a39-990c-81048f75e22b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a5a52756-a016-491d-9207-0edb63ea559e" />
+          </association>
+        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
