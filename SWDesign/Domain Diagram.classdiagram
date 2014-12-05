@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="15c7810e-6a41-47c5-918b-49a199a55565" name="Domain Diagram" linkedPackageId="60c33577-ef47-43c8-9b89-1306e3fe4161" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="096137b8-2a71-4cc1-8847-6112b55907c2">
+      <profileInstance Id="353a79d3-b6ed-4b96-94df-3b0003c87ad2" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="fd1d3e3e-a2ab-4524-80c2-521102c2a05f">
+      <profileInstance Id="d1c3ad20-4bfe-49cd-9df4-f6a0597ead54" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7d53ea54-75de-4f06-8a9b-3ec119e7a06d" name="LocationServices" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f7de8715-5250-4b48-8c09-d537a16811c5" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2e6e6cc5-89cb-4d75-ba22-e52e9bfefd6c" name="FacebookIntegration" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aea0a4a8-8fe6-4ef8-8cd9-30dd33bc7119" />
+        <targetEnds>
+          <association Id="81bb5728-e77c-4add-b55f-58797151f962" isDerived="false" sourceEndRoleName="FacebookIntegration" targetEndRoleName="Route" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a061e16f-5088-4b8f-b6f1-be613d3129fb" LastKnownName="FacebookRoute" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ef5e2a3a-2d9e-4117-a9d7-f737b565741f" name="FacebookIntegration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1f73e041-017b-459a-8310-8953c4de0825" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3449f63c-bcb8-4a13-be97-f7b8e5b58311" name="Route" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="343e7730-eb0f-4ced-9199-099f7bfc2ace" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="526f19c2-e46a-4947-9787-5c9dcf7a343d" />
+          </association>
+          <association Id="f7b21725-4ebc-4d8c-9984-37ad08547cf4" isDerived="false" sourceEndRoleName="FacebookIntegration" targetEndRoleName="FacebookViewShops" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7e4506ea-706a-4cff-b310-ce394ffe77f1" LastKnownName="FacebookViewShops" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d189f4c9-78e1-4d2b-aa37-fc130d52eab2" name="FacebookIntegration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d103f0a8-8cc7-4a95-9c9d-11934c923874" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1733e25-d9ac-4b02-a5a0-cce62e756360" name="FacebookViewShops" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8ed4bbf8-18d9-4f3f-bde9-0ef28a3cf941" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="430aba5e-75f7-4abd-8f3d-fd7f4ab3ecc7" />
+          </association>
+          <association Id="ee40bfc3-2f27-4397-b250-5f01e97187ae" isDerived="false" sourceEndRoleName="FacebookIntegration" targetEndRoleName="LocationServices" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7d53ea54-75de-4f06-8a9b-3ec119e7a06d" LastKnownName="LocationServices" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebc31c6d-59f1-452f-8b2b-fc4a5b7950b9" name="FacebookIntegration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c28a97b9-656c-4851-ad3b-e942cac88da1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8b110eb-68e5-419d-8f81-5ec12d5a53e5" name="LocationServices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dcc982d7-9b2f-41ef-8320-4248ded2baf4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3ea3e1c5-964d-4031-80b1-99f5b04af4fa" />
+          </association>
+          <association Id="a010a64e-6ddd-4c65-b418-a7b9686c6f48" isDerived="false" sourceEndRoleName="FacebookIntegration" targetEndRoleName="Settings" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3ddaa6c1-34d7-4795-9937-d037b2519aa9" LastKnownName="Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51cebc92-07f6-4759-811b-8d07063ceb87" name="FacebookIntegration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1504b211-a9ef-4965-8f53-5ed50d70d81b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d79afd6-8b22-4883-bf43-7048c3f8c253" name="Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="84faf16b-e335-4f9f-a862-c413709261ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bd1e379f-bfdc-4147-9ba4-eabc296b3035" />
+          </association>
+          <association Id="ed907811-51bd-4e38-b7a3-f4d4496f7911" isDerived="false" sourceEndRoleName="FacebookIntegration" targetEndRoleName="SaveData" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5616b335-c00c-4fa8-af39-26c8fa12ddde" LastKnownName="SaveData" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="583a256d-c1ad-4d61-845b-69c79335db53" name="FacebookIntegration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b20183b7-ad00-49ce-91d9-d5f41a880107" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0965e52a-4d6a-4051-89dc-7290500897f8" name="SaveData" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1cbd7c7e-be41-499d-bf75-960f8788bb25" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="77c9c00a-a778-4d75-bb99-827de32e8389" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c95b3d0c-4236-4a4c-a989-0e052305cc42" name="ImageHandeling" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6fedb8d3-55ec-4dd0-a823-84ce2ca0473e" />
+        <targetEnds>
+          <association Id="d3f6f674-a336-422b-a11d-bbfe4151e203" isDerived="false" sourceEndRoleName="ImageHandeling" targetEndRoleName="ImageCapture" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e5dd0ed3-7d14-455a-9247-3aab5cb21fc6" LastKnownName="ImageCapture" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea3545c7-0ecd-4dca-bc04-21da687fa4dc" name="ImageHandeling" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bf59258b-7215-47cf-986b-117e0ad462e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="315fbd9e-eb68-4550-8599-4796961dd6cb" name="ImageCapture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d55e0286-6024-463f-9ff5-8ff565c5cd5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7940e764-d75d-4d0c-92d9-02bd60508e70" />
+          </association>
+          <association Id="1084a5f8-f650-408e-b4dd-5e598002aa09" isDerived="false" sourceEndRoleName="ImageHandeling" targetEndRoleName="ImageComparison" isLeaf="false" isAbstract="false">
+            <classMoniker Id="87d7753e-c5d4-4a44-ba91-678a60238c16" LastKnownName="ImageComparison" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d4b0f294-f9bf-41ab-a099-42910cfd062f" name="ImageHandeling" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b8d3c50-f39d-416d-9616-32b4dac8fad6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf18bb64-1866-456a-97cf-c88c3529e971" name="ImageComparison" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="91b11de4-f4ce-4d71-8056-711894c3be55" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4bd8faea-70f4-44a7-9840-5264904b0f51" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b7052360-d0cd-46bf-9382-18f6fc9b9c39" name="Weather" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="28547497-1222-4444-9ca5-097de31e32de" />
+        <targetEnds>
+          <association Id="b6f176e2-8bf7-482e-916a-d609bc40ac85" isDerived="false" sourceEndRoleName="Weather" targetEndRoleName="WeatherRetriever" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c836cf64-073e-4e8c-90cf-4757a78504ce" LastKnownName="WeatherRetriever" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="40fa468a-cc85-4ccf-a265-4722943c78b2" name="Weather" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="97e4901b-f1f4-4dce-8f06-41fc02171aa2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d15827a3-674d-4aac-971e-f3c270a43924" name="WeatherRetriever" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f9c9f3ad-e64d-432c-ab7a-ccd5e8f511e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7291f600-ad0a-43eb-a2d7-fd1d7a1536fd" />
+          </association>
+          <association Id="9a78567f-c73e-421e-b1c9-fd8c499fba38" isDerived="false" sourceEndRoleName="Weather" targetEndRoleName="SaveData" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5616b335-c00c-4fa8-af39-26c8fa12ddde" LastKnownName="SaveData" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f36a4c74-0219-4fde-b612-6ed669285fd4" name="Weather" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7089bd62-a8be-4174-b413-a4bbe21544de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="84d3b530-43b1-4aab-bb92-2ebacd90d6f0" name="SaveData" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab77dbe4-4442-4956-a569-2c8f797c5101" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e44c3157-2b4f-4e1c-92b3-70a73233f20f" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="82309ea7-333a-43b7-aab7-9ada42b03891" name="DataCollection" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d4d7cda3-e121-4195-b0d0-93c55909b513" />
+        <targetEnds>
+          <association Id="ce1e008a-a28d-41df-85b0-7a9f813a36f3" isDerived="false" sourceEndRoleName="DataCollection" targetEndRoleName="SaveData" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5616b335-c00c-4fa8-af39-26c8fa12ddde" LastKnownName="SaveData" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6ffef59-a323-4174-bcf0-3cca20e2c15c" name="DataCollection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e6c745f4-e997-4dcc-9766-acb86a41ebe3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5278d5a-9211-4c83-975a-7dd8f05eda72" name="SaveData" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="21ed93c8-ddd8-4a99-94c9-d95920c604b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa4ddd44-e866-462d-96a1-a12912bf3c45" />
+          </association>
+          <association Id="050fd612-09f4-4651-ad7d-d1c0e0802ff4" isDerived="false" sourceEndRoleName="DataCollection" targetEndRoleName="Settings" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3ddaa6c1-34d7-4795-9937-d037b2519aa9" LastKnownName="Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5080a28d-7303-45fd-a7e7-cd7381fd8aa0" name="DataCollection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="37cd76c3-2265-4a31-9f9f-1ee3cbfb93d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e1ac1cf-7a3d-4d90-abf7-0c493c202561" name="Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e131fd7-c115-4b8f-967d-71451d65867f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="80bf2c39-4a98-49b2-a8f1-1ca3420cf2c1" />
+          </association>
+          <association Id="391d0705-219c-43a0-8a7a-cfd11ab913e1" isDerived="false" sourceEndRoleName="DataCollection" targetEndRoleName="LocationServices" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7d53ea54-75de-4f06-8a9b-3ec119e7a06d" LastKnownName="LocationServices" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d30ab23-f5ef-4f0e-8e19-7a77cebfe36c" name="DataCollection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="887dbbd7-b20b-4969-91c4-b32f9de945ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25d32e76-4614-4110-b349-29951132497c" name="LocationServices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="20fb9047-3441-487d-9fd6-b505df772c84" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0e2cbb8e-7ac7-40af-a148-cd3ff0081475" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3ddaa6c1-34d7-4795-9937-d037b2519aa9" name="Settings" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3584c4a6-6447-484e-960a-291f8bf84ed1" />
+        <targetEnds>
+          <association Id="213e55ee-de38-496e-aadf-cb75b97f4227" isDerived="false" sourceEndRoleName="Settings" targetEndRoleName="SaveData" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5616b335-c00c-4fa8-af39-26c8fa12ddde" LastKnownName="SaveData" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca410e9e-5a92-4e4c-b5fd-1aaae32fcd7c" name="Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e9d1913f-0e00-4ebf-a02c-973509862710" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a5ba91e-ffa5-40b8-ada4-73ab7b9d8eb5" name="SaveData" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="053c8c01-410d-4aec-863c-e1accf757e82" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="009b2d81-d522-4c62-b83d-df61423154f3" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1f77730c-c6d2-4345-acd7-d678b5423743" name="TreasureHunt" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7ffef7f8-cecc-41d3-b940-bb6dcdf3fa8b" />
+        <targetEnds>
+          <association Id="0d3231db-b017-4d59-bc36-4d58dec38371" isDerived="false" sourceEndRoleName="TreasureHunt" targetEndRoleName="ImageHandeling" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c95b3d0c-4236-4a4c-a989-0e052305cc42" LastKnownName="ImageHandeling" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92271657-a5b2-4b30-a876-9f1d0d9dc1d6" name="TreasureHunt" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f7a2e870-d27f-4242-85a7-b21125cd3838" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96615969-fbcc-46cc-adcc-bc89af91b452" name="ImageHandeling" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="34757765-9fa7-47e6-83fd-c1d186d670fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e4a55787-4201-4a09-b701-81bd9fe95110" />
+          </association>
+          <association Id="827fca46-c00c-426e-9b29-c03f62114fab" isDerived="false" sourceEndRoleName="TreasureHunt" targetEndRoleName="LocationServices" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7d53ea54-75de-4f06-8a9b-3ec119e7a06d" LastKnownName="LocationServices" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8256a1b5-b006-4863-9d35-772e71469af8" name="TreasureHunt" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e2c4a55c-a423-45da-8523-8ac35dfe154a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c18c970b-4e9d-4c7c-9653-f66cf47ed7fa" name="LocationServices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab8b954a-0c12-4744-b70a-4ecaa695dedf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="262fd0b6-9968-43e7-a837-5962700a9459" />
+          </association>
+          <association Id="c1f7c054-bec5-4832-afd5-aa0ebb58429b" isDerived="false" sourceEndRoleName="TreasureHunt" targetEndRoleName="Settings" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3ddaa6c1-34d7-4795-9937-d037b2519aa9" LastKnownName="Settings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b061f738-2bd1-44be-82d4-d1f33ac2db12" name="TreasureHunt" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fe445495-e0ea-4eaf-8f6b-0301ecb1aace" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6536c72-377d-4dd1-a281-e30731e97ec0" name="Settings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fbcca457-b1f5-4303-bbdf-28e15139cc1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="484252d5-a161-4146-8e89-4a03dd07fa2f" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a061e16f-5088-4b8f-b6f1-be613d3129fb" name="FacebookRoute" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="22875a6b-68b1-4605-92f0-1db7c55e5abd" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7e4506ea-706a-4cff-b310-ce394ffe77f1" name="FacebookViewShops" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db3f6998-ce3f-47a6-9451-fff619b292ba" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e5dd0ed3-7d14-455a-9247-3aab5cb21fc6" name="ImageCapture" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cf2feb60-195b-4404-b720-c2ceca8e3ce9" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="87d7753e-c5d4-4a44-ba91-678a60238c16" name="ImageComparison" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="29a6ed2c-3ef3-4e61-97ce-3c59f8aae37c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c836cf64-073e-4e8c-90cf-4757a78504ce" name="WeatherRetriever" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58d7d677-141f-4ec1-a807-9777aff84d8f" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5616b335-c00c-4fa8-af39-26c8fa12ddde" name="SaveData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6f69f9f7-95c6-40ad-9986-882ca8c9688c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="60c33577-ef47-43c8-9b89-1306e3fe4161" name="SWDesign">
+    <elementDefinition Id="7cbf6182-4e87-442e-9a31-d327ac4be078" />
+  </package>
+</logicalClassDesignerModel>

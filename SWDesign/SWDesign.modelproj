@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <ProjectGuid>{3147d2ad-3647-4aeb-ad4f-cc942a795ead}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
     <Name>SWDesign</Name>
     <RootNamespace>SWDesign</RootNamespace>
@@ -23,6 +23,13 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
+    <Content Include="Domain Diagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Domain Diagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Domain Diagram.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\SWDesign.uml">
       <SubType>Content</SubType>
     </Content>
