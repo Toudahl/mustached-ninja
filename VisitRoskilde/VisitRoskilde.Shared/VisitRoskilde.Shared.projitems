@@ -15,6 +15,20 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DataCollection\DataCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookIntegration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookViewBusinesses.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageCapture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageComparison.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageHandeling.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LocationServices\LocationServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Persistence\LoadData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Persistence\SaveData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TreasureHunt\TreasureHunt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Weather\Weather.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Weather\WeatherRetriever.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="7cbf6182-4e87-442e-9a31-d327ac4be078"
   name="SWDesign" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -82,7 +82,7 @@
             isAbstract="false">
             <classMoniker
               Id="db3f6998-ce3f-47a6-9451-fff619b292ba"
-              LastKnownName="FacebookViewShops"
+              LastKnownName="FacebookViewBusinesses"
               LastKnownLocation="SWDesign.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -624,6 +624,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="9820a551-a67f-4d1e-bbc7-2abb6ca921cd"
+            isDerived="false"
+            sourceEndRoleName="Settings"
+            targetEndRoleName="Class1"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1d2ca93f-a754-4334-9541-c00cde115a1b"
+              LastKnownName="LoadData"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a93ae55-1a64-4a77-889a-f572ec82c8b9"
+                  name="Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab36e920-07cc-41d8-8def-8305a44ae41b"
+                  name="Class1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
@@ -766,7 +805,7 @@
     <packageHasNamedElement>
       <class
         Id="db3f6998-ce3f-47a6-9451-fff619b292ba"
-        name="FacebookViewShops"
+        name="FacebookViewBusinesses"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -1584,6 +1623,14 @@
       <class
         Id="a46d7bc3-d3d7-4bb2-9ae6-e211d42f3b3a"
         name="DataDelivery"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1d2ca93f-a754-4334-9541-c00cde115a1b"
+        name="LoadData"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
