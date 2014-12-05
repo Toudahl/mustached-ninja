@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="15c7810e-6a41-47c5-918b-49a199a55565" name="Domain Diagram" linkedPackageId="60c33577-ef47-43c8-9b89-1306e3fe4161" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="096137b8-2a71-4cc1-8847-6112b55907c2">
-      <profileInstance Id="353a79d3-b6ed-4b96-94df-3b0003c87ad2" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="fd1d3e3e-a2ab-4524-80c2-521102c2a05f">
-      <profileInstance Id="d1c3ad20-4bfe-49cd-9df4-f6a0597ead54" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="15c7810e-6a41-47c5-918b-49a199a55565" name="Domain Diagram" linkedPackageId="60c33577-ef47-43c8-9b89-1306e3fe4161" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="7d53ea54-75de-4f06-8a9b-3ec119e7a06d" name="LocationServices" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -237,6 +223,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="0e2cbb8e-7ac7-40af-a148-cd3ff0081475" />
           </association>
+          <association Id="ec79b128-2b35-4906-bf6b-63301cc1ba33" isDerived="false" sourceEndRoleName="DataCollection" targetEndRoleName="DataDelivery" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9316e59b-d9e6-4b27-9d12-c2cb844ebdb0" LastKnownName="DataDelivery" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5bc5658e-5294-479e-b664-f30edf21f285" name="DataCollection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3a26702b-9858-4823-9543-c9e43e9725f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="58f783c4-d8fb-415c-ad8d-da1d4773837c" name="DataDelivery" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4fecde1a-b7fa-4fc8-a3b4-8391d39b3430" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5d1af37e-884c-466d-93bb-c9682fcb63dc" />
+          </association>
         </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -348,8 +350,27 @@
         <elementDefinition Id="6f69f9f7-95c6-40ad-9986-882ca8c9688c" />
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9316e59b-d9e6-4b27-9d12-c2cb844ebdb0" name="DataDelivery" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a46d7bc3-d3d7-4bb2-9ae6-e211d42f3b3a" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="60c33577-ef47-43c8-9b89-1306e3fe4161" name="SWDesign">
     <elementDefinition Id="7cbf6182-4e87-442e-9a31-d327ac4be078" />
+    <profileInstances>
+      <packageHasProfileInstances Id="096137b8-2a71-4cc1-8847-6112b55907c2">
+        <profileInstance Id="353a79d3-b6ed-4b96-94df-3b0003c87ad2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="fd1d3e3e-a2ab-4524-80c2-521102c2a05f">
+        <profileInstance Id="d1c3ad20-4bfe-49cd-9df4-f6a0597ead54" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

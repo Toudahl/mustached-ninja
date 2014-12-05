@@ -535,6 +535,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="5d1af37e-884c-466d-93bb-c9682fcb63dc"
+            isDerived="false"
+            sourceEndRoleName="DataCollection"
+            targetEndRoleName="DataDelivery"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a46d7bc3-d3d7-4bb2-9ae6-e211d42f3b3a"
+              LastKnownName="DataDelivery"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a26702b-9858-4823-9543-c9e43e9725f8"
+                  name="DataCollection"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4fecde1a-b7fa-4fc8-a3b4-8391d39b3430"
+                  name="DataDelivery"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
@@ -1540,6 +1579,14 @@
           </association>
         </targetEnds>
       </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a46d7bc3-d3d7-4bb2-9ae6-e211d42f3b3a"
+        name="DataDelivery"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
