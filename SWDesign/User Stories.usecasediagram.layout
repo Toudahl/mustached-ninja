@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.625, 8.5" name="User Stories">
+  <useCaseModelRootMoniker Id="d8c3b552-1ce6-4510-bcdc-e0181337926d" />
+  <nestedChildShapes>
+    <actorShape Id="3a958a0a-b918-4a0b-8d09-77e7659fd52b" absoluteBounds="1, 2, 2.875, 3.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="9407010d-61f1-48ee-9ef1-37c4bd680fad" LastKnownName="Visitor" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="6cac3db4-6cb3-41b3-a8d0-fa8fc25e067e" absoluteBounds="5.375, 0.75, 1.75, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="f7c06412-9050-4dbf-85c0-b6affad81181" LastKnownName="Treasure hunting" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.875 : 2.71311475409836); (5.92776732514335 : 1.23243012612611)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4a5031d7-b12f-46b7-875d-19524d2bafa2" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="3a958a0a-b918-4a0b-8d09-77e7659fd52b" />
+        <useCaseShapeMoniker Id="6cac3db4-6cb3-41b3-a8d0-fa8fc25e067e" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="70abd85d-081e-4e7e-b5d2-8be141bd9b02" absoluteBounds="6, 1.5, 1.625, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="b588142d-47a6-4b5e-94c2-763f226024c2" LastKnownName="Spend the day" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.875 : 3.09285714285714); (6.35881920052063 : 1.95739693690485)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="742f0f6e-024c-451f-9eeb-e7793139c659" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="3a958a0a-b918-4a0b-8d09-77e7659fd52b" />
+        <useCaseShapeMoniker Id="70abd85d-081e-4e7e-b5d2-8be141bd9b02" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="a9f34e98-386f-46c7-9831-6e4b005f9521" absoluteBounds="6.375, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="558b5566-b853-4555-bb0d-181129b00331" LastKnownName="Weather" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.875 : 3.34507042253521); (6.43937618612756 : 2.62271093348519)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="fd2ec5ad-d47d-4afb-b8c0-2768494c450f" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="3a958a0a-b918-4a0b-8d09-77e7659fd52b" />
+        <useCaseShapeMoniker Id="a9f34e98-386f-46c7-9831-6e4b005f9521" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="857ee580-8104-4331-bae9-9da18f815002" absoluteBounds="6.375, 2.875, 1.375, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="91925a37-a27a-4a33-8318-0f1bdc1f26bd" LastKnownName="Finding my way" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.875 : 3.55574324324324); (6.41806074176113 : 3.2120863862485)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="c7845790-ddfc-483c-84f7-f02ed5864e6d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="3a958a0a-b918-4a0b-8d09-77e7659fd52b" />
+        <useCaseShapeMoniker Id="857ee580-8104-4331-bae9-9da18f815002" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="53fff047-26c6-47c9-ae55-54b14f92f40d" absoluteBounds="6.5, 3.5, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="750cd22b-fcd2-4662-bc0c-ddd1d5d5cf9b" LastKnownName="Social sharing" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.875 : 3.75); (6.5 : 3.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="fbbd39b7-a596-46d7-9a69-35cd4bb9a866" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="3a958a0a-b918-4a0b-8d09-77e7659fd52b" />
+        <useCaseShapeMoniker Id="53fff047-26c6-47c9-ae55-54b14f92f40d" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="bc289cd4-88d9-45ac-953f-eec1d2800300" absoluteBounds="6.5, 4.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="002768ac-6955-49bf-8f8b-78f4056794be" LastKnownName="Find shop" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.875 : 3.98630136986301); (6.52501169852634 : 4.4219197312646)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="0073e11f-d9f8-48e8-b936-8441321b53f0" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="3a958a0a-b918-4a0b-8d09-77e7659fd52b" />
+        <useCaseShapeMoniker Id="bc289cd4-88d9-45ac-953f-eec1d2800300" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="e810cf6e-d3ec-46c6-9c0b-ac212f33172c" absoluteBounds="6.5, 5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="55358b64-47f9-4c89-bf23-b41b72428b90" LastKnownName="Settings" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(3.875 : 4.22260273972603); (6.58222232055723 : 5.1126484341558)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="454514e1-cad1-47f6-8c39-bb61911b2bc7" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="3a958a0a-b918-4a0b-8d09-77e7659fd52b" />
+        <useCaseShapeMoniker Id="e810cf6e-d3ec-46c6-9c0b-ac212f33172c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="518aa872-1fce-4a65-bde8-4386e9237062" absoluteBounds="7.5, 6.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e854d8d7-d20c-4b48-a520-b9fae2f09d01" LastKnownName="CollectData" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <artifactShape Id="89e30cc2-8d21-4753-81bd-c081ae30b0b0" absoluteBounds="11.875, 2.375, 1.5, 0.5" customColor="161, 199, 231">
+      <artifactMoniker Id="065c6c03-a48e-4c16-82ce-0f77f3f3af58" LastKnownName="Visit Roskilde" />
+    </artifactShape>
+    <useCaseAssociationConnector edgePoints="[(12.3359375 : 2.875); (8.25025147461893 : 6.40856629222147)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4bb7eeb4-bc2e-4722-bb53-d91b833e80f6" />
+      <relativeChildShapes />
+      <nodes>
+        <artifactShapeMoniker Id="89e30cc2-8d21-4753-81bd-c081ae30b0b0" />
+        <useCaseShapeMoniker Id="518aa872-1fce-4a65-bde8-4386e9237062" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(12.0892857142857 : 2.875); (7.36552763412143 : 5.07942043741)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="0cae17f1-920a-410e-a837-140be3f3d165" />
+      <relativeChildShapes />
+      <nodes>
+        <artifactShapeMoniker Id="89e30cc2-8d21-4753-81bd-c081ae30b0b0" />
+        <useCaseShapeMoniker Id="e810cf6e-d3ec-46c6-9c0b-ac212f33172c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(11.875 : 2.43382352941176); (6.9029225584043 : 1.16643124037757)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="fe5ce938-af9c-42f1-a28d-0d7476b8900c" />
+      <relativeChildShapes />
+      <nodes>
+        <artifactShapeMoniker Id="89e30cc2-8d21-4753-81bd-c081ae30b0b0" />
+        <useCaseShapeMoniker Id="6cac3db4-6cb3-41b3-a8d0-fa8fc25e067e" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

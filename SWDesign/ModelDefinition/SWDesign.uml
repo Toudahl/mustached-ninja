@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="7cbf6182-4e87-442e-9a31-d327ac4be078"
   name="SWDesign" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -763,6 +763,783 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="59bb7ae2-1d0e-4c71-a3ed-fd4265c3b156"
+        name="Visitor"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="89ad67d5-08d8-417b-be20-c7e64e7012b9"
+            isDerived="false"
+            sourceEndRoleName="Visitor"
+            targetEndRoleName="Treasure hunting"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="54cda77b-48d1-4dd8-87e9-319bf3e96a85"
+              LastKnownName="Treasure hunting"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cbcc82fd-f852-4414-bf98-8af7a33d2274"
+                  name="Visitor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b862f33e-69ed-4e09-b8b0-22e4bb7ae6a0"
+                  name="Treasure hunting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="38b1c04a-e6e0-471e-a3c5-18a82b8092a7"
+            isDerived="false"
+            sourceEndRoleName="Visitor"
+            targetEndRoleName="Spend the day"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d44a2570-5e0f-4c29-81d2-8a53166307a3"
+              LastKnownName="Spend the day"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f615d73-b07f-463e-8756-de517a74e0fb"
+                  name="Visitor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ef68508-022f-4859-ab5f-c967eb8b07e7"
+                  name="Spend the day"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2937da50-0296-4b74-8015-e41e2c1c356a"
+            isDerived="false"
+            sourceEndRoleName="Visitor"
+            targetEndRoleName="Weather"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="79c70132-6c12-46e2-b71c-12c1a16abc8a"
+              LastKnownName="Weather"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c29b6c97-0932-4b21-9ba7-21aeaf23d63b"
+                  name="Visitor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0af98a9b-5181-4c73-804c-84ce34512849"
+                  name="Weather"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ac56d8aa-5c94-4090-a566-198f3b39a4a1"
+            isDerived="false"
+            sourceEndRoleName="Visitor"
+            targetEndRoleName="Finding my way"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bbe69a22-33c7-4241-90ac-3d61a3b36486"
+              LastKnownName="Finding my way"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3ba605b-31a3-4416-a59a-eb8d14467810"
+                  name="Visitor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e152330a-01e4-44ce-b04d-72e16bd1fa83"
+                  name="Finding my way"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5ec03554-c99a-4e22-a0f7-1c3f3164a3e2"
+            isDerived="false"
+            sourceEndRoleName="Visitor"
+            targetEndRoleName="Social sharing"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c6c9b6b5-83d0-40c5-887c-0c96fb79b562"
+              LastKnownName="Social sharing"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3b4c535-0603-492b-925b-a2e7d27f1e8e"
+                  name="Visitor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f36e77f-745e-4a84-b995-71fd3837f9bd"
+                  name="Social sharing"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ce9d127b-1730-4cbb-a31b-4016bca4f8e2"
+            isDerived="false"
+            sourceEndRoleName="Visitor"
+            targetEndRoleName="Find shop"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="634a56cb-1ff9-4685-ad2d-facc87cf0657"
+              LastKnownName="Find shop"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bcf41c7c-35bd-4950-9d90-5a0b110e7dd5"
+                  name="Visitor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74fab4dc-f04f-4b59-a21f-9b53c3c2d4d2"
+                  name="Find shop"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5ea4a0b6-5902-4358-b2f6-be19febe34ce"
+            isDerived="false"
+            sourceEndRoleName="Visitor"
+            targetEndRoleName="Privacy"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="551c6544-06fc-4b9a-ba07-9122cdcf5c61"
+              LastKnownName="Settings"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="894c4f1c-443d-4a4a-ade6-5b9ac252a909"
+                  name="Visitor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65f0645f-b412-431e-b96f-46c06e68c3d5"
+                  name="Privacy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="54cda77b-48d1-4dd8-87e9-319bf3e96a85"
+        name="Treasure hunting"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f9ad1ff0-0506-464d-bd6d-ff0e23be18a8"
+            isDerived="false"
+            sourceEndRoleName="Treasure hunting"
+            targetEndRoleName="Compare images"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8c7652c4-5c6f-47b2-835b-f6ce60f31d8e"
+              LastKnownName="Compare images"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4baf11a6-6e0b-45fa-8a1a-9d7c788b118c"
+                  name="Treasure hunting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a9f6ce29-efb2-4c1b-b6dd-e4d73aa960f8"
+                  name="Compare images"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d959c139-1aef-4114-bfb2-622f2680ba7f"
+        name="Visit Roskilde"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7303008a-4c1d-4aad-9cd2-27c0f5f99c30"
+            isDerived="false"
+            sourceEndRoleName="Visit Roskilde"
+            targetEndRoleName="CollectData"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="52b8b020-7eee-4421-9e36-fa84272ddfcb"
+              LastKnownName="CollectData"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17732f43-348d-4b7a-bdf9-a933c1376264"
+                  name="Visit Roskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c9acd6a-ee35-4ff4-b778-b33b360c2fda"
+                  name="CollectData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c51e419e-7d1a-4344-91f1-5841536dd4a4"
+            isDerived="false"
+            sourceEndRoleName="Visit Roskilde"
+            targetEndRoleName="Privacy"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="998ec103-6727-44f2-a022-254655c32c7a"
+              LastKnownName="Privacy"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80f5d730-c9a6-4ed9-b314-688bf42b864d"
+                  name="Visit Roskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f6bf2323-942c-4d50-a614-d042a7496d66"
+                  name="Privacy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a77dca54-264b-4448-b340-20971a6153b7"
+            isDerived="false"
+            sourceEndRoleName="Visit Roskilde"
+            targetEndRoleName="Compare images"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8c7652c4-5c6f-47b2-835b-f6ce60f31d8e"
+              LastKnownName="Compare images"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5940d4d3-59a7-4d4e-b7e9-354d5bb54ff9"
+                  name="Visit Roskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c73b5b0-b30b-4046-9408-bda3779413d4"
+                  name="Compare images"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f8e9248d-54db-4ac1-aa15-d2b1e261ddf8"
+            isDerived="false"
+            sourceEndRoleName="Visit Roskilde"
+            targetEndRoleName="Settings"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="551c6544-06fc-4b9a-ba07-9122cdcf5c61"
+              LastKnownName="Settings"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec44dc40-5572-45ae-908b-b7d534a16c38"
+                  name="Visit Roskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ccf9ea4-e6f4-4b36-b3c7-bb65dca64504"
+                  name="Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="831c71f2-c5cb-44a7-9c27-843fdb361ca5"
+            isDerived="false"
+            sourceEndRoleName="Visit Roskilde"
+            targetEndRoleName="Treasure hunting"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="54cda77b-48d1-4dd8-87e9-319bf3e96a85"
+              LastKnownName="Treasure hunting"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8e689cac-84aa-4290-9cd4-41d08afdb69a"
+                  name="Visit Roskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc181576-b4a5-4d9d-b435-f51c7e46f064"
+                  name="Treasure hunting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d44a2570-5e0f-4c29-81d2-8a53166307a3"
+        name="Spend the day"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="79c70132-6c12-46e2-b71c-12c1a16abc8a"
+        name="Weather"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bbe69a22-33c7-4241-90ac-3d61a3b36486"
+        name="Finding my way"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c6c9b6b5-83d0-40c5-887c-0c96fb79b562"
+        name="Social sharing"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="634a56cb-1ff9-4685-ad2d-facc87cf0657"
+        name="Find shop"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="551c6544-06fc-4b9a-ba07-9122cdcf5c61"
+        name="Settings"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="189ffb0b-5fb6-4966-9f98-c6c970850943"
+            isDerived="false"
+            sourceEndRoleName="Settings"
+            targetEndRoleName="Privacy"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="998ec103-6727-44f2-a022-254655c32c7a"
+              LastKnownName="Privacy"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65de3d66-6bd5-43b1-80db-2e30bd9d7197"
+                  name="Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fda3b568-fb3f-4d24-aa9b-9ea34be584dc"
+                  name="Privacy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="52b8b020-7eee-4421-9e36-fa84272ddfcb"
+        name="CollectData"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="998ec103-6727-44f2-a022-254655c32c7a"
+        name="Privacy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c7652c4-5c6f-47b2-835b-f6ce60f31d8e"
+        name="Compare images"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="1833f74f-0c8b-4e18-a4f7-097a2d722166"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="ea356227-7b7f-43d6-8381-fe2f3688cfa0"
+        name="Visit Roskilde"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="cfaa4da3-c3fa-46a3-9ed5-f819233197e9"
+            isDerived="false"
+            sourceEndRoleName="Visit Roskilde"
+            targetEndRoleName="CollectData"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="52b8b020-7eee-4421-9e36-fa84272ddfcb"
+              LastKnownName="CollectData"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="900295a3-3f26-481e-8530-826b865e1dad"
+                  name="Visit Roskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="40ea8824-67ec-4710-b143-2f06c62120d7"
+                  name="CollectData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8bfe4a08-b519-4388-bb1c-3691963ef7af"
+            isDerived="false"
+            sourceEndRoleName="Visit Roskilde"
+            targetEndRoleName="Settings"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="551c6544-06fc-4b9a-ba07-9122cdcf5c61"
+              LastKnownName="Settings"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fba72618-854f-449d-9f09-eceaaa150547"
+                  name="Visit Roskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d4ae517b-b869-4939-8afb-6f1feab22c67"
+                  name="Settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2d826b8b-213f-4214-b02a-1e4b8866d35c"
+            isDerived="false"
+            sourceEndRoleName="Visit Roskilde"
+            targetEndRoleName="Treasure hunting"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="54cda77b-48d1-4dd8-87e9-319bf3e96a85"
+              LastKnownName="Treasure hunting"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1bab5ab1-f6ff-41ab-b763-7c9b4d859eb7"
+                  name="Visit Roskilde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e80e29f-7f06-497f-8e8d-41d3acbe7dc0"
+                  name="Treasure hunting"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
