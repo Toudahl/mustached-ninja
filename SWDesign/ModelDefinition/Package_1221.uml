@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="da07ff9a-fa12-475c-88c1-0109199c5608"
+  name="Enum"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e439981d-4d84-4475-9e02-2a258a4c9675"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVisitRoskilde.Enum"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="1eb4d1d4-d7bd-4358-a120-b055d5bff0f4"
+        name="SettingsEnum"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="842d0032-735a-4296-bd07-23679c2b52a5"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Enum Type%3DSettingsEnum"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="483c1a0f-cd20-41b1-9d99-37ab31ecdba2"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9136b1b9-f6f3-4916-9ccc-07002063d29d">
+                <propertyInstance
+                  Id="16c9c8ec-31ec-40e0-b33f-3fb542d081b2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d238d1d4-3922-4191-944c-27cbbaa40efe">
+                <propertyInstance
+                  Id="9fefebde-cb2a-4190-9c0e-e69b60ce9fb7"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca49ee09-2bd5-4493-9d07-e077221b6a92">
+                <propertyInstance
+                  Id="bdec8ee9-68ef-41f5-8e2c-ef0c81025a40"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="ef7d0bc0-73fb-4e3a-a50d-1d5f5e3f542b"
+            name="Privacy">
+            <referencesInternal>
+              <reference
+                Id="af57d1e7-881e-40fe-b814-fe2fdec3a37f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Enum Type%3DSettingsEnum Member%3DPrivacy"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="d8aca70a-64b6-45ae-9ba1-4847faf74875"
+            name="Facebook">
+            <referencesInternal>
+              <reference
+                Id="441321e2-9c39-429c-ae02-ea13f917d982"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Enum Type%3DSettingsEnum Member%3DFacebook"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

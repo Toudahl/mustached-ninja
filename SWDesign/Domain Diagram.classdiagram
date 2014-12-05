@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="15c7810e-6a41-47c5-918b-49a199a55565" name="Domain Diagram" linkedPackageId="60c33577-ef47-43c8-9b89-1306e3fe4161" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0545a934-b517-4905-9e9c-3e954171a3e6">
+      <profileInstance Id="d4b195bf-0b99-4cb2-8596-ade62111c113" name="CSharpProfile">
+        <elementDefinition Id="3bc642d7-cb51-4ff1-ad38-caf531a5a4b7" />
+      </profileInstance>
+      <elementDefinition Id="0ba9dee6-2f3f-4da9-80fb-ae8b23c3a2ef" />
+    </packageHasProfileInstances>
+  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="7d53ea54-75de-4f06-8a9b-3ec119e7a06d" name="LocationServices" isAbstract="false" isLeaf="false" isActiveClass="false">

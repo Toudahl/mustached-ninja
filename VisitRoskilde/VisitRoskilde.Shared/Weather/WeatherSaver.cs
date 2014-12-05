@@ -7,7 +7,7 @@ namespace VisitRoskilde.Weather
 {
     class WeatherSaver: ISave
     {
-        // Send the weather data to the Weather class
+        // Send the weather data to the Weather Object
         public bool SaveData()
         {
             throw new NotImplementedException();

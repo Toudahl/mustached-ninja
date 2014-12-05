@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7b84032e-2cb4-435d-8a33-9be3edd6f873"
+  name="Interfaces"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="30211a75-0fec-4db8-aff2-8df3aad407ff"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVisitRoskilde.Interfaces"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="5899b90f-2961-4c17-af82-14d157bc36d2"
+        name="ILoad"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="cfa76a0b-1a0f-4d06-b99c-1ecb1562a19e"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Interfaces Type%3DILoad"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f523b2ae-e2a2-43ad-b74a-97bafa4fdcdf"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ede5720-755b-436f-9bd2-2d34e3c321c2">
+                <propertyInstance
+                  Id="7103d2b9-47da-4e78-8adc-e1efe3301f62"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ea03c64-b024-4e19-a868-1dc025f47a2d">
+                <propertyInstance
+                  Id="bd2759eb-ca44-44d7-985d-47daa23b79a0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7a2d02c3-3867-4db2-b1b8-3c355bf8bd96">
+                <propertyInstance
+                  Id="6fd743b0-d67b-4745-b350-657fdba5928b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="18e6666c-9004-402a-afc4-3da777fed710">
+                <propertyInstance
+                  Id="90603fd1-b76f-422e-a37d-c8c89c8dab62"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="51d170ac-8960-4be8-9e81-baef354741a2"
+            name="LoadData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f3c4bf62-99ab-4f93-9c22-f910215a31a3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Interfaces Type%3DILoad Member%3DLoadData"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="db7d9d63-bbc8-493e-8851-a4fc6713e1b3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42bf12c0-dc55-4aa6-bbe1-6154a8e90716">
+                    <propertyInstance
+                      Id="4fd56415-a420-4dcf-88c9-7d97f75353b7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6966af7e-5750-4fdd-89e4-041446ebfc17">
+                    <propertyInstance
+                      Id="eff45cfd-8267-4824-8d3c-e27381e468d1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04749e2b-3a62-4a81-a07f-65a88189aaa3">
+                    <propertyInstance
+                      Id="d6c5d022-bda7-48fa-aeec-842bc925fce7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="828bf486-bac6-4d8e-814f-354d3459bb28">
+                    <propertyInstance
+                      Id="fdbf6c47-f9e0-4bd3-9339-770d90a5444f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78f28e8e-096b-47bf-9379-1498f724978e">
+                    <propertyInstance
+                      Id="9e905695-3819-4f5e-9b03-862aa75d7873"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54783aad-e376-4ccd-b0d3-1a54de5afbfa">
+                    <propertyInstance
+                      Id="8a431305-95fd-4491-8840-bf40a6df9e31"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="936f3864-0a27-494f-8d9c-d37011094c3b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="32787b22-25d1-4a18-a0df-05ddbd837c14"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Package2_1221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a5aa1688-1608-492c-914b-a86e33399e36"
+        name="ISave"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="2fbaaef8-92b4-42c1-a65b-8f23f049e04d"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Interfaces Type%3DISave"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1120175b-54ad-4160-93dd-7daa23b060b2"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="138d3695-0c63-4999-985c-f3d32910f87c">
+                <propertyInstance
+                  Id="b833e22d-1baa-437e-9817-a12dd6f0d038"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1c283ee-1c18-4d44-8094-dfc6373520d7">
+                <propertyInstance
+                  Id="972667ec-d099-4fad-9d94-a78d07c6f21e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="40d3ca36-cc5d-4fe0-bbf9-04944a38e39e">
+                <propertyInstance
+                  Id="5f4fa7a3-86fb-4dd5-93eb-2aaa2bd2d4c2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06db47e1-c9c5-4dff-bd71-a1f479f83ff1">
+                <propertyInstance
+                  Id="77637e1a-2d59-4bfa-a0be-b84229b8079f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="aadf3be8-06e6-47f3-bcee-337494baec0b"
+            name="SaveData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="164e6e3c-096c-4085-88e1-75ca85379e67"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Interfaces Type%3DISave Member%3DSaveData"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fbda8418-1a09-4baf-aacd-5b126872777d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af4b825c-4c42-4961-968f-a278c7d6f794">
+                    <propertyInstance
+                      Id="5e54479e-2dfb-4ae1-8f9a-3ac23a7dd6b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cf26313-260b-4b2e-afb8-fef6b742f35a">
+                    <propertyInstance
+                      Id="b046d9a5-32d4-433c-ab1c-66793ee3ff3e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10697afe-634b-4f40-a97a-948747784cb4">
+                    <propertyInstance
+                      Id="2d890d44-5465-41b1-869a-31c76916e8a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12ab06d0-4118-43d9-ab88-3dfb8ee37bc8">
+                    <propertyInstance
+                      Id="e22dcfb2-fecd-4145-bf1d-4f97ed471a78"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecba5cd3-1bc8-4c9d-84f6-6fd3848e864d">
+                    <propertyInstance
+                      Id="e25f03c6-faff-44c1-9770-d9a563e5db8d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26198ca7-62e8-461e-b597-aa915e95f397">
+                    <propertyInstance
+                      Id="941ff188-0a45-4af8-9904-160fd3de3917"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afbf3f5a-078a-4fed-a7d1-804bdfde4fdb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="32787b22-25d1-4a18-a0df-05ddbd837c14"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Package2_1221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

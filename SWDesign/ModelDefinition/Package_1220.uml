@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ba5f0a9c-3b64-4812-9d89-a316acdacc79"
+  name="VisitRoskilde"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="5719cfa0-e0c0-49d2-a26f-f3d5e158a54c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVisitRoskilde"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d2b38432-d532-445b-ab30-8fb0289bd629"
+        LastKnownName="DataCollection"
+        LastKnownLocation="Package1_1220.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="da07ff9a-fa12-475c-88c1-0109199c5608"
+        LastKnownName="Enum"
+        LastKnownLocation="Package_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ed13e071-5d9f-4edc-ad09-a841255837f6"
+        LastKnownName="FacebookIntegration"
+        LastKnownLocation="Package1_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7b84032e-2cb4-435d-8a33-9be3edd6f873"
+        LastKnownName="Interfaces"
+        LastKnownLocation="Package3_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a3ee6793-c850-40f8-89fc-17ffef7f6a3d"
+        LastKnownName="ImageHandeling"
+        LastKnownLocation="Package4_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="51c72d0f-231d-45a7-abff-1ec0a3160ab5"
+        LastKnownName="LocationServices"
+        LastKnownLocation="Package5_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f9716ea2-5bae-499f-9997-229ce1311825"
+        LastKnownName="Navigation"
+        LastKnownLocation="Package6_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4adb8129-3fed-4668-b68f-e69b447612af"
+        LastKnownName="Persistence"
+        LastKnownLocation="Package7_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3d85b1aa-dfd5-4a6f-a0ef-ceb699818d91"
+        LastKnownName="Settings"
+        LastKnownLocation="Package8_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cbb0a276-e362-4ccb-baf4-163da8f391f8"
+        LastKnownName="TreasureHunt"
+        LastKnownLocation="Package9_1221.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c9ad4998-0f22-4c57-b98b-9d70b372c790"
+        LastKnownName="Weather"
+        LastKnownLocation="Package10_1221.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
