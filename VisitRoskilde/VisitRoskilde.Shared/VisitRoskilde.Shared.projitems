@@ -22,7 +22,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageCapture.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageComparison.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageHandeling.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ILoad.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ISave.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LocationServices\LocationServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Navigator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\LoadData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\SaveData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Settings\Settings.cs" />
