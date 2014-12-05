@@ -16,6 +16,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)DataCollection\DataCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataCollection\DataDelivery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enum\SettingsEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookIntegration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookRoute.cs" />

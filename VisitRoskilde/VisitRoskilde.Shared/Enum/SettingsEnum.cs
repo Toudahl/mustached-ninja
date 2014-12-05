@@ -3,5 +3,6 @@
     enum SettingsEnum
     {
         Privacy,
+        Facebook,
     }
 }

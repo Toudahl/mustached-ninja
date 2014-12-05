@@ -586,10 +586,10 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="9820a551-a67f-4d1e-bbc7-2abb6ca921cd"
+            Id="7a97612a-9c57-4f28-a504-13319d1b6a34"
             isDerived="false"
             sourceEndRoleName="Settings"
-            targetEndRoleName="Class1"
+            targetEndRoleName="LoadData"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -599,7 +599,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="0a93ae55-1a64-4a77-889a-f572ec82c8b9"
+                  Id="cab61b97-bce1-4786-a22c-ca3fa5095d9c"
                   name="Settings"
                   isLeaf="false"
                   isStatic="false"
@@ -612,8 +612,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="ab36e920-07cc-41d8-8def-8305a44ae41b"
-                  name="Class1"
+                  Id="1543ea7a-56d5-4e4b-a11e-c4d1d6a51589"
+                  name="LoadData"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -785,7 +785,49 @@
         name="ImageComparison"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="614ee830-96ec-47ac-8a57-083d113168d7"
+            isDerived="false"
+            sourceEndRoleName="ImageComparison"
+            targetEndRoleName="LoadData"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1d2ca93f-a754-4334-9541-c00cde115a1b"
+              LastKnownName="LoadData"
+              LastKnownLocation="SWDesign.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a04539a1-1cd2-4ada-bfe2-205644fefc95"
+                  name="ImageComparison"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="367d28a3-6944-4f3e-8700-838627921b83"
+                  name="LoadData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
