@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VisitRoskilde.Persistence
+namespace VisitRoskilde.Interfaces
 {
-    class SaveData
+    interface IDataCollectable
     {
     }
 }

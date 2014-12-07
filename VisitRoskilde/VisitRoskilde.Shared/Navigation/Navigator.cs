@@ -4,7 +4,8 @@ using System.Text;
 
 namespace VisitRoskilde.Navigation
 {
-    class Navigator
+    static class Navigator
     {
+        // Create public static fields as nessesary for navigation
     }
 }
