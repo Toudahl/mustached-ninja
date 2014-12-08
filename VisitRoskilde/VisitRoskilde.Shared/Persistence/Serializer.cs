@@ -1,30 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization;
 using System.Text;
+using Windows.Storage;
 using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.Persistence
 {
-    class Serializer<T>
+    abstract class Serializer<T>
     {
+        private StorageFolder _storageFolder;
+        protected string _fileName;
+        private DataContractSerializer _serializer;
+        protected T _restoredObject;
 
-        public void Serialize(T objectForSaving)
+        /// <summary>
+        /// Input the filename in the constructor.
+        /// </summary>
+        /// <param name="fileName">file.xml</param>
+        public Serializer()
         {
-            // Serialize object as per instructions in the example at
-            // https://github.com/SoftwareConstruction-1semester/PersistenceStoreApp
-            // Make it take an object of the type <T>, and use the filename of the class for
-            // the file it creates.
-
-            // Throw a custom exception if failed.
+            _storageFolder = ApplicationData.Current.LocalFolder;
+            _serializer = new DataContractSerializer(typeof(T));
         }
 
-        public IMyDataPersists Deserialize(T objectForRestoring)
-        {
-            // Deserialize object as per instructions in the example at
-            // https://github.com/SoftwareConstruction-1semester/PersistenceStoreApp
-            // Make it load data from the file matching the filename of the class that requests deserilization
 
-            return null;
+        public async void Serialize(T objectForSaving)
+        {
+            Stream stream = await _storageFolder.OpenStreamForWriteAsync(_fileName, CreationCollisionOption.ReplaceExisting);
+            _serializer.WriteObject(stream, objectForSaving);
+        }
+
+        public async void Deserialize()
+        {
+            Stream stream = await _storageFolder.OpenStreamForReadAsync(_fileName);
+            _restoredObject = (T)_serializer.ReadObject(stream);
         }
     }
 }

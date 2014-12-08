@@ -8,8 +8,12 @@ using VisitRoskilde.Persistence;
 namespace VisitRoskilde.DataCollection
 {
     [DataContract]
-    class DataDelivery
+    class DataDelivery : Serializer<DataDelivery>
     {
+        public DataDelivery()
+        {
+            _fileName = "dataCollection.xml";
+        }
         public bool SaveData(List<IDataCollectable> collectedInformation)
         {
             throw new NotImplementedException();
@@ -17,7 +21,14 @@ namespace VisitRoskilde.DataCollection
 
         ~DataDelivery()
         {
-            // Serialize the list.
+            try
+            {
+                Serialize(this);
+            }
+            catch (Exception exception)
+            {
+                throw new Exception("Saving the collected message failed with the following message: " + exception);
+            }
         }
     }
 }
