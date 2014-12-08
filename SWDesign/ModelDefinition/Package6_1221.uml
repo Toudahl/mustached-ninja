@@ -22,7 +22,7 @@
         <referencesInternal>
           <reference
             Id="2714c6e9-fe3b-4e05-bc2c-a69a3fc756a5"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Navigation Type%3DNavigator"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Navigation Type%3DNavigator"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -49,7 +49,7 @@
                 <propertyInstance
                   Id="8e4a75fa-f0ce-4b09-8951-587f7ce69f86"
                   name="IsStatic"
-                  value="False" />
+                  value="True" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
                 Id="3a65e4df-1e0e-4abd-8dc6-595528effe80">
@@ -68,73 +68,6 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="d0c68aad-1c9a-48a9-b3cb-8c7305cd2a94"
-            name="Navigator"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="6b1746d7-1cff-4781-9545-b01c9fcf01e5"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Navigation Type%3DNavigator Member%3D.ctor"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="c09da7c9-575f-48d8-b417-b70de59ddc44"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="74e647b1-a119-4a63-9f6f-3ede288a690f">
-                    <propertyInstance
-                      Id="6e610a07-b496-4163-82ab-3d9ea98f87ea"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1a024741-2fc3-4923-8fc2-6f357b5070ae">
-                    <propertyInstance
-                      Id="7ea5062a-1401-44e6-9127-786908ab7f83"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="95936e4c-3f32-480f-82d2-b563c37ef068">
-                    <propertyInstance
-                      Id="cc048588-3ee3-4cb1-9230-6d390bfacd33"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d4ed360d-667b-4428-8d3e-548667d02709">
-                    <propertyInstance
-                      Id="537b5b4f-0630-492f-8d13-9c4d340f26df"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="dcad1d9b-81e7-4c99-bfb8-fd25da131984">
-                    <propertyInstance
-                      Id="f7ab7537-c972-4b19-93e0-69e684eb8acf"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="48423ff2-7cf7-4a2a-bb78-c723dedf365a">
-                    <propertyInstance
-                      Id="efa46def-ca54-4794-b080-1948c5490a72"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

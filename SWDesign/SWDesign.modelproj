@@ -31,6 +31,9 @@
     <Content Include="ModelDefinition\Package1_1221.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package1_1224.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package2_1221.uml">
       <SubType>Content</SubType>
     </Content>
@@ -67,6 +70,9 @@
     <Content Include="Classes.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Classes.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package_1224.uml">
+      <SubType>Content</SubType>
     </Content>
     <Content Include="SSDFacebook.sequencediagram">
       <SubType>Content</SubType>

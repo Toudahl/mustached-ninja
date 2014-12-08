@@ -22,7 +22,7 @@
         <referencesInternal>
           <reference
             Id="ef04ba3e-5d9d-4119-8a10-2d46464dea13"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookIntegration"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookIntegration"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -77,6 +77,86 @@
               LastKnownLocation="Package3_1221.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="9c25c3d7-e355-4f25-987b-1bd61e12f65f"
+            isDerived="false"
+            sourceEndRoleName="FacebookIntegration"
+            targetEndRoleName="FacebookRoute"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="01bc2898-6b73-40e3-ae95-abbb33d85341"
+              LastKnownName="FacebookRoute"
+              LastKnownLocation="Package1_1221.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7afe5038-59ba-4840-8813-d858add33fa6"
+                  name="FacebookIntegration"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="12dd72c2-b993-443f-b7bf-caaaf8e814a3"
+                  name="FacebookRoute"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a9f829a0-3ff9-408a-8c18-a4a05fdb1973"
+            isDerived="false"
+            sourceEndRoleName="FacebookIntegration"
+            targetEndRoleName="FacebookViewBusinesses"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0584af6a-6ae4-4d0f-af89-87b54407fabe"
+              LastKnownName="FacebookViewBusinesses"
+              LastKnownLocation="Package1_1221.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a81aef3f-bc69-4907-8e1d-75a561e08fc0"
+                  name="FacebookIntegration"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64f78f23-3dc0-482f-907f-138c2878afbf"
+                  name="FacebookViewBusinesses"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedOperationsInternal>
           <operation
             Id="6507795a-5a97-4598-9e53-719b945baccd"
@@ -89,7 +169,7 @@
             <referencesInternal>
               <reference
                 Id="74164d4f-e797-43b9-bad7-2fe5a16a7030"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookIntegration Member%3DLoadData"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookIntegration Member%3DLoadData"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -158,7 +238,7 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="e09201b1-6460-40cc-9c16-3ce5445bea92"
+            Id="26173559-ffa9-4269-a988-7452b1569133"
             name="FacebookIntegration"
             isLeaf="false"
             isStatic="false"
@@ -167,54 +247,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="7cf84659-646c-45f2-9b28-0cbe3979142d"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookIntegration Member%3D.ctor"
+                Id="f9c36b48-6778-4707-9d39-0665750b5f8f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookIntegration Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="3e330414-02ad-4c21-9fe1-478d44bb04d0"
+                Id="29d051e7-640b-4748-8f72-e73da0e4a072"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="c586b830-1a96-43ac-9b25-62089ea96acb">
+                    Id="d9da5d4a-0dcb-4a9f-af3e-35874431da25">
                     <propertyInstance
-                      Id="91702970-65dc-43fb-95ca-e8173f26027a"
+                      Id="b1b016a4-0024-4fa7-8545-251a9a37fd8b"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="36b1842f-cb01-44dc-914b-0fd297fcca5f">
+                    Id="344d9fb7-2d3a-4f65-8cb3-c779929bcf6a">
                     <propertyInstance
-                      Id="2323e146-ee68-4fd6-89fb-db03949c085b"
+                      Id="b29686c1-4e21-4a45-8908-e4e20dc49696"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="8624b43e-8137-485c-a720-32630b72ba2e">
+                    Id="6c2a2794-13b6-4167-bc14-a9b7a1a0c333">
                     <propertyInstance
-                      Id="363593f5-90e2-4972-9172-c3e6f4b54cba"
+                      Id="4e03aff7-d0d9-4f89-8906-889cffc5425e"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="35870330-8b0d-47ca-9911-3e54268dec1b">
+                    Id="3fe82872-b0d0-4389-895d-ed7e531b57c2">
                     <propertyInstance
-                      Id="a6a6633d-1e2e-47de-a30a-8128cbb43d26"
+                      Id="0f4c3ae3-a5be-41ff-9f3e-a50a618a7b30"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="4aa540dc-ef0d-42a9-aeff-ed31505bf49d">
+                    Id="06609c0e-3fae-48af-9c6f-1b278ca52e9c">
                     <propertyInstance
-                      Id="1cb0daea-4fc8-407f-974f-ef560ab7036a"
+                      Id="c4cb8d50-d179-4ddf-b560-31361c44d0c8"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="cd574689-c3af-4e29-afeb-3521a0e91ae0">
+                    Id="fb569dfa-89c6-401f-93eb-73aa65efefdf">
                     <propertyInstance
-                      Id="9a4b428b-258c-4a64-90e7-8231d57c0cb4"
+                      Id="17cdd5f9-a549-4ea0-b31c-0174bd259440"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -236,7 +316,7 @@
         <referencesInternal>
           <reference
             Id="1823d6f9-c1d7-4301-8f0d-c5b644ccef7a"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookRoute"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookRoute"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -284,7 +364,7 @@
         </appliedStereotypesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="cb534f77-9bd1-4dc4-994c-2b99dc7ee751"
+            Id="d626e3e2-d6a8-4d70-a035-56ef4a3ed44a"
             name="FacebookRoute"
             isLeaf="false"
             isStatic="false"
@@ -293,54 +373,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="031c8ad2-6b6a-40ba-b151-88f6367a0238"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookRoute Member%3D.ctor"
+                Id="d9acd951-09b0-4842-8ed9-3661ac75d921"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookRoute Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="de2acc8b-e5c5-41d1-89df-a6063654f6e5"
+                Id="9fff8a19-19ab-41cf-bce2-a53970208fe1"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="f1823262-ef1c-43f0-82b3-5ba2a48c5313">
+                    Id="9d5f4d10-7d65-46ea-bd40-f5a5a219ce38">
                     <propertyInstance
-                      Id="c17653d9-72b8-4c25-827a-02d9468ed42d"
+                      Id="7fad6188-ed0e-4dd1-b5c5-a4e0a7b49251"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="c76114f5-8ac1-46c7-bde5-7920241de6b8">
+                    Id="04a3f33a-cfc4-4715-b227-aed1fd3d0c13">
                     <propertyInstance
-                      Id="e13b0cce-5548-4ceb-b789-5d9ef28c9b63"
+                      Id="5a400d6f-0047-461a-919f-d025422ad01b"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="2f5c983e-3027-47ac-aa21-2ef6f281a4b4">
+                    Id="39f1af7a-7f34-4950-a472-0dee52f159cf">
                     <propertyInstance
-                      Id="49e4dd64-c072-4f97-b5fe-0b435993bed5"
+                      Id="c60bd942-03ff-49f3-9a67-179461023f7b"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="fcef3c79-9d76-4609-a919-20e41e29b3b3">
+                    Id="0a5897e9-b312-4e43-bf5f-7c3ebbe28ca5">
                     <propertyInstance
-                      Id="46353d0f-aa93-468d-90f1-71a7e2bf07a8"
+                      Id="962f7359-7e22-413f-86f7-2f008898f253"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="bec6cfff-99cb-4712-b1f3-3c400b90297a">
+                    Id="bbd4bcf5-ed79-48fc-b273-236baa5aeb5a">
                     <propertyInstance
-                      Id="679b5f45-78ac-41f0-8d9e-880c9b5efd17"
+                      Id="8b7d778f-03aa-4e7d-b3cc-66176da6f1cb"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="81c2c675-040a-416b-9ed3-71ddbd921ea5">
+                    Id="b7efb450-f5a3-4aa4-98f9-a9845bb5600f">
                     <propertyInstance
-                      Id="1deaedf4-e3c7-4de6-8480-18cb8090d320"
+                      Id="f7f86c24-b55a-415d-a783-3c4077607a97"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -362,7 +442,7 @@
         <referencesInternal>
           <reference
             Id="f02be312-ec61-43d7-9878-4ae3126f2c83"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookViewBusinesses"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookViewBusinesses"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -410,7 +490,7 @@
         </appliedStereotypesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="8f3fefba-931e-40fa-86bc-6b15627b9b51"
+            Id="34b4ae93-bec8-4ed1-8e7d-c359efa8d4f9"
             name="FacebookViewBusinesses"
             isLeaf="false"
             isStatic="false"
@@ -419,54 +499,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="1c492005-e89a-4bf7-b5dc-d7abf9dbfaf6"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookViewBusinesses Member%3D.ctor"
+                Id="9c2c78eb-bbbd-4334-a87b-373372aa110b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.FacebookIntegration Type%3DFacebookViewBusinesses Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="386e32ef-2c9a-4fb9-901e-421bbbe69f95"
+                Id="939dd2e7-39c4-412f-a7c6-b323b3ac6c79"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="44e9d9a2-9cc3-4ddc-9c0e-54036afd3e75">
+                    Id="f530667c-f328-43dd-8e8a-f82ae34c8cc0">
                     <propertyInstance
-                      Id="075190e0-56a6-4a2d-ae66-ff7037ca7075"
+                      Id="19462fe6-0302-42e7-8f5f-bf852b697976"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="a147300a-9050-4e7f-8812-b40cac91d79f">
+                    Id="c91c8779-12b3-41d4-b79b-6f27b0c5d63c">
                     <propertyInstance
-                      Id="cb89cacb-6526-4a14-bb08-0e300b4a93ca"
+                      Id="1ec3a252-3495-4c56-a181-60706b791454"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="f59c94e0-4db5-4302-891f-6c001b0abc4e">
+                    Id="7ce8c185-d648-4b3d-8e0c-cbf6c6e8f231">
                     <propertyInstance
-                      Id="bdaf649b-6e1c-4ced-b8e2-3fa0d69e1cac"
+                      Id="c7c2e2da-12e7-49e9-9be4-e00de1e19e0c"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="23d98aad-f7a8-4c4f-b568-14ff0808538b">
+                    Id="bfda8c54-a5a4-426c-a83f-b2369af3b2a9">
                     <propertyInstance
-                      Id="e910c06b-210c-459b-bb53-fbfd43da5fee"
+                      Id="d361a85e-eb6c-41ed-88f0-6af6177e7afc"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="54f8b390-def9-4963-9e41-ff183b5f1158">
+                    Id="0317efa3-89cd-4654-9b1a-6de3bbeca9cc">
                     <propertyInstance
-                      Id="5e968ccb-5426-4fd5-bb8f-2629f6bd16d7"
+                      Id="efc72b82-15e3-416f-86ae-b0771931a2d9"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="82670617-7425-4102-b7a3-aebb451638fd">
+                    Id="b59301dd-6634-473b-aa63-d48c6ffa9294">
                     <propertyInstance
-                      Id="9264edbc-96e7-4d38-92ec-aed4744d7d38"
+                      Id="ae2723d6-dcb9-483f-a356-6a783ef38f08"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>

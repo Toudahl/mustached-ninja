@@ -62,5 +62,11 @@
         </appliedStereotypesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4e974090-7e27-4cb5-9c82-02a58e27b239"
+        LastKnownName="Collections"
+        LastKnownLocation="Package_1224.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

@@ -6,83 +6,113 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2014-12-05T12:21:46" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::System' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::System::Boolean' -  (Class)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::DataCollection' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataDelivery' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataDelivery::DataDelivery' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Enum' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Enum::SettingsEnum' -  (Enumeration)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Enum::SettingsEnum::Facebook' -  (EnumerationLiteral)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Enum::SettingsEnum::Privacy' -  (EnumerationLiteral)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookIntegration' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookIntegration::FacebookIntegration' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookIntegration::LoadData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookRoute' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookRoute::FacebookRoute' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookViewBusinesses' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookViewBusinesses::FacebookViewBusinesses' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageCapture' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageCapture::ImageCapture' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageComparison' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageComparison::ImageComparison' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageHandeling' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageHandeling::ImageHandeling' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::ILoad' -  (Interface)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::ILoad::LoadData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::ISave' -  (Interface)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::ISave::SaveData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices::LoadData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices::LocationServices' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices::SaveData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Navigation' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Navigation::Navigator' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Navigation::Navigator::Navigator' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::LoadData' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::LoadData::LoadData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::SaveData' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::SaveData::SaveData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings::LoadData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings::SaveData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings::Settings' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::TreasureHunt' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::TreasureHunt::TreasureHunt' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::TreasureHunt::TreasureHunt::LoadData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::TreasureHunt::TreasureHunt::TreasureHunt' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather' -  (Package)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::Weather' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::Weather::LoadData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::Weather::SaveData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::Weather::Weather' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherRetriever' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherRetriever::LoadData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherRetriever::WeatherRetriever' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherSaver' -  (Class)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherSaver::SaveData' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherSaver::WeatherSaver' -  (Operation)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::FacebookIntegration::FacebookIntegration to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::LocationServices::LocationServices to SWDesign::VisitRoskilde::Interfaces::ISave (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::LocationServices::LocationServices to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Settings::Settings to SWDesign::VisitRoskilde::Interfaces::ISave (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Settings::Settings to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::TreasureHunt::TreasureHunt to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Weather::Weather to SWDesign::VisitRoskilde::Interfaces::ISave (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Weather::Weather to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Weather::WeatherRetriever to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Weather::WeatherSaver to SWDesign::VisitRoskilde::Interfaces::ISave (InterfaceRealization)" />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="High" Text="(20) type(s) fully reverse engineered." />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="High" Text="(1) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
-  <Message Timestamp="2014-12-05T12:21:50" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2014-12-08T12:24:18" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '411e441b-8a5a-4834-a2cf-2ba6e625e09d' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'e12b3ecf-4ae2-4692-b562-ea1cb1e00ff3' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::System' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::System::Boolean' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::System::Collections' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::System::Collections::Generic::List&lt;IDataCollectable‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::~DataCollection' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::Collect' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::Collect::collectable' -  (Parameter)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::collectedInformation' -  (Property)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::DataCollection' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::delivery' -  (Property)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::GetInstance' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataCollection::obj' -  (Property)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataDelivery' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataDelivery::~DataDelivery' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataDelivery::DataDelivery' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataDelivery::SaveData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::DataCollection::DataDelivery::SaveData::collectedInformation' -  (Parameter)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Enum' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Enum::SettingsEnum' -  (Enumeration)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Enum::SettingsEnum::Facebook' -  (EnumerationLiteral)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Enum::SettingsEnum::Privacy' -  (EnumerationLiteral)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookIntegration' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookIntegration::FacebookIntegration' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookIntegration::LoadData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookRoute' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookRoute::FacebookRoute' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookViewBusinesses' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::FacebookIntegration::FacebookViewBusinesses::FacebookViewBusinesses' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageCapture' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageCapture::GetInstance' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageCapture::ImageCapture' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageCapture::obj' -  (Property)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageCapture::SelectImage' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageComparison' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageComparison::Compare' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageComparison::GetInstance' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageComparison::ImageComparison' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageComparison::obj' -  (Property)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageHandeling' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageHandeling::capture' -  (Property)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageHandeling::compare' -  (Property)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageHandeling::CompareImage' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageHandeling::GetImage' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::ImageHandeling::ImageHandeling::ImageHandeling' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::IDataCollectable' -  (Interface)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::ILoad' -  (Interface)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::ILoad::LoadData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::IMyDataPersists' -  (Interface)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::ISave' -  (Interface)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Interfaces::ISave::SaveData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices::CheckSettings' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices::LoadData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices::LocationServices' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::LocationServices::LocationServices::SaveData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Navigation' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Navigation::Navigator' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::Serializer' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::Serializer::Deserialize' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::Serializer::Deserialize::objectForRestoring' -  (Parameter)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::Serializer::Serialize' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::Serializer::Serialize::objectForSaving' -  (Parameter)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Persistence::Serializer::Serializer' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings::~Settings' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings::LoadData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings::SaveData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Settings::Settings::Settings' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::TreasureHunt' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::TreasureHunt::TreasureHunt' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::TreasureHunt::TreasureHunt::LoadData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::TreasureHunt::TreasureHunt::TreasureHunt' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather' -  (Package)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::Weather' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::Weather::~Weather' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::Weather::LoadData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::Weather::Weather' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Medium" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherRetriever' -  (Class)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherRetriever::LoadData' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SWDesign::VisitRoskilde::Weather::WeatherRetriever::WeatherRetriever' -  (Operation)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::FacebookIntegration::FacebookIntegration to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::LocationServices::LocationServices to SWDesign::VisitRoskilde::Interfaces::ISave (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::LocationServices::LocationServices to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::LocationServices::LocationServices to SWDesign::VisitRoskilde::Interfaces::IDataCollectable (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Settings::Settings to SWDesign::VisitRoskilde::Interfaces::ISave (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Settings::Settings to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Settings::Settings to SWDesign::VisitRoskilde::Interfaces::IMyDataPersists (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::TreasureHunt::TreasureHunt to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Weather::Weather to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Weather::Weather to SWDesign::VisitRoskilde::Interfaces::IMyDataPersists (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Weather::Weather to SWDesign::VisitRoskilde::Interfaces::IDataCollectable (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SWDesign::VisitRoskilde::Weather::WeatherRetriever to SWDesign::VisitRoskilde::Interfaces::ILoad (InterfaceRealization)" />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="High" Text="(20) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="High" Text="(3) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2014-12-08T12:24:28" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>

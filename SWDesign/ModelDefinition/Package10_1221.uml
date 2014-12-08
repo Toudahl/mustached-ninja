@@ -22,7 +22,7 @@
         <referencesInternal>
           <reference
             Id="70df539f-ffff-4dad-b5bb-b032a2b129ab"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeather"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeather"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -70,100 +70,28 @@
         </appliedStereotypesInternal>
         <suppliersInternal>
           <interfaceRealization
-            Id="10c4041b-4532-4ee7-919c-c16c018956a3">
-            <interfaceMoniker
-              Id="a5aa1688-1608-492c-914b-a86e33399e36"
-              LastKnownName="ISave"
-              LastKnownLocation="Package3_1221.uml" />
-          </interfaceRealization>
-          <interfaceRealization
             Id="ba1a5ba2-8ef3-479b-9125-1627f4be0ba1">
             <interfaceMoniker
               Id="5899b90f-2961-4c17-af82-14d157bc36d2"
               LastKnownName="ILoad"
               LastKnownLocation="Package3_1221.uml" />
           </interfaceRealization>
+          <interfaceRealization
+            Id="c6ab4f99-40cd-426e-becf-1b88941db35d">
+            <interfaceMoniker
+              Id="5069d31d-2089-4c97-b901-f516a3c39333"
+              LastKnownName="IMyDataPersists"
+              LastKnownLocation="Package3_1221.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="2f9760cb-19dd-49f9-a4d4-59fd7bf9e0bf">
+            <interfaceMoniker
+              Id="bc234a5e-aeef-42f5-9920-23216293371d"
+              LastKnownName="IDataCollectable"
+              LastKnownLocation="Package3_1221.uml" />
+          </interfaceRealization>
         </suppliersInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="9305c04a-5009-456f-b8ba-a0557d58c554"
-            name="SaveData"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="648ac7c4-33cd-49a3-b12b-325f3ff514d4"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeather Member%3DSaveData"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="4fd7e829-7206-4d44-aec0-af9ae8fcc0ef"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f1450b18-a437-41a0-9c51-2c85549b4602">
-                    <propertyInstance
-                      Id="669f7b6f-ee98-43bc-8063-30688a72bf7f"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e83b311b-6ce3-4bb8-b105-10d2d9f5eabf">
-                    <propertyInstance
-                      Id="26ff6698-ddbc-41d8-8d5b-8113a908bef1"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2fadf200-6f2d-4634-9c91-b69d36f238ed">
-                    <propertyInstance
-                      Id="8768b2e4-9fa4-4941-8b9f-23e546230196"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="62d3b3ef-1674-4ae1-a17a-fb0cae8b9a49">
-                    <propertyInstance
-                      Id="86a76970-5e7b-45f6-af36-7df7e0599957"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="523edbb1-6513-400f-869e-21f21d4b50e4">
-                    <propertyInstance
-                      Id="318ca584-d4b5-4f7d-9162-39e298113f3f"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9fffa6fc-0e95-4f5b-a63a-545ec2b8eb89">
-                    <propertyInstance
-                      Id="70d31c70-b821-42e0-9531-eb51dfb3b1ef"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="ee79c6a8-66c3-4df1-8b39-e90c8efa6cad"
-                  direction="Return">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="32787b22-25d1-4a18-a0df-05ddbd837c14"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="Package2_1221.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation
             Id="0b7be4d1-6567-41c8-9fdb-1cc61effccd0"
             name="LoadData"
@@ -175,7 +103,7 @@
             <referencesInternal>
               <reference
                 Id="a019d024-0e84-4475-93a1-5b1d86e69c37"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeather Member%3DLoadData"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeather Member%3DLoadData"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -244,7 +172,7 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="82106870-51d0-4ac5-9a46-cd75c3e4301d"
+            Id="67b6009b-97fd-4062-9d83-b5dca8448bd4"
             name="Weather"
             isLeaf="false"
             isStatic="false"
@@ -253,54 +181,120 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="2275cc4e-841b-4ded-bb71-e513855db240"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeather Member%3D.ctor"
+                Id="a39e7566-e569-494b-8d34-aa316422319a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeather Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="c196ede4-fbe8-43ae-b392-f262a89cd8f5"
+                Id="ebe38156-1402-4c35-bd3b-5bfba469252e"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="6ea2a3c8-4aad-4a7f-9939-d275c6b14e81">
+                    Id="3eaca99a-1370-4b0d-b500-da0ec8feb2ea">
                     <propertyInstance
-                      Id="0135225e-084a-46ff-957d-18b64ea48c2f"
+                      Id="26d0253e-5ca2-4e8e-98d3-5db3ef41295f"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="82567df3-cf5d-4082-b466-cdecd933b9ff">
+                    Id="c28ebf2e-9a7e-4346-86f1-edab5e094d62">
                     <propertyInstance
-                      Id="615a010a-8eea-4cd4-9550-a7454e5f10d2"
+                      Id="c3fdef60-d069-4924-bf5e-f24418e969c4"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="9f494831-1b16-40b2-8b69-eabc13831d55">
+                    Id="1e9fa534-4ae1-4d59-a4c3-588c521d052b">
                     <propertyInstance
-                      Id="6d454af2-7518-45a6-953e-8ab7ea298538"
+                      Id="b0900757-5f07-4b63-88f6-ecb281c27012"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="b57baec6-1808-43e4-9d73-3c66c8cde984">
+                    Id="f57e0a07-9fc0-4711-8d4c-d61ebccdfc3f">
                     <propertyInstance
-                      Id="70f082a2-a86f-4dbb-bd6f-e3745eaa88d2"
+                      Id="827f7c38-d204-491a-8a36-fea6c79b63dc"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="4f7f17e3-1412-4eba-ac9c-1c95269641c3">
+                    Id="84f48a2a-9899-4d10-969c-d4c85dd9efac">
                     <propertyInstance
-                      Id="0deeb855-a86e-444b-824a-652acdc13354"
+                      Id="84fbb0d8-be75-4da3-8222-62ba0fea0a8b"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="61cfcc0e-25d3-485b-a03a-7cb15cffc4b5">
+                    Id="bd6f78a5-feef-402f-aa25-0e17efe19186">
                     <propertyInstance
-                      Id="6e7f1c07-8092-458a-86fc-b98c3d966a9c"
+                      Id="9ca14b33-245f-40e9-8581-85553bfc688c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="0dbe5892-279c-42d3-bbef-a7ca02fae03b"
+            name="~Weather"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dd09907a-a991-4a53-9ca3-17fdee6ccd3a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeather Member%3DFinalize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d36bf3d6-53f3-4ffa-bdfe-8e1f5cef9f0a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fccb6ad9-ab9b-4400-833b-ff37e660cce7">
+                    <propertyInstance
+                      Id="74730922-43d4-44f4-9e11-f0da4eb1131e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f751c014-85b2-46d0-a1f0-f76bc15b17a9">
+                    <propertyInstance
+                      Id="fd95b898-0662-41b0-b068-3b609d668933"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23b4e1d8-fb1f-42a1-bf0f-743205dfcd9b">
+                    <propertyInstance
+                      Id="64c32e41-acdd-4709-b74b-471ea936914e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e379278-14a6-4228-95d9-7162119c2c23">
+                    <propertyInstance
+                      Id="e7d31e62-2dd8-4a62-ab62-41e4206692c0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b3fd2b1-8634-4739-b4b5-6ebdfbe576ef">
+                    <propertyInstance
+                      Id="b920ae68-c7f1-4017-a9d5-aaf09dc525d8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b1f1906-e81a-4fdb-a2c2-6bbc787b9688">
+                    <propertyInstance
+                      Id="169922b2-2992-4a48-9930-3bf364f5fb65"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -322,7 +316,7 @@
         <referencesInternal>
           <reference
             Id="f1dce254-4b5c-4a5b-aec5-2163b2126424"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeatherRetriever"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeatherRetriever"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -377,6 +371,47 @@
               LastKnownLocation="Package3_1221.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="bd317b76-b3b6-4749-848e-71f5a50f94ec"
+            isDerived="false"
+            sourceEndRoleName="WeatherRetriever"
+            targetEndRoleName="Weather"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f29240d5-a0d9-4df7-991b-19cc5cacab11"
+              LastKnownName="Weather"
+              LastKnownLocation="Package10_1221.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="918bfe78-7e0d-47e1-a886-21d3afb7fb3a"
+                  name="WeatherRetriever"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94c0cfdf-13b6-454d-907f-decb25015c91"
+                  name="Weather"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedOperationsInternal>
           <operation
             Id="8bdb2ac5-af67-4009-9e82-ac5f8e8e19e8"
@@ -389,7 +424,7 @@
             <referencesInternal>
               <reference
                 Id="6a317e46-dadc-42f3-83bd-68def20259ce"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeatherRetriever Member%3DLoadData"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeatherRetriever Member%3DLoadData"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -458,7 +493,7 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="6f8a2053-8cf5-4bab-aa23-71e39d61196a"
+            Id="4432e597-b372-482b-8f01-445f289061f8"
             name="WeatherRetriever"
             isLeaf="false"
             isStatic="false"
@@ -467,54 +502,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="9ec41843-73eb-4d23-826c-a1d76b03ee2b"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeatherRetriever Member%3D.ctor"
+                Id="c0296d09-6856-4c1a-81fc-e4322a984d69"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Weather Type%3DWeatherRetriever Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="46f8d7e8-44ff-4b12-a288-706f5440716f"
+                Id="5495a5fd-62a2-44dc-bc70-3e06d01a0ebd"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="9d8097a9-da81-422b-aaf0-7f7f1e5e77cd">
+                    Id="1bf930e4-804c-4f24-827c-4ffe2a1f398d">
                     <propertyInstance
-                      Id="1716120e-1ad8-4b76-9b58-1fcd7e606da6"
+                      Id="71d69bc9-e2d2-4ba3-8480-12763ca940d4"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="5d2e5a81-dcd8-4095-9714-bb866660c847">
+                    Id="202a32ef-fc01-43ac-9f3e-2e66743fe8b2">
                     <propertyInstance
-                      Id="44797927-9e83-48a1-a390-95bbc7a10bf9"
+                      Id="e558a911-900c-4d7c-8b3d-5719d7a7e782"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="9458c85b-9680-4365-8e84-94b93a6c910e">
+                    Id="96f61129-b76e-4b1d-89d6-5092b4e4c379">
                     <propertyInstance
-                      Id="b3ab3def-0926-4ccd-a7dd-cb743e978a6e"
+                      Id="0dabc5f8-21be-4f95-8b96-154ea383653a"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="dbfd4539-23af-47f1-9352-5fc46da90064">
+                    Id="41a6dd3a-b462-4fc5-b030-e4a73cb67ec2">
                     <propertyInstance
-                      Id="9fda4882-1620-4f60-96df-4bebc1f5469b"
+                      Id="f76ed7a1-845c-49d8-9df2-f413fe676f69"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="47ee4add-63f5-4652-aa92-8292d7d82397">
+                    Id="6e4ca14b-d962-4a32-80df-065ecc4bc2e3">
                     <propertyInstance
-                      Id="f31cf55a-b791-4fd0-83fb-93b91e8cec67"
+                      Id="37070658-04c0-440b-8993-7d39fa5dc81f"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="ec5f22b7-7e1d-4a00-bd1a-1b5eaa54a953">
+                    Id="ce1ca3f1-20e1-4da3-bccd-449048d75ef6">
                     <propertyInstance
-                      Id="f0840467-863c-4e1b-bc7e-4b82b121937c"
+                      Id="f85bf992-3860-43b1-afd3-26b651ef5195"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
