@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 using VisitRoskilde.Interfaces;
+using VisitRoskilde.Persistence;
 
 namespace VisitRoskilde.LocationServices
 {
-    class LocationServices: ISave, ILoad, IDataCollectable
+    class LocationServices:  ISave, ILoad, IDataCollectable
     {
+        private bool locationEnabled;
+        private bool dataCollectionEnabled;
+
         public LocationServices()
         {
             CheckSettings();
@@ -16,6 +20,7 @@ namespace VisitRoskilde.LocationServices
         private void CheckSettings()
         {
             // Check the Settings Object. Insert permissions in fields in this Object
+
             throw new NotImplementedException();
         }
 
@@ -23,7 +28,7 @@ namespace VisitRoskilde.LocationServices
         public bool SaveData()
         {
             CheckSettings();
-            throw new NotImplementedException();
+            return false;
         }
 
         // Get current location
