@@ -19,7 +19,7 @@ namespace VisitRoskilde.Persistence
         private DataContractSerializer _serializer;
         protected T _restoredObject;
 
-        public Serializer()
+        protected Serializer()
         {
             _storageFolder = ApplicationData.Current.LocalFolder;
             _serializer = new DataContractSerializer(typeof(T));
@@ -28,7 +28,7 @@ namespace VisitRoskilde.Persistence
         /// <summary>
         /// Use this method to Serialize the subclass.
         /// </summary>
-        public async void Serialize()
+        protected async void Serialize()
         {
             Stream stream = await _storageFolder.OpenStreamForWriteAsync(_fileName, CreationCollisionOption.ReplaceExisting);
             _serializer.WriteObject(stream, this);
@@ -37,7 +37,7 @@ namespace VisitRoskilde.Persistence
         /// <summary>
         /// Use this method to Deserialize the subclass. The result will
         /// </summary>
-        public async void Deserialize()
+        protected async void Deserialize()
         {
             Stream stream = await _storageFolder.OpenStreamForReadAsync(_fileName);
             _restoredObject = (T)_serializer.ReadObject(stream);
