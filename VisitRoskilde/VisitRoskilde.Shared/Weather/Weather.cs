@@ -13,7 +13,6 @@ namespace VisitRoskilde.Weather
 
         public Weather()
         {
-            LoadData();
             // Send the temperature and weather conditions (rainy, sunny etc.) to be DataCollected. 
         }
 

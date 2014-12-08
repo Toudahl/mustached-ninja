@@ -32,7 +32,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Navigation\Navigator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\Serializer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\SerializableAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Persistence\StoreData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Settings\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TreasureHunt\TreasureHunt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Weather\Weather.cs" />

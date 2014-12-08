@@ -5,10 +5,10 @@ using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.Persistence
 {
-    static class Serializer
+    class Serializer<T>
     {
 
-        static public void Serialize(IMyDataPersists objectForSaving)
+        public void Serialize(T objectForSaving)
         {
             // Serialize object as per instructions in the example at
             // http://msdn.microsoft.com/en-us/library/system.serializableattribute%28v=vs.110%29.aspx
@@ -18,7 +18,7 @@ namespace VisitRoskilde.Persistence
             // Throw a custom exception if failed.
         }
 
-        static public IMyDataPersists Deserialize(IMyDataPersists objectForRestoring)
+        public IMyDataPersists Deserialize(T objectForRestoring)
         {
             // Deserialize object as per instructions in the example at
             // http://msdn.microsoft.com/en-us/library/system.serializableattribute%28v=vs.110%29.aspx
