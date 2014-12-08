@@ -36,7 +36,7 @@ namespace VisitRoskilde.Weather
         {
             try
             {
-                Serialize(this);
+                Serialize();
                 return true;
             }
             catch (Exception exception)

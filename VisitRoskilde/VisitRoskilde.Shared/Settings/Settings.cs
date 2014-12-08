@@ -21,7 +21,7 @@ namespace VisitRoskilde.Settings
         {
             try
             {
-                Serialize(this);
+                Serialize();
                 return true;
             }
             catch (Exception exception)

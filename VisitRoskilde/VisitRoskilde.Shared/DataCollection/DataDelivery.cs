@@ -23,7 +23,7 @@ namespace VisitRoskilde.DataCollection
         {
             try
             {
-                Serialize(this);
+                Serialize();
             }
             catch (Exception exception)
             {
