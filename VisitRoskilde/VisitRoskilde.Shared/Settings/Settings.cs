@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
 
 namespace VisitRoskilde.Settings
 {
-    [Serializable]
+    [DataContract]
     class Settings : ISave, ILoad, IMyDataPersists
     {
         public Settings()

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 using System.Text;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
 
 namespace VisitRoskilde.Weather
 {
-    [Serializable]
+    [DataContract]
     class Weather: ILoad, IMyDataPersists, IDataCollectable
     {
 
