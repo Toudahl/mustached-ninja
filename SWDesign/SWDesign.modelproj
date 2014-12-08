@@ -68,6 +68,20 @@
       <SubType>Content</SubType>
       <DependentUpon>Classes.classdiagram</DependentUpon>
     </Content>
+    <Content Include="SSDFacebook.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SSDFacebook.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SSDFacebook.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="SSDTreasureHunt.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SSDTreasureHunt.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SSDTreasureHunt.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="User Stories.usecasediagram">
       <SubType>Content</SubType>
     </Content>
