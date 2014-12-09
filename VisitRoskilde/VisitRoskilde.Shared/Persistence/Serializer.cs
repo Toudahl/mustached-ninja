@@ -8,6 +8,8 @@ using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.Persistence
 {
+    // Author: Morten Toudahl
+
     /// <summary>
     /// Abstract class used for providing persistence to select Objects.
     /// Set the string _fileName to be the name of the xml file that will contain the information of the object

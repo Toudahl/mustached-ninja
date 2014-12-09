@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Windows.UI.Xaml.Controls;
 using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.FacebookIntegration

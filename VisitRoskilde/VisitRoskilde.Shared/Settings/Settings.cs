@@ -2,19 +2,46 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
+using Windows.UI.Xaml.Controls;
+using VisitRoskilde.FacebookIntegration;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
 
 namespace VisitRoskilde.Settings
-{
-    [DataContract]
+{   
+    // Author: Morten Toudahl
+    
     class Settings : Serializer<Settings>, ISave, ILoad, IMyDataPersists
     {
+        private bool _dataCollectionAllowed;
+        private bool _locationServicedEnabled;
+        private bool _facebookIsLoggedIn;
+
         public Settings()
         {
             _fileName = "settings.xml";
             LoadData();
         }
+
+        public bool DataCollectionAllowed
+        {
+            get { return _dataCollectionAllowed; }
+            set { _dataCollectionAllowed = value; }
+        }
+
+        // Make a privacy setting, enable/disable location services
+        public bool LocationServicedEnabled
+        {
+            get { return _locationServicedEnabled; }
+            set { _locationServicedEnabled = value; }
+        }
+
+        // Make a facebook status check
+
+        // Provide log in option for facebook - facilitating contact to FacebookIntegration
+
+        // Provide log out option for facebook - facilitating contact to FacebookIntegration
+
 
         // Save the new settings both to this object, and to the StoreData Object.
         public bool SaveData()
@@ -33,7 +60,15 @@ namespace VisitRoskilde.Settings
         // Deserialize the settings, get the file to deserialize from the StoreData Object
         public bool LoadData()
         {
-            throw new NotImplementedException();
+            try
+            {
+                Deserialize();
+                return true;
+            }
+            catch (Exception exception)
+            {
+                throw new Exception("Loading the settings failed with the following message: " + exception);
+            }
         }
 
         // Serialize the settings

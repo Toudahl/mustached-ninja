@@ -8,29 +8,81 @@ using VisitRoskilde.Persistence;
 
 namespace VisitRoskilde.Weather
 {
+    // Author: Morten Toudahl
+
+    /// <summary>
+    /// This class contains the Weather.
+    /// You should use the 
+    /// </summary>
     [DataContract]
-    class Weather: Serializer<Weather>, ILoad, ISave, IMyDataPersists, IDataCollectable
+    class Weather: Serializer<Weather>, ISave, IMyDataPersists, IDataCollectable
     {
+        [DataMember]
+        private string _temperature;
+        [DataMember]
+        private string _wind;
+        [DataMember]
+        private string _sunrise;
+        [DataMember]
+        private string _sunset;
+        [DataMember]
+        private string _cloudiness;
+        [DataMember]
+        private DateTime _timeStamp;
+        [DataMember]
+        private string _humidity;
 
         public Weather()
         {
-            _fileName = "weather.xml";
-            LoadData();
-            // Send the temperature and weather conditions (rainy, sunny etc.) to be DataCollected. 
+            Deserialize();
         }
 
-        // Get weather information from WeatherRetriever Object, or deserialize the Weather Object if no
-        // internet or old (2-3 hours?) data
-        public bool LoadData()
+        #region Fields
+        public string Temperature
         {
-            throw new NotImplementedException();
+            get { return _temperature; }
+            set { _temperature = value; }
         }
 
-        // Serialize the Weather Object
-        ~Weather()
+        public string Humidity
         {
-            SaveData();
+            get { return _humidity; }
+            set { _humidity = value; }
         }
+
+        public string Wind
+        {
+            get { return _wind; }
+            set { _wind = value; }
+        }
+
+        public string Sunrise
+        {
+            get { return _sunrise; }
+            set { _sunrise = value; }
+        }
+
+        public string Sunset
+        {
+            get { return _sunset; }
+            set { _sunset = value; }
+        }
+
+        public string Cloudiness
+        {
+            get { return _cloudiness; }
+            set { _cloudiness = value; }
+        }
+
+        public DateTime TimeStamp
+        {
+            get { return _timeStamp; }
+            set { _timeStamp = value; }
+        }
+
+
+        #endregion
+
 
         public bool SaveData()
         {
@@ -43,6 +95,11 @@ namespace VisitRoskilde.Weather
             {
                 throw new Exception("The saving of the weather data failed with the following message: " + exception);
             }
+        }
+
+        ~Weather()
+        {
+            SaveData();
         }
     }
 }
