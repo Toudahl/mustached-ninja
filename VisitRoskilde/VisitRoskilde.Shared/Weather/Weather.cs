@@ -8,6 +8,12 @@ using VisitRoskilde.Persistence;
 
 namespace VisitRoskilde.Weather
 {
+    // Author: Morten Toudahl
+
+    /// <summary>
+    /// This class contains the Weather.
+    /// You should use the 
+    /// </summary>
     [DataContract]
     class Weather: Serializer<Weather>, ISave, IMyDataPersists, IDataCollectable
     {

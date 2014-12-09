@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 using Windows.Data.Xml.Dom;
 using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.Weather
 {
+    // Author: Morten Toudahl
     class WeatherRetriever
     {
-        //TODO: return the weather object in some way.
+        private const string city = "Roskilde,DK";
+        private const string dataType = "xml";
+        private const string unitType = "metric";
+        private const string appID = "629f3309109159c6beff00ede0af4940";
 
-        private string dataLocation =
-            "http://api.openweathermap.org/data/2.5/weather?q=Roskilde,DK&mode=xml&units=metric&APPID=629f3309109159c6beff00ede0af4940";
+        private const string dataLocation =
+            "http://api.openweathermap.org/data/2.5/weather?q="+city+"&mode="+dataType+"&units="+unitType+"&APPID="+appID;
         private Weather _weather;
 
 
@@ -23,12 +28,12 @@ namespace VisitRoskilde.Weather
 
         private async void RefreshData()
         {
-            Uri weatherUrl = new Uri(dataLocation);
-
-            XmlDocument doc = await XmlDocument.LoadFromUriAsync(weatherUrl);
-
             if (_weather.TimeStamp.AddHours(6) <= DateTime.Now)
             {
+                Uri weatherUrl = new Uri(dataLocation);
+
+                XmlDocument doc = await XmlDocument.LoadFromUriAsync(weatherUrl);
+
                 _weather.Temperature = doc.GetElementsByTagName("temperature")[0].Attributes[0].NodeValue.ToString();
                 _weather.Humidity = doc.GetElementsByTagName("humidity")[0].Attributes[0].NodeValue.ToString();
                 _weather.Wind = doc.GetElementsByTagName("speed")[0].Attributes[1].NodeValue.ToString();
@@ -37,6 +42,11 @@ namespace VisitRoskilde.Weather
                 _weather.Cloudiness = doc.GetElementsByTagName("clouds")[0].Attributes[1].NodeValue.ToString();
                 _weather.TimeStamp = DateTime.Now;
             }
+        }
+
+        public Weather Weather
+        {
+            get { return _weather; }
         }
     }
 }
