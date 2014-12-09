@@ -15,26 +15,26 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)DataCollection\DataCollection.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)DataCollection\DataDelivery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataCollectionModule\DataCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataCollectionModule\DataDelivery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enum\SettingsEnum.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookIntegration.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookRoute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegration\FacebookViewBusinesses.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageCapture.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageComparison.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ImageHandeling\ImageHandeling.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookIntegration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookViewBusinesses.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageHandelingModule\ImageCapture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageHandelingModule\ImageComparison.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ImageHandelingModule\ImageHandeling.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IDataCollectable.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ILoad.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMyDataPersists.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ISave.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)LocationServices\LocationServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LocationServiceModule\LocationServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Navigation\Navigator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\Serializer.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Settings\Settings.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)TreasureHunt\TreasureHunt.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Weather\Weather.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Weather\WeatherRetriever.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SettingsModule\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TreasureHuntModule\TreasureHunt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WeatherModule\Weather.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WeatherModule\WeatherRetriever.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VisitRoskilde.ImageHandeling
+namespace VisitRoskilde.ImageHandelingModule
 {
     class ImageComparison
     {

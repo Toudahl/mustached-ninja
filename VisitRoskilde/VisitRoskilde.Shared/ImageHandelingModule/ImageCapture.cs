@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace VisitRoskilde.ImageHandeling
+namespace VisitRoskilde.ImageHandelingModule
 {
     class ImageCapture
     {

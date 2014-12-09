@@ -5,7 +5,7 @@ using System.Text;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
 
-namespace VisitRoskilde.DataCollection
+namespace VisitRoskilde.DataCollectionModule
 {
     [DataContract]
     class DataDelivery : Serializer<DataDelivery>

@@ -4,7 +4,7 @@ using System.Text;
 using Windows.UI.Xaml.Controls;
 using VisitRoskilde.Interfaces;
 
-namespace VisitRoskilde.FacebookIntegration
+namespace VisitRoskilde.FacebookIntegrationModule
 {
     class FacebookIntegration: ILoad
     {

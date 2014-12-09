@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 using Windows.UI.Xaml.Controls;
-using VisitRoskilde.FacebookIntegration;
+using VisitRoskilde.FacebookIntegrationModule;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
 
-namespace VisitRoskilde.Settings
+namespace VisitRoskilde.SettingsModule
 {   
     // Author: Morten Toudahl
     

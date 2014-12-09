@@ -6,7 +6,7 @@ using System.Text;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
 
-namespace VisitRoskilde.Weather
+namespace VisitRoskilde.WeatherModule
 {
     // Author: Morten Toudahl
 

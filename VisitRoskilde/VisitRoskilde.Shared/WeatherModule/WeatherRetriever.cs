@@ -5,7 +5,7 @@ using System.Text;
 using Windows.Data.Xml.Dom;
 using VisitRoskilde.Interfaces;
 
-namespace VisitRoskilde.Weather
+namespace VisitRoskilde.WeatherModule
 {
     // Author: Morten Toudahl
     class WeatherRetriever

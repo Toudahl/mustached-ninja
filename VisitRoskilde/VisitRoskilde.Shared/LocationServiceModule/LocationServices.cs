@@ -4,7 +4,7 @@ using System.Text;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
 
-namespace VisitRoskilde.LocationServices
+namespace VisitRoskilde.LocationServiceModule
 {
     class LocationServices:  ISave, ILoad, IDataCollectable
     {

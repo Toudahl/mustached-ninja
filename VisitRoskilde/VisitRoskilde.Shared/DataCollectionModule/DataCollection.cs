@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using VisitRoskilde.Interfaces;
 
-namespace VisitRoskilde.DataCollection
+namespace VisitRoskilde.DataCollectionModule
 {
     class DataCollection
     {

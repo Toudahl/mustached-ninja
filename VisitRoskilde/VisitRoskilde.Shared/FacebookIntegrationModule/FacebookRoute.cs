@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VisitRoskilde.FacebookIntegration
+namespace VisitRoskilde.FacebookIntegrationModule
 {
-    class FacebookViewBusinesses
+    class FacebookRoute
     {
     }
 }
