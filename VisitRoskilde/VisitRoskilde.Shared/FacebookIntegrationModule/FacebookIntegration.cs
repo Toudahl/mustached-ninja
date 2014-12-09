@@ -59,6 +59,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
         /// <param name="password"></param>
         public void LogIn(string username, string password)
         {
+            // If log in fails, throw an exception. Do not catch it.
             throw new NotImplementedException();
         }
 
@@ -67,6 +68,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
         /// </summary>
         public void LogOut()
         {
+            // If log out fails thrown an exception. Do not catch it.
             throw new NotImplementedException();
         }
     }

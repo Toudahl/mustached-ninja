@@ -12,10 +12,10 @@ namespace VisitRoskilde.WeatherModule
 
     /// <summary>
     /// This class contains the Weather.
-    /// You should use the 
+    /// You should use the WeatherRetriever class if you wish to get the updated weather data
     /// </summary>
     [DataContract]
-    class Weather: Serializer<Weather>, ISave, IMyDataPersists, IDataCollectable
+    class Weather: Serializer<Weather>, ISave, ILoad, IMyDataPersists, IDataCollectable
     {
         [DataMember]
         private string _temperature;
@@ -34,7 +34,7 @@ namespace VisitRoskilde.WeatherModule
 
         public Weather()
         {
-            Deserialize();
+            LoadData();
         }
 
         #region Fields
@@ -83,12 +83,26 @@ namespace VisitRoskilde.WeatherModule
 
         #endregion
 
-
+        /// <summary>
+        /// Serialize the weather data
+        /// </summary>
+        /// <returns></returns>
         public bool SaveData()
         {
             Serialize();
             return true;
         }
+
+        /// <summary>
+        /// Deserialize the weather data
+        /// </summary>
+        /// <returns></returns>
+        public bool LoadData()
+        {
+            Deserialize();
+            return true;
+        }
+
 
         ~Weather()
         {
