@@ -13,5 +13,17 @@ namespace VisitRoskilde.FacebookIntegrationModule
         {
             throw new NotImplementedException();
         }
+
+        public bool Status { get; set; }
+
+        public void LogIn(string username, string password)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void LogOut()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
