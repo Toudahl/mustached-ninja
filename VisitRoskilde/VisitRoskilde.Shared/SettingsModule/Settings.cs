@@ -79,7 +79,7 @@ namespace VisitRoskilde.SettingsModule
             }
             catch (Exception exception)
             {
-                FacebookLogMessage = exception.ToString();
+                FacebookLogMessage = exception.Message;
             }
         }
 
@@ -96,7 +96,7 @@ namespace VisitRoskilde.SettingsModule
                 }
                 catch (Exception exception)
                 {
-                    FacebookLogMessage = exception.ToString();
+                    FacebookLogMessage = exception.Message;
                 }
             }
         }
@@ -107,15 +107,8 @@ namespace VisitRoskilde.SettingsModule
         /// <returns></returns>
         public bool SaveData()
         {
-            try
-            {
                 Serialize();
                 return true;
-            }
-            catch (Exception exception)
-            {
-                throw new Exception("Saving the settings failed with the following message: " + exception);
-            }
         }
 
         /// <summary>
@@ -124,15 +117,8 @@ namespace VisitRoskilde.SettingsModule
         /// <returns></returns>
         public bool LoadData()
         {
-            try
-            {
-                Deserialize();
-                return true;
-            }
-            catch (Exception exception)
-            {
-                throw new Exception("Loading the settings failed with the following message: " + exception);
-            }
+            Deserialize();
+            return true;
         }
 
         /// <summary>

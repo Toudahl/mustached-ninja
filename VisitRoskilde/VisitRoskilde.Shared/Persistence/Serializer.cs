@@ -34,6 +34,7 @@ namespace VisitRoskilde.Persistence
         {
             Stream stream = await _storageFolder.OpenStreamForWriteAsync(_fileName, CreationCollisionOption.ReplaceExisting);
             _serializer.WriteObject(stream, this);
+            // TODO: Make a failed save throw an exception
         }
 
         /// <summary>
@@ -43,6 +44,7 @@ namespace VisitRoskilde.Persistence
         {
             Stream stream = await _storageFolder.OpenStreamForReadAsync(_fileName);
             _restoredObject = (T)_serializer.ReadObject(stream);
+            // TODO: Make a failed load, throw an exception
         }
     }
 }
