@@ -86,15 +86,8 @@ namespace VisitRoskilde.WeatherModule
 
         public bool SaveData()
         {
-            try
-            {
-                Serialize();
-                return true;
-            }
-            catch (Exception exception)
-            {
-                throw new Exception("The saving of the weather data failed with the following message: " + exception);
-            }
+            Serialize();
+            return true;
         }
 
         ~Weather()

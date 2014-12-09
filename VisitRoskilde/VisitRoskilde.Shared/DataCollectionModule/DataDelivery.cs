@@ -21,14 +21,7 @@ namespace VisitRoskilde.DataCollectionModule
 
         ~DataDelivery()
         {
-            try
-            {
-                Serialize();
-            }
-            catch (Exception exception)
-            {
-                throw new Exception("Saving the collected message failed with the following message: " + exception);
-            }
+            Serialize();
         }
     }
 }
