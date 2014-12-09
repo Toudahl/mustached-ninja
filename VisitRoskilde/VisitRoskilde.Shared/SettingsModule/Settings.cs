@@ -10,40 +10,101 @@ using VisitRoskilde.Persistence;
 namespace VisitRoskilde.SettingsModule
 {   
     // Author: Morten Toudahl
-    
+    /// <summary>
+    /// This class manages the settings of the application.
+    /// </summary>
     class Settings : Serializer<Settings>, ISave, ILoad, IMyDataPersists
     {
+        private FacebookIntegration facebook;
         private bool _dataCollectionAllowed;
         private bool _locationServicedEnabled;
         private bool _facebookIsLoggedIn;
+        private string _facebookLogMessage = "";
 
         public Settings()
         {
             _fileName = "settings.xml";
+            facebook = new FacebookIntegration();
             LoadData();
         }
 
+        /// <summary>
+        /// Used to enable or disable DataCollection.
+        /// </summary>
         public bool DataCollectionAllowed
         {
             get { return _dataCollectionAllowed; }
             set { _dataCollectionAllowed = value; }
         }
 
-        // Make a privacy setting, enable/disable location services
+        /// <summary>
+        /// Used to enable or disable the LocationServices.
+        /// </summary>
         public bool LocationServicedEnabled
         {
             get { return _locationServicedEnabled; }
             set { _locationServicedEnabled = value; }
         }
 
-        // Make a facebook status check
+        /// <summary>
+        /// Contains the message from the log in or log out process, if it failed.
+        /// </summary>
+        public string FacebookLogMessage
+        {
+            get { return _facebookLogMessage; }
+            private set { _facebookLogMessage = "The action failed with the message: " + value; }
+        }
 
-        // Provide log in option for facebook - facilitating contact to FacebookIntegration
+        /// <summary>
+        /// Informs you if the user is currently logged into facebook or not.
+        /// </summary>
+        /// <returns></returns>
+        public bool FacebookStatus()
+        {
+            if (facebook.Status)
+                return true;
+            return false;
+        }
 
-        // Provide log out option for facebook - facilitating contact to FacebookIntegration
+        /// <summary>
+        /// Used for logging into facebook. Supply username and password.
+        /// </summary>
+        /// <param name="username">example@email.com</param>
+        /// <param name="password">Passw0rd</param>
+        public void FacebookLogIn(string username, string password)
+        {
+            try
+            {
+                facebook.LogIn(username, password);
+            }
+            catch (Exception exception)
+            {
+                FacebookLogMessage = exception.ToString();
+            }
+        }
 
+        /// <summary>
+        /// Used for logging out of facebook.
+        /// </summary>
+        public void FacebookLogOut()
+        {
+            if (FacebookStatus())
+            {
+                try
+                {
+                    facebook.LogOut();
+                }
+                catch (Exception exception)
+                {
+                    FacebookLogMessage = exception.ToString();
+                }
+            }
+        }
 
-        // Save the new settings both to this object, and to the StoreData Object.
+        /// <summary>
+        /// Saves the settings to xml
+        /// </summary>
+        /// <returns></returns>
         public bool SaveData()
         {
             try
@@ -53,11 +114,14 @@ namespace VisitRoskilde.SettingsModule
             }
             catch (Exception exception)
             {
-                throw new Exception("The saving of the settings failed with the following message: " + exception);
+                throw new Exception("Saving the settings failed with the following message: " + exception);
             }
         }
 
-        // Deserialize the settings, get the file to deserialize from the StoreData Object
+        /// <summary>
+        /// Loads the settings from xml
+        /// </summary>
+        /// <returns></returns>
         public bool LoadData()
         {
             try
@@ -71,7 +135,9 @@ namespace VisitRoskilde.SettingsModule
             }
         }
 
-        // Serialize the settings
+        /// <summary>
+        /// Save the settings before being garbage collected.
+        /// </summary>
         ~Settings()
         {
             SaveData();
