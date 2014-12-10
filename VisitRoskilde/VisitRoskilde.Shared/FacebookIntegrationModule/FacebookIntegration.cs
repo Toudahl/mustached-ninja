@@ -6,6 +6,7 @@ using System.Text;
 using Windows.Security.Authentication.Web;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 using Facebook;
 using VisitRoskilde.Interfaces;
 
@@ -14,23 +15,36 @@ namespace VisitRoskilde.FacebookIntegrationModule
     [DataContract]
     class FacebookIntegration: ILoad, IDataCollectable
     {
+        #region Variables
         //AppID for testing app (localhost)
         private string _fbAppIdTEST = "306430699547145";
         //AppID for live app (https://f0cus.myds.me/visitRoskilde/)
         private string _fbAppId = "304738753049673";
         string _fbScope = "user_about_me,read_stream,publish_stream";
-        private bool _status;
+        [DataMember]
+        private string _userName;
+        private BitmapImage _userProfilePicture;
         [DataMember]
         private string _userHomeCity;
         [DataMember]
         private string _userGender;
         [DataMember]
         private int _userAge;
+        private bool _status;
         FacebookClient _fb = new FacebookClient();
+        #endregion
 
-        public bool LoadData()
+        #region Properties
+        public string UserName
         {
-            throw new NotImplementedException();
+            get { return _userName; }
+            set { _userName = value; }
+        }
+
+        public BitmapImage UserProfilePicture
+        {
+            get { return _userProfilePicture; }
+            set { _userProfilePicture = value; }
         }
 
         public string UserHomeCity
@@ -51,8 +65,6 @@ namespace VisitRoskilde.FacebookIntegrationModule
             private set { _userAge = value; }
         }
 
-        
-
         /// <summary>
         /// Returns true if the user is logged in.
         /// </summary>
@@ -60,6 +72,13 @@ namespace VisitRoskilde.FacebookIntegrationModule
         {
             get { return _status; }
             private set { _status = value; }
+        }
+        #endregion
+
+        #region Methods
+        public bool LoadData()
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -147,10 +166,15 @@ namespace VisitRoskilde.FacebookIntegrationModule
             parameters = new ExpandoObject();
             parameters.id = result.id;
             parameters.access_token = accessToken;
+            string profilePictureUrl = string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", _fb.AppId, "large", _fb.AccessToken);
+
+            UserProfilePicture = new BitmapImage(new Uri(profilePictureUrl));
+            UserName = result.name;
 
             //TODO: Add something here to tell the user he is logged in
             MessageDialog fbLogMDialog = new MessageDialog("You are logged into Facebook now.");
 
         }
+        #endregion
     }
 }
