@@ -14,7 +14,7 @@ namespace VisitRoskilde.Persistence
     /// Abstract class used for providing persistence to select Objects.
     /// Set the string _fileName to be the name of the xml file that will contain the information of the object
     /// </summary>
-    abstract class Serializer<T>
+    public abstract class Serializer<T>
     {
         private StorageFolder _storageFolder;
         protected string _fileName;

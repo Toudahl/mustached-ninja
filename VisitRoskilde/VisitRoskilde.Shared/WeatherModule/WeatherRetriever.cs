@@ -12,7 +12,7 @@ namespace VisitRoskilde.WeatherModule
     /// This class is used for retrieving the weather information.
     /// Currently it is being retrieved from openweathermap.org
     /// </summary>
-    class WeatherRetriever
+    public class WeatherRetriever
     {
         private const string city = "Roskilde,DK";
         private const string dataType = "xml";
@@ -25,7 +25,7 @@ namespace VisitRoskilde.WeatherModule
 
         public WeatherRetriever()
         {
-            _weather = new Weather();
+            _weather = new Weather(false);
             RefreshData();
         }
 

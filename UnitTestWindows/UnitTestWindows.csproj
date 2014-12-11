@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{c546b088-8240-4097-80d2-803c0ac99961}</ProjectGuid>
+    <ProjectGuid>{C546B088-8240-4097-80D2-803C0AC99961}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnitTestWindows</RootNamespace>
-    <AssemblyName>UnitTestWindows</AssemblyName>    
+    <AssemblyName>UnitTestWindows</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
@@ -108,34 +108,41 @@
     <AppxPackageIncludePrivateSymbols>true</AppxPackageIncludePrivateSymbols>
   </PropertyGroup>
   <ItemGroup>
-     <!--A reference to the entire .Net Framework and Windows SDK are automatically included--> 
+    <!--A reference to the entire .Net Framework and Windows SDK are automatically included-->
     <SDKReference Include="MSTestFramework, Version=11.0" />
     <SDKReference Include="TestPlatform, Version=11.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeatherModule\WeatherTest.cs" />
   </ItemGroup>
- <ItemGroup>
+  <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="UnitTestWindows_TemporaryKey.pfx" />
- </ItemGroup>
- <ItemGroup>
-	<Content Include="Images\UnitTestLogo.scale-100.png">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</Content>
-	<Content Include="Images\UnitTestSmallLogo.scale-100.png">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</Content>
-	<Content Include="Images\UnitTestSplashScreen.scale-100.png">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</Content>
-	<Content Include="Images\UnitTestStoreLogo.scale-100.png">
-		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	</Content>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\UnitTestLogo.scale-100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\UnitTestSmallLogo.scale-100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\UnitTestSplashScreen.scale-100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\UnitTestStoreLogo.scale-100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VisitRoskilde\VisitRoskilde.Windows\VisitRoskilde.Windows.csproj">
+      <Project>{8fc0a659-9a8e-48e6-9b98-ff707ab64ea7}</Project>
+      <Name>VisitRoskilde.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

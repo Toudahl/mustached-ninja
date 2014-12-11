@@ -62,7 +62,11 @@ namespace VisitRoskilde.SettingsModule
         public bool FacebookStatus()
         {
             if (facebook.Status)
+            {
+                _facebookIsLoggedIn = true;
                 return true;
+            }
+                
             return false;
         }
 

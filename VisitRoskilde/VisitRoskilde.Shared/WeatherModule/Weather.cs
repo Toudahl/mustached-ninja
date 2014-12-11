@@ -15,7 +15,7 @@ namespace VisitRoskilde.WeatherModule
     /// You should use the WeatherRetriever class if you wish to get the updated weather data
     /// </summary>
     [DataContract]
-    class Weather: Serializer<Weather>, ISave, ILoad, IMyDataPersists, IDataCollectable
+    public class Weather: Serializer<Weather>, ISave, ILoad, IMyDataPersists, IDataCollectable
     {
         [DataMember]
         private string _temperature;
@@ -28,13 +28,22 @@ namespace VisitRoskilde.WeatherModule
         [DataMember]
         private string _cloudiness;
         [DataMember]
-        private DateTime _timeStamp;
+        private DateTime _timeStamp = DateTime.Now.AddHours(-6);
         [DataMember]
         private string _humidity;
+        private const string _filename = "weather.xml";
 
         public Weather()
         {
             LoadData();
+        }
+
+        public Weather(bool toLoadOrNotToLoad)
+        {
+            if (toLoadOrNotToLoad)
+            {
+                LoadData();
+            }
         }
 
         #region Fields
@@ -100,6 +109,13 @@ namespace VisitRoskilde.WeatherModule
         public bool LoadData()
         {
             Deserialize();
+            TimeStamp = _restoredObject.TimeStamp;
+            Temperature = _restoredObject.Temperature;
+            Humidity = _restoredObject.Humidity;
+            Wind = _restoredObject.Wind;
+            Sunrise = _restoredObject.Sunrise;
+            Sunset = _restoredObject.Sunset;
+            Cloudiness = _restoredObject.Cloudiness;
             return true;
         }
 
