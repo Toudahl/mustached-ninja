@@ -62,11 +62,7 @@ namespace VisitRoskilde.DataCollectionModule
             }
             finally
             {
-                if (httpClient != null)
-                {
-                    httpClient.Dispose();
-                    httpClient = null;
-                }
+                httpClient.Dispose();
             } 
         }
 
