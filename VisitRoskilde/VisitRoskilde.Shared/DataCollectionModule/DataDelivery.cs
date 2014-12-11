@@ -5,6 +5,8 @@ using System.Net;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Xml.Linq;
+using Windows.Data.Xml.Dom;
 using Windows.Storage;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
