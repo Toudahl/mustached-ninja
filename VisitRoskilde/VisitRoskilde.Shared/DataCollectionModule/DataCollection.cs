@@ -9,11 +9,9 @@ namespace VisitRoskilde.DataCollectionModule
     {
         private static DataCollection obj;
         private List<IDataCollectable> collectedInformation;
-        private DataDelivery delivery;
 
         private DataCollection()
         {
-            delivery = new DataDelivery();
             collectedInformation = new List<IDataCollectable>();
             // Check Settings Object for permissions
         }
@@ -32,10 +30,10 @@ namespace VisitRoskilde.DataCollectionModule
             collectedInformation.Add(collectable);
         }
 
-        // Send data to the DateDelivery Object
+        // Send data to the DataDelivery Object
         ~DataCollection()
         {
-            delivery.SaveData(collectedInformation);
+            var delivery = new DataDelivery {Collectables = collectedInformation};
         }
     }
 }
