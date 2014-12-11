@@ -100,6 +100,13 @@ namespace VisitRoskilde.WeatherModule
         public bool LoadData()
         {
             Deserialize();
+            TimeStamp = _restoredObject.TimeStamp;
+            Temperature = _restoredObject.Temperature;
+            Humidity = _restoredObject.Humidity;
+            Wind = _restoredObject.Wind;
+            Sunrise = _restoredObject.Sunrise;
+            Sunset = _restoredObject.Sunset;
+            Cloudiness = _restoredObject.Cloudiness;
             return true;
         }
 

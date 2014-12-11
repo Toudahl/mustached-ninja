@@ -13,11 +13,15 @@ namespace VisitRoskilde.SettingsModule
     /// <summary>
     /// This class manages the settings of the application.
     /// </summary>
+    [DataContract]
     class Settings : Serializer<Settings>, ISave, ILoad, IMyDataPersists
     {
         private FacebookIntegration facebook;
+        [DataMember]
         private bool _dataCollectionAllowed;
+        [DataMember]
         private bool _locationServicedEnabled;
+        [DataMember]
         private bool _facebookIsLoggedIn;
         private string _facebookLogMessage = "";
 
@@ -118,6 +122,9 @@ namespace VisitRoskilde.SettingsModule
         public bool LoadData()
         {
             Deserialize();
+            _dataCollectionAllowed = _restoredObject._dataCollectionAllowed;
+            _locationServicedEnabled = _restoredObject._locationServicedEnabled;
+            _facebookIsLoggedIn = _restoredObject._facebookIsLoggedIn;
             return true;
         }
 
