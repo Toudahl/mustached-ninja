@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 using Windows.Data.Xml.Dom;
 using Windows.Storage;
@@ -30,23 +33,47 @@ namespace VisitRoskilde.DataCollectionModule
             set { _collectables = value; }
         }
 
+        /// <summary>
+        /// This code will be used to Upload the Data to a data collector.
+        /// </summary>
         private async void UploadData()
         {
-            StorageFile storageFile = await ApplicationData.Current.LocalFolder.GetFileAsync(_fileName);
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://f0cus.myds.me/visitRoskilde/datacollector.php");
-            request.Method = "POST";
-            Stream stream = await storageFile.OpenStreamForWriteAsync();
-            //AsyncCallback callback = new AsyncCallback();
-            //request.BeginGetRequestStream();
-            //HttpWebResponse resp = request.BeginGetResponse() as HttpWebResponse;
-            stream.Dispose();
-            // And all is happy with the uploaded data.
+            HttpClient httpClient = new HttpClient();
+            try
+            {
+                StorageFile file = await ApplicationData.Current.LocalFolder.GetFileAsync(_fileName);
+                Stream fileStream = await file.OpenStreamForReadAsync();
+                Uri resourceAddress = new Uri("Http://f0cus.myds.me/visitRoskilde/datacollector.php");
+                HttpContent content = new StreamContent(fileStream);
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/xml"));
+                HttpResponseMessage wcfResponse = await httpClient.PostAsync(resourceAddress, content);
+            }
+            catch (HttpRequestException hre)
+            {
+                //NotifyUser("Error:" + hre.Message);
+            }
+            catch (TaskCanceledException)
+            {
+                //NotifyUser("Request canceled.");
+            }
+            catch (Exception ex)
+            {
+                //NotifyUser(ex.Message);
+            }
+            finally
+            {
+                if (httpClient != null)
+                {
+                    httpClient.Dispose();
+                    httpClient = null;
+                }
+            } 
         }
 
         ~DataDelivery()
         {
             Serialize();
-            UploadData();
+            //UploadData();
         }
     }
 }
