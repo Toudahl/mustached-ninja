@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="VisitRoskilde.View.EntryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VisitRoskilde.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.TopAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="appbutton_goToExploring" Content="Exploring" Label="Exploring" Icon="PreviewLink" Click="Appbutton_goToExploring_OnClick"/>
+            <AppBarButton x:Name="appbutton_goToTreasureHunt" Content="Hunting" Label="Treasure Hunts" Icon="PreviewLink" Click="Appbutton_goToTreasureHunt_OnClick"/>
+        </CommandBar>
+    </Page.TopAppBar>
+    <Page.BottomAppBar>
+        <AppBar>
+            <AppBarButton x:Name="appbutton_settings" Content="Settings" Label="Settings" Icon="PreviewLink">
+            </AppBarButton>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="grid_main" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textblock_topTriangle" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"  IsHitTestVisible="False" Text="Exploring" Foreground="Black" FontSize="24"/>
+        <TextBlock x:Name="textblock_bottomTriangle" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Treasure Hunts" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" IsHitTestVisible="False" Foreground="Black" FontSize="24"/>
+    </Grid>
+</Page>
