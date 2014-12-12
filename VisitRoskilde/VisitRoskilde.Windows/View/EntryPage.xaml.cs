@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -29,85 +30,81 @@ namespace VisitRoskilde.View
     {
         private Polygon topTriangle;
         private Polygon bottomTriangle;
+        double screenHeight;
+        double screenWidth;
+
 
         
         public EntryPage()
         {
             this.InitializeComponent();
-            double screenHeight = Window.Current.Bounds.Height;
-            double screenWidth = Window.Current.Bounds.Width;
-         
+            GetScreenSize();
 
-            double hypotenuse = Math.Sqrt(Math.Pow(screenHeight, 2) + Math.Pow(screenWidth, 2));
+            CoreWindow.GetForCurrentThread().SizeChanged += OnScreenSizeChanged;
 
-            Canvas testCanvas = new Canvas();
-            testCanvas.Width = Math.Round(hypotenuse);
-
-            #region Top triangle
-            topTriangle = new Polygon();
-            Point topTrianglePoint1 = new Point(0, 0); // Top left
-            Point topTrianglePoint2 = new Point(screenWidth, 0); // Top right
-            Point topTrianglePoint3 = new Point(0, screenHeight);
+            BottomTriangle();
+            TopTriangle();
 
 
-            topTriangle.Points.Add(topTrianglePoint1);
-            topTriangle.Points.Add(topTrianglePoint2);
-            topTriangle.Points.Add(topTrianglePoint3);
+        }
 
-            topTriangle.Fill = new SolidColorBrush(Colors.DarkRed);
-
-            topTriangle.PointerEntered += TopTriangleOnPointerEntered;
-            topTriangle.PointerExited += TopTriangleOnPointerExited;
-
-            grid_main.Children.Add(topTriangle);
-            #endregion
-
-
-
-
-            #region Bottom triangle
+        private void BottomTriangle()
+        {
             bottomTriangle = new Polygon();
-            Point bottomTrianglePoint1 = new Point(screenWidth, screenHeight); // Bottom right
-            Point bottomTrianglePoint2 = new Point(screenWidth, 0); // Top right
-            Point bottomTrianglePoint3 = new Point(0, screenHeight);
 
+            bottomTriangle.Points.Add(new Point(screenWidth, screenHeight));
+            bottomTriangle.Points.Add(new Point(screenWidth, 0));
+            bottomTriangle.Points.Add(new Point(0, screenHeight));
 
-            bottomTriangle.Points.Add(bottomTrianglePoint1);
-            bottomTriangle.Points.Add(bottomTrianglePoint2);
-            bottomTriangle.Points.Add(bottomTrianglePoint3);
+            bottomTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
 
-
-            bottomTriangle.Fill = new SolidColorBrush(Colors.DarkGreen);
-
-            bottomTriangle.PointerEntered += BottomTriangleOnPointerEntered;
-            bottomTriangle.PointerExited += BottomTriangleOnPointerExited;
+            bottomTriangle.PointerEntered += thePointerEntered;
+            bottomTriangle.PointerExited += thePointerExited;
 
             grid_main.Children.Add(bottomTriangle);
-            
-
-            #endregion
-
 
         }
 
-        private void TopTriangleOnPointerExited(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
+        private void TopTriangle()
         {
-            topTriangle.Fill = new SolidColorBrush(Colors.DarkRed);
+            topTriangle = new Polygon();
+
+            topTriangle.Points.Add(new Point(0, 0));
+            topTriangle.Points.Add(new Point(screenWidth, 0));
+            topTriangle.Points.Add(new Point(0, screenHeight));
+
+            topTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
+
+            topTriangle.PointerEntered += thePointerEntered;
+            topTriangle.PointerExited += thePointerExited;
+            grid_main.Children.Add(topTriangle);
         }
 
-        private void TopTriangleOnPointerEntered(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
+        private void GetScreenSize()
         {
-            topTriangle.Fill = new SolidColorBrush(Colors.Red);
+            screenWidth = CoreWindow.GetForCurrentThread().Bounds.Width;
+            screenHeight = CoreWindow.GetForCurrentThread().Bounds.Height;
         }
 
-        private void BottomTriangleOnPointerExited(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
+        private void OnScreenSizeChanged(CoreWindow sender, WindowSizeChangedEventArgs args)
         {
-            bottomTriangle.Fill = new SolidColorBrush(Colors.DarkGreen);
+            GetScreenSize();
+            grid_main.Children.Clear();
+            TopTriangle();
+            BottomTriangle();
         }
 
-        private void BottomTriangleOnPointerEntered(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
+        private void thePointerExited(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
         {
-            bottomTriangle.Fill = new SolidColorBrush(Colors.Green);
+            var triangle = sender as Polygon;
+            triangle.Fill = new SolidColorBrush(Colors.DarkOrange);
         }
+
+        private void thePointerEntered(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
+        {
+            var triangle = sender as Polygon;
+            triangle.Fill = new SolidColorBrush(Colors.Orange);
+        }
+
     }
 }

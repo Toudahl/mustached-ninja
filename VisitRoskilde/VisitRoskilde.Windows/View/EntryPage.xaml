@@ -7,7 +7,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="grid_main" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="grid_main" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textblock_topTriangle" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Listings" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"  IsHitTestVisible="False"/>
+        <TextBlock x:Name="textblock_bottomTriangle" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Treasure Hunts" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" IsHitTestVisible="False"/>
     </Grid>
 </Page>
