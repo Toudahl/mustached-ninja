@@ -80,6 +80,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\EntryPage.xaml.cs">
       <DependentUpon>EntryPage.xaml</DependentUpon>
