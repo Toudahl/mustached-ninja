@@ -14,7 +14,7 @@
     </Page.TopAppBar>
     <Page.BottomAppBar>
         <AppBar>
-            <AppBarButton Content="Settings" Label="Settings" Icon="PreviewLink"/>
+            <AppBarButton x:Name="appbutton_settings" Content="Settings" Label="Settings" Icon="PreviewLink"/>
         </AppBar>
     </Page.BottomAppBar>
 
