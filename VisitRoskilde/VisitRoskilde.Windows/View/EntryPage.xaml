@@ -15,6 +15,25 @@
     <Page.BottomAppBar>
         <AppBar>
             <AppBarButton x:Name="appbutton_settings" Content="Settings" Label="Settings" Icon="PreviewLink">
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Location Services"/>
+                                <ToggleSwitch x:Name="toggleswitch_location"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Location Services"/>
+                                <ToggleSwitch/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Location Services"/>
+                                <ToggleSwitch/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+
             </AppBarButton>
         </AppBar>
     </Page.BottomAppBar>
