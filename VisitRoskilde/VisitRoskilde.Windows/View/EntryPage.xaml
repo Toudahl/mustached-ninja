@@ -35,12 +35,10 @@
                             <ToggleSwitch x:Name="toggleswitch_dataCollection" Grid.Row="1" Grid.Column="1"/>
                             
                             <TextBlock Text="Facebook: " Grid.Row="2" Grid.Column="0"/>
-                            <Button x:Name="button_facebook" Content="Facebook!" Background="#B3000CFF" Grid.Row="2" Grid.Column="1"/>
-
+                            <Button x:Name="button_facebook" Content="Facebook!" Background="#B3000CFF"  Grid.Row="2" Grid.Column="1"/>
                         </Grid>
                     </Flyout>
                 </Button.Flyout>
-
             </AppBarButton>
         </AppBar>
     </Page.BottomAppBar>
