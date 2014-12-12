@@ -108,6 +108,9 @@
     <Reference Include="Facebook">
       <HintPath>..\..\packages\Facebook.7.0.0-alpha\lib\portable-win81+wpa81\Facebook.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.6\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
