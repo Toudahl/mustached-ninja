@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Xml.Linq;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Globalization.DateTimeFormatting;
 using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.Input;
@@ -45,8 +47,6 @@ namespace VisitRoskilde.View
 
             BottomTriangle();
             TopTriangle();
-
-
         }
 
         private void BottomTriangle()
@@ -137,5 +137,6 @@ namespace VisitRoskilde.View
         {
             this.Frame.Navigate(typeof(TreasureHuntEntryPage));
         }
+
     }
 }

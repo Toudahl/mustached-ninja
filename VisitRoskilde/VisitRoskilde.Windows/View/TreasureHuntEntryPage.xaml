@@ -5,6 +5,7 @@
     xmlns:local="using:VisitRoskilde.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="using:VisitRoskilde.ViewModel"
     mc:Ignorable="d">
     <Page.TopAppBar>
         <CommandBar>
@@ -18,6 +19,9 @@
                 <Button.Flyout>
                     <Flyout>
                         <Grid>
+                            <Grid.DataContext>
+                                <viewModel:SettingsViewModel/>
+                            </Grid.DataContext>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
@@ -27,15 +31,19 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <TextBlock Text="Location Services:" Grid.Row="0" Grid.Column="0"/>
-                            <ToggleSwitch x:Name="toggleswitch_location" Grid.Row="0" Grid.Column="1"/>
+                            <ToggleSwitch x:Name="toggleswitch_location" Grid.Row="0" Grid.Column="1" IsOn="{Binding LocationService, Mode=TwoWay}" ToolTipService.ToolTip="Enableing this will allow the app to better show you the nearby locations of interrest"/>
 
                             <TextBlock Text="Anonymouse data collection:" Grid.Row="1" Grid.Column="0"/>
-                            <ToggleSwitch x:Name="toggleswitch_dataCollection" Grid.Row="1" Grid.Column="1"/>
+                            <ToggleSwitch x:Name="toggleswitch_dataCollection" Grid.Row="1" Grid.Column="1" IsOn="{Binding DataCollection, Mode=TwoWay}" ToolTipService.ToolTip="Allowing this, will collect your location (if enabled), the weather and information from facebook regarding your home city and country"/>
 
                             <TextBlock Text="Facebook: " Grid.Row="2" Grid.Column="0"/>
-                            <Button x:Name="button_facebook" Content="Facebook!" Background="#B3000CFF"  Grid.Row="2" Grid.Column="1"/>
+                            <Image Source="{Binding FaceBookStatusImage}" Grid.Row="2" Grid.Column="1" Width="90" Height="30"/>
+                            <Button Opacity="0" Grid.Row="2" Grid.Column="1" Command="{Binding FacebookCommand}" Width="95" Height="35" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+                            <Button Content="Save settings" Command="{Binding SaveCommand, Mode=TwoWay}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
                         </Grid>
                     </Flyout>
                 </Button.Flyout>
@@ -43,8 +51,5 @@
         </AppBar>
     </Page.BottomAppBar>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Treasure Hunt" VerticalAlignment="Center"/>
-
-    </Grid>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
 </Page>

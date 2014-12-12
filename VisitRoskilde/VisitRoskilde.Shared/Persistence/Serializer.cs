@@ -14,6 +14,7 @@ namespace VisitRoskilde.Persistence
     /// Abstract class used for providing persistence to select Objects.
     /// Set the string _fileName to be the name of the xml file that will contain the information of the object
     /// </summary>
+    [DataContract]
     abstract class Serializer<T>
     {
         private StorageFolder _storageFolder;
@@ -32,8 +33,10 @@ namespace VisitRoskilde.Persistence
         /// </summary>
         protected async void Serialize()
         {
-            Stream stream = await _storageFolder.OpenStreamForWriteAsync(_fileName, CreationCollisionOption.ReplaceExisting);
-            _serializer.WriteObject(stream, this);
+            using (Stream stream = await _storageFolder.OpenStreamForWriteAsync(_fileName, CreationCollisionOption.ReplaceExisting))
+            {
+                _serializer.WriteObject(stream, this);
+            }
             // TODO: Make a failed save throw an exception
         }
 
@@ -42,8 +45,10 @@ namespace VisitRoskilde.Persistence
         /// </summary>
         protected async void Deserialize()
         {
-            Stream stream = await _storageFolder.OpenStreamForReadAsync(_fileName);
-            _restoredObject = (T)_serializer.ReadObject(stream);
+            using (Stream stream = await _storageFolder.OpenStreamForReadAsync(_fileName))
+            {
+                _restoredObject = (T)_serializer.ReadObject(stream);
+            }
             // TODO: Make a failed load, throw an exception
         }
     }

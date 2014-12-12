@@ -21,6 +21,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookIntegration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookRoute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookViewBusinesses.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICommandModule\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ImageHandelingModule\ImageCapture.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ImageHandelingModule\ImageComparison.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ImageHandelingModule\ImageHandeling.cs" />
@@ -33,11 +34,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\Serializer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SettingsModule\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TreasureHuntModule\TreasureHunt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SettingsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WeatherModule\Weather.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WeatherModule\WeatherRetriever.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
   </ItemGroup>
 </Project>

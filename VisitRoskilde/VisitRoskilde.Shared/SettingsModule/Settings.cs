@@ -21,8 +21,6 @@ namespace VisitRoskilde.SettingsModule
         private bool _dataCollectionAllowed;
         [DataMember]
         private bool _locationServicedEnabled;
-        [DataMember]
-        private bool _facebookIsLoggedIn;
         private string _facebookLogMessage = "";
 
         public Settings()
@@ -115,18 +113,13 @@ namespace VisitRoskilde.SettingsModule
         public bool LoadData()
         {
             Deserialize();
-            _dataCollectionAllowed = _restoredObject._dataCollectionAllowed;
-            _locationServicedEnabled = _restoredObject._locationServicedEnabled;
-            _facebookIsLoggedIn = _restoredObject._facebookIsLoggedIn;
-            return true;
-        }
-
-        /// <summary>
-        /// Save the settings before being garbage collected.
-        /// </summary>
-        ~Settings()
-        {
-            SaveData();
+            if (_restoredObject != null)
+            {
+                _dataCollectionAllowed = _restoredObject._dataCollectionAllowed;
+                _locationServicedEnabled = _restoredObject._locationServicedEnabled;
+                return true;
+            }
+            return false;
         }
     }
 }
