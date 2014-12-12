@@ -34,11 +34,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\Serializer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SettingsModule\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TreasureHuntModule\TreasureHunt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ExploreViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WeatherModule\Weather.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WeatherModule\WeatherRetriever.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
   </ItemGroup>
 </Project>
