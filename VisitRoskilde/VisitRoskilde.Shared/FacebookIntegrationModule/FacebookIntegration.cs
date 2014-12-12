@@ -41,6 +41,8 @@ namespace VisitRoskilde.FacebookIntegrationModule
         private bool _status;
         FacebookClient _fbClient;
         private ICommand _loginCommand;
+        private static FacebookIntegration _singleFacebookHandler;
+
         #endregion
 
         #region Properties
@@ -112,13 +114,23 @@ namespace VisitRoskilde.FacebookIntegrationModule
 
         #region Methods
         #region Constructor
-        public FacebookIntegration()
+        private FacebookIntegration()
         {
             //Instances FacebookClient class with the proper parameters
             CreateClient();
             _loginCommand = new RelayCommand(LogIn);
         }
         #endregion
+
+        public static FacebookIntegration GetInstance()
+        {
+            if (_singleFacebookHandler == null)
+            {
+                _singleFacebookHandler = new FacebookIntegration();
+            }
+            return _singleFacebookHandler;
+        }
+
         public bool LoadData()
         {
             throw new NotImplementedException();
