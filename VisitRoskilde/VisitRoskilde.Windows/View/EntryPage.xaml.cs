@@ -7,6 +7,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
 using Windows.UI.Core;
+using Windows.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -60,9 +61,19 @@ namespace VisitRoskilde.View
 
             bottomTriangle.PointerEntered += thePointerEntered;
             bottomTriangle.PointerExited += thePointerExited;
+            bottomTriangle.PointerPressed += GoToTreasureHunting;
 
             grid_main.Children.Add(bottomTriangle);
 
+        }
+
+        private void GoToTreasureHunting(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
+        {
+            var pointer = PointerPoint.GetCurrentPoint(pointerRoutedEventArgs.Pointer.PointerId).Properties.IsLeftButtonPressed;
+            if (pointer)
+            {
+                this.Frame.Navigate(typeof(TreasureHuntEntryPage));
+            }
         }
 
         private void TopTriangle()
@@ -77,7 +88,18 @@ namespace VisitRoskilde.View
 
             topTriangle.PointerEntered += thePointerEntered;
             topTriangle.PointerExited += thePointerExited;
+            topTriangle.PointerPressed += GoToExploring;
+
             grid_main.Children.Add(topTriangle);
+        }
+
+        private void GoToExploring(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
+        {
+            var pointer = PointerPoint.GetCurrentPoint(pointerRoutedEventArgs.Pointer.PointerId).Properties.IsLeftButtonPressed;
+            if (pointer)
+            {
+                this.Frame.Navigate(typeof(ExploringEntryPage));
+            }
         }
 
         private void GetScreenSize()
@@ -106,5 +128,14 @@ namespace VisitRoskilde.View
             triangle.Fill = new SolidColorBrush(Colors.Orange);
         }
 
+        private void Appbutton_goToExploring_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ExploringEntryPage));
+        }
+
+        private void Appbutton_goToTreasureHunt_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(TreasureHuntEntryPage));
+        }
     }
 }

@@ -84,6 +84,12 @@
     <Compile Include="View\EntryPage.xaml.cs">
       <DependentUpon>EntryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ExploringEntryPage.xaml.cs">
+      <DependentUpon>ExploringEntryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TreasureHuntEntryPage.xaml.cs">
+      <DependentUpon>TreasureHuntEntryPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -108,6 +114,14 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="View\EntryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ExploringEntryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TreasureHuntEntryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
