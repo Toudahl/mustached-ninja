@@ -21,6 +21,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="978,119,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Topic}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
         <TextBlock HorizontalAlignment="Left" Margin="846,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.636,1.642" Text="End"/>
         <TextBlock HorizontalAlignment="Left" Margin="846,377,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.636,1.642" Text="Start"/>
+        <Button Content="Start Trip!" HorizontalAlignment="Left" Margin="961,533,0,0" VerticalAlignment="Top" Height="90" Width="196" Click="Button_Click"/>
 
     </Grid>
 </Page>
