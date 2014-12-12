@@ -17,7 +17,11 @@ namespace VisitRoskilde.ViewModel
         public HuntTopicModel SelectedHunt
         {
             get { return _selectedHunt; }
-            set { _selectedHunt = value; }
+            set
+            {
+                _selectedHunt = value;
+                OnPropertyChanged("SelectedHunt");
+            }
         }
 
         public TreasureHuntEntryPageViewModel()

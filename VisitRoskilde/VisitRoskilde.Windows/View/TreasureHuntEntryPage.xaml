@@ -2,44 +2,23 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:VisitRoskilde.View"
-    xmlns:common="using:VisitRoskilde.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:VisitRoskilde.ViewModel"
-    x:Name="pageRoot"
-    x:Class="VisitRoskilde.View.BasicPage1"
-    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Mode=Self}}"
+    x:Class="VisitRoskilde.View.TreasureHuntEntryPage"
     mc:Ignorable="d">
 
-    <Page.Resources>
-        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">My Application</x:String>
-    </Page.Resources>
-
-    <!--
-        This grid acts as a root panel for the page that defines two rows:
-        * Row 0 contains the back button and page title
-        * Row 1 contains the rest of the page layout
-    -->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition/>
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="768"/>
-        </Grid.RowDefinitions>
         <Grid.DataContext>
             <ViewModel:TreasureHuntEntryPageViewModel/>
         </Grid.DataContext>
-        <ListView HorizontalAlignment="Left" Height="295" Margin="75,172,0,0" VerticalAlignment="Top" Width="289" ItemsSource="{Binding HuntList}" SelectedItem="{Binding SelectedHunt}"/>
-        <TextBlock x:Name="textblock_time" HorizontalAlignment="Left" Margin="993,163,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Time}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock x:Name="textblock_type" HorizontalAlignment="Left" Margin="993,193,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Theme}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock x:Name="textblock_reward" HorizontalAlignment="Left" Margin="993,223,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Reward}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock x:Name="textblock_start" HorizontalAlignment="Left" Margin="993,253,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Start}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock x:Name="textblock_end" HorizontalAlignment="Left" Margin="993,281,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.End}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock x:Name="textblock_topic" HorizontalAlignment="Left" Margin="993,136,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Topic}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <ListView HorizontalAlignment="Left" Height="240" Margin="103,163,0,0"  VerticalAlignment="Top" Width="242"  ItemsSource="{Binding HuntList, Mode=TwoWay}" SelectedItem="{Binding SelectedHunt,Mode=TwoWay}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="978,172,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Time}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="978,226,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Theme}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="978,288,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Reward}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="978,349,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Start}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="978,416,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.End}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="978,119,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Topic}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
 
     </Grid>
 </Page>
