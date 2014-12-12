@@ -101,7 +101,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
             throw new NotImplementedException();
         }
 
-        private async void LogIn()
+        public async void LogIn()
         {
             var redirectUrl = "https://www.facebook.com/connect/login_success.html";
             try
@@ -176,5 +176,6 @@ namespace VisitRoskilde.FacebookIntegrationModule
 
         }
         #endregion
+
     }
 }

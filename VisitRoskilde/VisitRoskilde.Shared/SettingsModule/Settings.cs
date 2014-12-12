@@ -75,16 +75,9 @@ namespace VisitRoskilde.SettingsModule
         /// </summary>
         /// <param name="username">example@email.com</param>
         /// <param name="password">Passw0rd</param>
-        public void FacebookLogIn(string username, string password)
+        public void FacebookLogIn()
         {
-            try
-            {
-                facebook.LogIn(username, password);
-            }
-            catch (Exception exception)
-            {
-                FacebookLogMessage = exception.Message;
-            }
+                facebook.LogIn();
         }
 
         /// <summary>

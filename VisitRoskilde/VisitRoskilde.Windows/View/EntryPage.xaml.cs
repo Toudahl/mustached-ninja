@@ -137,5 +137,6 @@ namespace VisitRoskilde.View
         {
             this.Frame.Navigate(typeof(TreasureHuntEntryPage));
         }
+
     }
 }

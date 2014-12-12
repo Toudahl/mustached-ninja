@@ -17,20 +17,27 @@
             <AppBarButton x:Name="appbutton_settings" Content="Settings" Label="Settings" Icon="PreviewLink">
                 <Button.Flyout>
                     <Flyout>
-                        <StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Location Services"/>
-                                <ToggleSwitch x:Name="toggleswitch_location"/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Location Services"/>
-                                <ToggleSwitch/>
-                            </StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="Location Services"/>
-                                <ToggleSwitch/>
-                            </StackPanel>
-                        </StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Location Services:" Grid.Row="0" Grid.Column="0"/>
+                            <ToggleSwitch x:Name="toggleswitch_location" Grid.Row="0" Grid.Column="1"/>
+
+                            <TextBlock Text="Anonymouse data collection:" Grid.Row="1" Grid.Column="0"/>
+                            <ToggleSwitch x:Name="toggleswitch_dataCollection" Grid.Row="1" Grid.Column="1"/>
+                            
+                            <TextBlock Text="Facebook: " Grid.Row="2" Grid.Column="0"/>
+                            <Button x:Name="button_facebook" Content="Facebook!" Background="#B3000CFF" Grid.Row="2" Grid.Column="1"/>
+
+                        </Grid>
                     </Flyout>
                 </Button.Flyout>
 
