@@ -8,14 +8,30 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image x:Name="DisplayImage" HorizontalAlignment="Left" Height="258" Margin="124,144,0,0" VerticalAlignment="Top" Width="315"/>
-        <Image x:Name="OriginalPhoto" HorizontalAlignment="Left" Height="258" Margin="943,144,0,0" VerticalAlignment="Top" Width="315" Source="ms-appx:///Assets/Roskilde_Hall.jpg" Stretch="UniformToFill"/>
-        <TextBlock HorizontalAlignment="Left" Margin="219,407,0,0" TextWrapping="Wrap" Text="Make this" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1053,402,0,0" TextWrapping="Wrap" Text="Look like this" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <Button Content="Select image" HorizontalAlignment="Left" Margin="203,560,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Compare" HorizontalAlignment="Left" Margin="598,461,0,0" VerticalAlignment="Top" Height="137" Width="185" Click="Button_Click_1"/>
-        <TextBlock x:Name="txt_Result" HorizontalAlignment="Left" Margin="637,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:Name="txt_test" HorizontalAlignment="Left" Margin="494,526,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Collapsed"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="317*"/>
+            <ColumnDefinition Width="502*"/>
+            <ColumnDefinition Width="320*"/>
+            <ColumnDefinition Width="105*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="143*"/>
+            <RowDefinition Height="259*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="101*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="174*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="DisplayImage" HorizontalAlignment="Left" Height="258"  VerticalAlignment="Top" Width="315" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1"/>
+        <Image x:Name="OriginalPhoto" HorizontalAlignment="Left" Height="258"  VerticalAlignment="Top" Width="315" Source="ms-appx:///Assets/Roskilde_Hall.jpg" Stretch="UniformToFill" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3"/>
+        <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Make this" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Look like this" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="2" Grid.Column="3"/>
+        <Button Content="Select image" HorizontalAlignment="Center"  VerticalAlignment="Top" Click="Button_Click" Grid.Row="4" Grid.RowSpan="3" Grid.Column="1"/>
+        <Button Content="Compare" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="137" Width="185" Click="Button_Click_1" Grid.Row="3" Grid.RowSpan="4" Grid.Column="2"/>
+        <TextBlock x:Name="txt_Result" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
+        <TextBlock x:Name="txt_test" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Collapsed" Grid.Row="4" Grid.Column="2"/>
 
     </Grid>
 </Page>

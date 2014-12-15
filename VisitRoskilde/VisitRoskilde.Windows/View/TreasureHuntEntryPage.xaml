@@ -9,19 +9,41 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="340*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="105*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="74*"/>
+        </Grid.RowDefinitions>
         <Grid.DataContext>
             <ViewModel:TreasureHuntEntryPageViewModel/>
         </Grid.DataContext>
-        <ListView HorizontalAlignment="Left" Height="240" Margin="103,163,0,0"  VerticalAlignment="Top" Width="242"  ItemsSource="{Binding HuntList, Mode=TwoWay}" SelectedItem="{Binding SelectedHunt,Mode=TwoWay}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="978,172,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Time}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="978,226,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Theme}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="978,288,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Reward}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="978,349,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Start}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="978,416,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.End}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="978,119,0,0" TextWrapping="Wrap" Text="{Binding SelectedHunt.Topic}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="846,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.636,1.642" Text="End"/>
-        <TextBlock HorizontalAlignment="Left" Margin="846,377,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.636,1.642" Text="Start"/>
-        <Button Content="Start Trip!" HorizontalAlignment="Left" Margin="961,533,0,0" VerticalAlignment="Top" Height="90" Width="196" Click="Button_Click"/>
+        <ListView HorizontalAlignment="Left" Height="240"   VerticalAlignment="Top" Width="242"  ItemsSource="{Binding HuntList, Mode=TwoWay}" SelectedItem="{Binding SelectedHunt,Mode=TwoWay}" Grid.ColumnSpan="2" Grid.Column="1" Grid.RowSpan="5" Grid.Row="1"/>
+        <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Time}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="2"/>
+        <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Theme}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Reward}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="5" VerticalAlignment="Bottom" Margin="0,0,0,36" Grid.ColumnSpan="2"/>
+        <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Start}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="5" Grid.RowSpan="2" Margin="0,32,0,0" VerticalAlignment="Bottom" Grid.ColumnSpan="2"/>
+        <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.End}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="7" Grid.RowSpan="2" Margin="0,0,0,78" Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>
+        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding SelectedHunt.Topic}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.636,1.642" Text="End" Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Width="38" RenderTransformOrigin="0.636,1.642" Text="Start" Grid.Column="3" Grid.Row="6" Grid.ColumnSpan="2"/>
+        <Button Content="Start Trip!" HorizontalAlignment="Left" Margin="91,103,0,0" VerticalAlignment="Top" Height="90" Width="196" Click="Button_Click" Grid.RowSpan="3" Grid.ColumnSpan="3" Grid.Column="4" Grid.Row="8"/>
 
     </Grid>
 </Page>

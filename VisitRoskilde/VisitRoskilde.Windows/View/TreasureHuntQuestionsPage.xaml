@@ -24,8 +24,8 @@
             <ColumnDefinition Width="369*"/>
             <ColumnDefinition Width="113*"/>
         </Grid.ColumnDefinitions>
-        <Image Source="ms-appx:///Assets/Roskilde_Hall.jpg" Stretch="None" Grid.Column="1" Grid.RowSpan="2" Grid.Row="2" />
-        <Image Source="ms-appx:///Assets/Roskilde_Hall.jpg" Stretch="UniformToFill" Grid.Column="3" Grid.RowSpan="2" Grid.Row="2" />
+        <Image Source="ms-appx:///Assets/Roskilde_Hall.jpg" Grid.Column="1" Grid.RowSpan="2" Grid.Row="2"  Stretch="None" />
+        <Image Source="ms-appx:///Assets/Roskilde_Hall.jpg" Grid.Column="3" Grid.RowSpan="2" Grid.Row="2"  Stretch="UniformToFill" />
         <Button Content="Take Picture" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="92" Width="171" Click="Button_Click" Grid.Column="2" Grid.RowSpan="2" Grid.Row="3" />
         <TextBlock HorizontalAlignment="Right" Height="112"  TextWrapping="Wrap" Text="Find the great hidden city hall in Roskilde and take picture of it" VerticalAlignment="Center" Width="438" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="2" Grid.Row="5" Margin="0,2"/>
         <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Find/Answer" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="1" Grid.Row="1"/>
