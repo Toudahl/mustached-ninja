@@ -48,7 +48,7 @@ namespace VisitRoskilde.DataCollectionModule
                 httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/xml"));
                 HttpResponseMessage wcfResponse = await httpClient.PostAsync(resourceAddress, content);
             }
-            catch (HttpRequestException hre)
+            catch (HttpRequestException)
             {
                 //NotifyUser("Error:" + hre.Message);
             }
@@ -56,7 +56,7 @@ namespace VisitRoskilde.DataCollectionModule
             {
                 //NotifyUser("Request canceled.");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 //NotifyUser(ex.Message);
             }

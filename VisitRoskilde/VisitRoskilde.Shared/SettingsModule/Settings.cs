@@ -26,8 +26,8 @@ namespace VisitRoskilde.SettingsModule
         public Settings()
         {
             _fileName = "settings.xml";
-            facebook = new FacebookIntegration();
-            LoadData();
+            facebook = FacebookIntegration.GetInstance();
+            //LoadData();
         }
 
         /// <summary>

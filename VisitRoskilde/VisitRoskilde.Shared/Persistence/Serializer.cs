@@ -45,11 +45,17 @@ namespace VisitRoskilde.Persistence
         /// </summary>
         protected async void Deserialize()
         {
-            using (Stream stream = await _storageFolder.OpenStreamForReadAsync(_fileName))
+            try
             {
-                _restoredObject = (T)_serializer.ReadObject(stream);
+                using (Stream stream = await _storageFolder.OpenStreamForReadAsync(_fileName))
+                {
+                    _restoredObject = (T)_serializer.ReadObject(stream);
+                }
             }
-            // TODO: Make a failed load, throw an exception
+            catch (Exception)
+            {
+                
+            }
         }
     }
 }
