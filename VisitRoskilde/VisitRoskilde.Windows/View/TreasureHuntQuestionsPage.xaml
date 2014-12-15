@@ -8,11 +8,30 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image HorizontalAlignment="Left" Height="291" Margin="79,176,0,0" VerticalAlignment="Top" Width="331"/>
-        <Image HorizontalAlignment="Left" Height="291" Margin="896,176,0,0" VerticalAlignment="Top" Width="331" Source="ms-appx:///Assets/Roskilde_Hall.jpg" Stretch="UniformToFill"/>
-        <Button Content="Take Picture" HorizontalAlignment="Left" Margin="573,438,0,0" VerticalAlignment="Top" Height="92" Width="171" Click="Button_Click"/>
-        <TextBlock HorizontalAlignment="Left" Height="112" Margin="447,594,0,0" TextWrapping="Wrap" Text="Find the great hidden city hall in Roskilde and take picture of it" VerticalAlignment="Top" Width="438" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <TextBlock HorizontalAlignment="Left" Margin="94,99,0,0" TextWrapping="Wrap" Text="Find/Answer" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="131*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="371*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="369*"/>
+            <ColumnDefinition Width="113*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="ms-appx:///Assets/Roskilde_Hall.jpg" Stretch="None" Grid.Column="1" Grid.RowSpan="2" Grid.Row="2" />
+        <Image Source="ms-appx:///Assets/Roskilde_Hall.jpg" Stretch="UniformToFill" Grid.Column="3" Grid.RowSpan="2" Grid.Row="2" />
+        <Button Content="Take Picture" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="92" Width="171" Click="Button_Click" Grid.Column="2" Grid.RowSpan="2" Grid.Row="3" />
+        <TextBlock HorizontalAlignment="Right" Height="112"  TextWrapping="Wrap" Text="Find the great hidden city hall in Roskilde and take picture of it" VerticalAlignment="Center" Width="438" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="2" Grid.Row="5" Margin="0,2"/>
+        <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Find/Answer" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="1" Grid.Row="1"/>
+        <Popup Grid.ColumnSpan="5" Grid.RowSpan="7"/>
+        <Button Content="Display Hint" HorizontalAlignment="Center"  VerticalAlignment="Center" Click="Button_Click_2" BorderThickness="0" Height="85" Width="150" Grid.Column="1" Grid.Row="4"/>
+        <RadioButton Content="" HorizontalAlignment="Center"  VerticalAlignment="Stretch" Width="33" Grid.Column="1" Margin="65,0,273,0"/>
 
     </Grid>
 </Page>
