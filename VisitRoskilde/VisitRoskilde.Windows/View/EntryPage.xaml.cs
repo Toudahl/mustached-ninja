@@ -48,7 +48,6 @@ namespace VisitRoskilde.View
 
             BottomTriangle();
             TopTriangle();
-            textblock_bottomTriangle.Text = DateTime.Now.CompareTo(DateTime.Now.AddHours(0)).ToString();
         }
 
         private void BottomTriangle()

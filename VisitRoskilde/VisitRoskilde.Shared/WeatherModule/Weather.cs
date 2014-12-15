@@ -17,7 +17,7 @@ namespace VisitRoskilde.WeatherModule
     /// You should use the WeatherRetriever class if you wish to get the updated weather data
     /// </summary>
     [DataContract]
-    class Weather: Serializer<Weather>, ISave, ILoad, IMyDataPersists, IDataCollectable, INotifyPropertyChanged
+    class Weather: Serializer<Weather>, ISave, ILoad, IMyDataPersists, IDataCollectable
     {
         [DataMember]
         private string _temperature;
@@ -37,7 +37,7 @@ namespace VisitRoskilde.WeatherModule
         public Weather()
         {
             _fileName = "weather.xml";
-            //LoadData();
+            LoadData();
         }
 
         #region Fields
@@ -47,7 +47,6 @@ namespace VisitRoskilde.WeatherModule
             set
             {
                 _temperature = value;
-                OnPropertyChanged();
             }
         }
 
@@ -119,15 +118,6 @@ namespace VisitRoskilde.WeatherModule
                 return true;
             }
             return false;
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
