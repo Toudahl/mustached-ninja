@@ -14,7 +14,7 @@
         </CommandBar>
     </Page.TopAppBar>
     <Page.BottomAppBar>
-        <AppBar>
+        <CommandBar>
             <AppBarButton x:Name="appbutton_settings" Content="Settings" Label="Settings" Icon="PreviewLink">
                 <Button.Flyout>
                     <Flyout>
@@ -48,7 +48,49 @@
                     </Flyout>
                 </Button.Flyout>
             </AppBarButton>
-        </AppBar>
+            <AppBarButton Content="Weather" Label="Weather" Icon="PreviewLink">
+                <Button.Flyout>
+                    <Flyout>
+                        <Grid>
+                            <Grid.DataContext>
+                                <viewModel:WeatherViewModel/>
+                            </Grid.DataContext>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0">Temperature</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="0">Cloudiness</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="0">Wind</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="0">Humidity</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="0">Sunset</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="0">Sunrise</TextBlock>
+                            <TextBlock Grid.Row="6" Grid.Column="0" Text="{Binding TimeStamp}" Grid.ColumnSpan="2"/>
+                            <TextBlock Grid.Row="7" Grid.Column="0" Text="{Binding TimeTillNextRefresh}" Grid.ColumnSpan="2"/>
+
+
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Temperature}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Cloudiness}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Wind}"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Humidity}"/>
+                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Sunset}"/>
+                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Sunrise}"/>
+                        </Grid>
+                    </Flyout>
+                </Button.Flyout>
+            </AppBarButton>
+        </CommandBar>
     </Page.BottomAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

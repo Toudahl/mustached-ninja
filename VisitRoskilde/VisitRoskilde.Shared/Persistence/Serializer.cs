@@ -37,7 +37,6 @@ namespace VisitRoskilde.Persistence
             {
                 _serializer.WriteObject(stream, this);
             }
-            // TODO: Make a failed save throw an exception
         }
 
         /// <summary>

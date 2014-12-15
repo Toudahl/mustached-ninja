@@ -47,6 +47,7 @@ namespace VisitRoskilde.WeatherModule
                 _weather.Sunset = doc.GetElementsByTagName("sun")[0].Attributes[1].NodeValue.ToString().Substring(11);
                 _weather.Cloudiness = doc.GetElementsByTagName("clouds")[0].Attributes[1].NodeValue.ToString();
                 _weather.TimeStamp = DateTime.Now;
+                _weather.SaveData();
             }
         }
 
