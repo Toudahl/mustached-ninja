@@ -32,6 +32,7 @@
         <Button Content="Compare" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="137" Width="185" Click="Button_Click_1" Grid.Row="3" Grid.RowSpan="4" Grid.Column="2"/>
         <TextBlock x:Name="txt_Result" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"/>
         <TextBlock x:Name="txt_test" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Visibility="Collapsed" Grid.Row="4" Grid.Column="2"/>
+        <Button x:Name="btn_Proceed" Content="Proceed" Grid.Column="3" HorizontalAlignment="Stretch"  Grid.Row="6" VerticalAlignment="Stretch" Click="btn_Proceed_Click" Visibility="Collapsed"/>
 
     </Grid>
 </Page>

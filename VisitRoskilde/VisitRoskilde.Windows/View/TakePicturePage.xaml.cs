@@ -61,11 +61,24 @@ namespace VisitRoskilde.View
             string d = Path.GetFileNameWithoutExtension(@"/Assets/Roskilde_Hall.jpg");
 
 
-            txt_Result.Text = txt_test.Text == d ? "Found match " : "no match";
+            txt_Result.Text = txt_test.Text == d ? "Found match "  : "no match";
             if (txt_test.Text == String.Empty)
             {
                 txt_Result.Text = " select first";
             }
+            if (txt_Result.Text=="Found match ")
+            {
+                                btn_Proceed.Visibility = Visibility.Visible;
+
+            }
+        }
+
+        private void btn_Proceed_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+                this.Frame.Navigate(typeof (HuntTaskCompletePage));
+            
         }
     }
 }
