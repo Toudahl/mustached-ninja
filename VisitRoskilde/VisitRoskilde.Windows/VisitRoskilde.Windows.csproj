@@ -112,6 +112,9 @@
     <Compile Include="View\EntryPage.xaml.cs">
       <DependentUpon>EntryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\HuntFinalPage.xaml.cs">
+      <DependentUpon>HuntFinalPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\HuntTaskCompletePage.xaml.cs">
       <DependentUpon>HuntTaskCompletePage.xaml</DependentUpon>
     </Compile>
@@ -146,6 +149,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="View\EntryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\HuntFinalPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
