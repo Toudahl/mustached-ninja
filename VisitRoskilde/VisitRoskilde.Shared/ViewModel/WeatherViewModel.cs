@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Windows.Input;
+using TouristAppV4.Common;
+using VisitRoskilde.Annotations;
 using VisitRoskilde.WeatherModule;
 
 namespace VisitRoskilde.ViewModel
@@ -8,15 +13,31 @@ namespace VisitRoskilde.ViewModel
     class WeatherViewModel
     {
         private WeatherRetriever weatherRetriever;
+        private ICommand _loadCommand;
 
         public WeatherViewModel()
         {
             weatherRetriever = new WeatherRetriever();
+            _loadCommand = new RelayCommand(Load);
+        }
+
+        private void Load()
+        {
+            weatherRetriever.Weather.LoadData();
+        }
+
+        public ICommand LoadCommand
+        {
+            get { return _loadCommand; }
+            set { _loadCommand = value; }
         }
 
         public string Temperature
         {
-            get { return weatherRetriever.Weather.Temperature; } 
+            get
+            {
+                return weatherRetriever.Weather.Temperature;
+            }
         }
 
         public string Cloudiness

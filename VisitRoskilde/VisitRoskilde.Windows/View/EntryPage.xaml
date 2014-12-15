@@ -35,7 +35,7 @@
                             </Grid.RowDefinitions>
                             <TextBlock Text="Location Services:" Grid.Row="0" Grid.Column="0"/>
                             <ToggleSwitch x:Name="toggleswitch_location" Grid.Row="0" Grid.Column="1" IsOn="{Binding LocationService, Mode=TwoWay}" ToolTipService.ToolTip="Enableing this will allow the app to better show you the nearby locations of interrest"/>
-                            <TextBlock x:Name="textblock_test" Grid.Row="0" Grid.Column="1" Text="{Binding LocationService,Mode=TwoWay}" ToolTipService.ToolTip="Enableing this will allow the app to better show you the nearby locations of interrest"/>
+
                             <TextBlock Text="Anonymouse data collection:" Grid.Row="1" Grid.Column="0"/>
                             <ToggleSwitch x:Name="toggleswitch_dataCollection" Grid.Row="1" Grid.Column="1" IsOn="{Binding DataCollection, Mode=TwoWay}" ToolTipService.ToolTip="Allowing this, will collect your location (if enabled), the weather and information from facebook regarding your home city and country"/>
                             
@@ -68,6 +68,7 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
 
                             <TextBlock Grid.Row="0" Grid.Column="0">Temperature</TextBlock>
@@ -76,16 +77,15 @@
                             <TextBlock Grid.Row="3" Grid.Column="0">Humidity</TextBlock>
                             <TextBlock Grid.Row="4" Grid.Column="0">Sunset</TextBlock>
                             <TextBlock Grid.Row="5" Grid.Column="0">Sunrise</TextBlock>
-                            <TextBlock Grid.Row="6" Grid.Column="0" Text="{Binding TimeStamp}" Grid.ColumnSpan="2"/>
-                            <TextBlock Grid.Row="7" Grid.Column="0" Text="{Binding TimeTillNextRefresh}" Grid.ColumnSpan="2"/>
 
 
-                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Temperature}"/>
-                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Cloudiness}"/>
-                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Wind}"/>
-                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Humidity}"/>
-                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Sunset}"/>
-                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Sunrise}"/>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Temperature, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Cloudiness, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Wind, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Humidity, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Sunset, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Sunrise, Mode=TwoWay}"/>
+                            
                         </Grid>
                     </Flyout>
                 </Button.Flyout>

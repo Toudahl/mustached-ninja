@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using Windows.Data.Xml.Dom;
+using VisitRoskilde.Annotations;
 using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.WeatherModule
@@ -34,20 +37,20 @@ namespace VisitRoskilde.WeatherModule
         /// </summary>
         private async void RefreshData()
         {
-            if (_weather.TimeStamp.AddHours(6) <= DateTime.Now)
+            if (_weather.TimeStamp.AddHours(6) < DateTime.Now)
             {
                 Uri weatherUrl = new Uri(dataLocation);
 
                 XmlDocument doc = await XmlDocument.LoadFromUriAsync(weatherUrl);
 
-                _weather.Temperature = doc.GetElementsByTagName("temperature")[0].Attributes[0].NodeValue.ToString();
-                _weather.Humidity = doc.GetElementsByTagName("humidity")[0].Attributes[0].NodeValue.ToString();
-                _weather.Wind = doc.GetElementsByTagName("speed")[0].Attributes[1].NodeValue.ToString();
-                _weather.Sunrise = doc.GetElementsByTagName("sun")[0].Attributes[0].NodeValue.ToString().Substring(11);
-                _weather.Sunset = doc.GetElementsByTagName("sun")[0].Attributes[1].NodeValue.ToString().Substring(11);
-                _weather.Cloudiness = doc.GetElementsByTagName("clouds")[0].Attributes[1].NodeValue.ToString();
-                _weather.TimeStamp = DateTime.Now;
-                _weather.SaveData();
+                Weather.Temperature = doc.GetElementsByTagName("temperature")[0].Attributes[0].NodeValue.ToString();
+                Weather.Humidity = doc.GetElementsByTagName("humidity")[0].Attributes[0].NodeValue.ToString();
+                Weather.Wind = doc.GetElementsByTagName("speed")[0].Attributes[1].NodeValue.ToString();
+                Weather.Sunrise = doc.GetElementsByTagName("sun")[0].Attributes[0].NodeValue.ToString().Substring(11);
+                Weather.Sunset = doc.GetElementsByTagName("sun")[0].Attributes[1].NodeValue.ToString().Substring(11);
+                Weather.Cloudiness = doc.GetElementsByTagName("clouds")[0].Attributes[1].NodeValue.ToString();
+                Weather.TimeStamp = DateTime.Now;
+                Weather.SaveData();
             }
         }
 
@@ -57,6 +60,10 @@ namespace VisitRoskilde.WeatherModule
         public Weather Weather
         {
             get { return _weather; }
+            private set
+            {
+                _weather = value;
+            }
         }
     }
 }

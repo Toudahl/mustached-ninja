@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Text;
+using VisitRoskilde.Annotations;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
 
@@ -15,7 +17,7 @@ namespace VisitRoskilde.WeatherModule
     /// You should use the WeatherRetriever class if you wish to get the updated weather data
     /// </summary>
     [DataContract]
-    class Weather: Serializer<Weather>, ISave, ILoad, IMyDataPersists, IDataCollectable
+    class Weather: Serializer<Weather>, ISave, ILoad, IMyDataPersists, IDataCollectable, INotifyPropertyChanged
     {
         [DataMember]
         private string _temperature;
@@ -35,7 +37,7 @@ namespace VisitRoskilde.WeatherModule
         public Weather()
         {
             _fileName = "weather.xml";
-            LoadData();
+            //LoadData();
         }
 
         #region Fields
@@ -45,6 +47,7 @@ namespace VisitRoskilde.WeatherModule
             set
             {
                 _temperature = value;
+                OnPropertyChanged();
             }
         }
 
@@ -116,6 +119,15 @@ namespace VisitRoskilde.WeatherModule
                 return true;
             }
             return false;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
