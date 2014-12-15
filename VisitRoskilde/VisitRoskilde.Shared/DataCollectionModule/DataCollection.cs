@@ -5,6 +5,7 @@ using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.DataCollectionModule
 {
+    // Author: Morten Toudahl
     class DataCollection
     {
         private static DataCollection obj;

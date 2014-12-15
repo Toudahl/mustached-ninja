@@ -5,7 +5,6 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Runtime.Serialization;
-using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -16,6 +15,7 @@ using VisitRoskilde.Persistence;
 
 namespace VisitRoskilde.DataCollectionModule
 {
+    // Author: Morten Toudahl
     [DataContract]
     class DataDelivery : Serializer<DataDelivery>
     {
