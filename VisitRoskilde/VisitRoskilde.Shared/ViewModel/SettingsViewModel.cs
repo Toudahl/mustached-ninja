@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
 using TouristAppV4.Common;
+using VisitRoskilde.Annotations;
 using VisitRoskilde.SettingsModule;
 
 namespace VisitRoskilde.ViewModel
 {
-    class SettingsViewModel
+    class SettingsViewModel : INotifyPropertyChanged
     {
         private Settings settings;
         private string _faceBookStatusImage;
@@ -18,7 +22,8 @@ namespace VisitRoskilde.ViewModel
         {
             settings = new Settings();
             settings.LoadData();
-            
+
+           
             FacebookChangeStatusImage();
             FacebookChangeCommandFunction();
 
@@ -104,6 +109,15 @@ namespace VisitRoskilde.ViewModel
         {
             get { return _saveCommand; }
             set { _saveCommand = value; }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

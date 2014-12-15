@@ -36,6 +36,10 @@ namespace VisitRoskilde.View
         {
             this.Frame.Navigate(typeof(TreasureHuntEntryPage));
         }
+        private void Appbutton_entryPage_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(EntryPage));
+        }
 
     }
 }

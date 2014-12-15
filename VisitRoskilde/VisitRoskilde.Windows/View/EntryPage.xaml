@@ -35,7 +35,7 @@
                             </Grid.RowDefinitions>
                             <TextBlock Text="Location Services:" Grid.Row="0" Grid.Column="0"/>
                             <ToggleSwitch x:Name="toggleswitch_location" Grid.Row="0" Grid.Column="1" IsOn="{Binding LocationService, Mode=TwoWay}" ToolTipService.ToolTip="Enableing this will allow the app to better show you the nearby locations of interrest"/>
-
+                            <TextBlock x:Name="textblock_test" Grid.Row="0" Grid.Column="1" Text="{Binding LocationService,Mode=TwoWay}" ToolTipService.ToolTip="Enableing this will allow the app to better show you the nearby locations of interrest"/>
                             <TextBlock Text="Anonymouse data collection:" Grid.Row="1" Grid.Column="0"/>
                             <ToggleSwitch x:Name="toggleswitch_dataCollection" Grid.Row="1" Grid.Column="1" IsOn="{Binding DataCollection, Mode=TwoWay}" ToolTipService.ToolTip="Allowing this, will collect your location (if enabled), the weather and information from facebook regarding your home city and country"/>
                             
