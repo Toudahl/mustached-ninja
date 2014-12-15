@@ -11,6 +11,7 @@ using VisitRoskilde.SettingsModule;
 
 namespace VisitRoskilde.ViewModel
 {
+    // Author: Morten Toudahl
     class SettingsViewModel : INotifyPropertyChanged
     {
         private Settings settings;

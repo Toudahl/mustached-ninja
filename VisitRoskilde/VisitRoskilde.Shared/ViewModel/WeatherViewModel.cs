@@ -10,6 +10,7 @@ using VisitRoskilde.WeatherModule;
 
 namespace VisitRoskilde.ViewModel
 {
+    // Author: Morten Toudahl
     class WeatherViewModel
     {
         private WeatherRetriever weatherRetriever;
