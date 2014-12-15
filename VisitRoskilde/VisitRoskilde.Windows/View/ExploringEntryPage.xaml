@@ -5,14 +5,15 @@
     xmlns:local="using:VisitRoskilde.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="using:VisitRoskilde.ViewModel"
     mc:Ignorable="d">
     <Page.TopAppBar>
         <CommandBar>
+            <AppBarButton x:Name="appbutton_entryPage" Content="Entry page" Label="Entry page" Icon="PreviewLink" Click="Appbutton_entryPage_OnClick"/>
             <AppBarButton x:Name="appbutton_goToExploring" Content="Exploring" Label="Exploring" Icon="PreviewLink" Click="Appbutton_goToExploring_OnClick"/>
             <AppBarButton x:Name="appbutton_goToTreasureHunt" Content="Hunting" Label="Treasure Hunts" Icon="PreviewLink" Click="Appbutton_goToTreasureHunt_OnClick"/>
         </CommandBar>
     </Page.TopAppBar>
-    <Page.BottomAppBar>
         <AppBar>
             <AppBarButton x:Name="appbutton_settings" Content="Settings" Label="Settings" Icon="PreviewLink">
                 <Button.Flyout>
@@ -43,7 +44,5 @@
         </AppBar>
     </Page.BottomAppBar>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Exploring" VerticalAlignment="Center"/>
-    </Grid>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
 </Page>
