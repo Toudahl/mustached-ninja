@@ -41,6 +41,5 @@ namespace VisitRoskilde.View
         {
             this.Frame.Navigate(typeof(EntryPage));
         }
-
     }
 }
