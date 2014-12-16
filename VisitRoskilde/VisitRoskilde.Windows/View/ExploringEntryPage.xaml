@@ -43,5 +43,7 @@
             <Image HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="75" Source="{Binding fbUserProfilePicture}" Stretch="UniformToFill"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding fbUserName, Mode=TwoWay}" VerticalAlignment="Top" FontSize="25" Margin="0,0,50,0"/>
         </StackPanel>
+        <TextBlock Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ListofLocations[0], Mode=TwoWay}" VerticalAlignment="Top" FontSize="25" Margin="0,0,50,0"/>
+        <ListView Grid.Column="1" HorizontalAlignment="Left" Height="500" Grid.Row="2" VerticalAlignment="Top" Width="200" ItemsSource="{Binding ListofLocations, Mode=TwoWay}" Header="Omg"/>
     </Grid>
 </Page>

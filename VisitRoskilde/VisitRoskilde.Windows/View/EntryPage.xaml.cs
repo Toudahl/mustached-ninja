@@ -64,6 +64,7 @@ namespace VisitRoskilde.View
 
             bottomTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
 
+
             bottomTriangle.PointerEntered += thePointerEntered;
             bottomTriangle.PointerExited += thePointerExited;
             bottomTriangle.PointerPressed += GoToTreasureHunting;

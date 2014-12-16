@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -29,6 +31,8 @@ namespace VisitRoskilde.ViewModel
         private string _fbUserAge;
         private string _fbUserGender;
         private string _fbUserHomeCity;
+        private ObservableCollection<FacebookLocationModel> _listofLocations;
+
         #endregion
 
         #region Properties
@@ -55,7 +59,7 @@ namespace VisitRoskilde.ViewModel
         public BitmapImage fbUserProfilePicture
         {
             get {
-                if (_fbUserProfilePicture == null)
+                if (fbHandler.UserProfilePicture != null)
                 {
                     return new BitmapImage(new Uri(fbHandler.UserProfilePicture));
                 }
@@ -106,6 +110,16 @@ namespace VisitRoskilde.ViewModel
             }
         }
 
+        public ObservableCollection<FacebookLocationModel> ListofLocations
+        {
+            get { return fbHandler.fbLocation; }
+            set
+            {
+                fbHandler.fbLocation = value; 
+                OnPropertyChanged("ListofLocations");
+            }
+        }
+
         public ICommand fbLoginCommand
         {
             get { return _fbLoginCommand; }
@@ -135,10 +149,39 @@ namespace VisitRoskilde.ViewModel
 
         public void updateuser()
         {
-            fbUserName = fbHandler.UserName;
-            fbUserGender = fbHandler.UserGender;
-            fbUserHomeCity = fbHandler.UserHomeCity;
-            fbUserProfilePicture = new BitmapImage(new Uri(fbHandler.UserProfilePicture));
+            try
+            {
+                fbUserName = fbHandler.UserName;
+                fbUserGender = fbHandler.UserGender;
+                fbUserHomeCity = fbHandler.UserHomeCity;
+                fbUserProfilePicture = new BitmapImage(new Uri(fbHandler.UserProfilePicture));
+            }
+            catch (Exception)
+            {
+                updateuser();
+                throw;
+            }
+            try
+            {
+                updateLocations();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void updateLocations()
+        {
+            try
+            {
+                _listofLocations = fbHandler.fbLocation;
+            }
+            catch (Exception)
+            {
+                updateLocations();
+                throw;
+            }
         }
         #endregion
 
