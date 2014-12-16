@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -46,19 +47,31 @@ namespace VisitRoskilde.View
 
             CoreWindow.GetForCurrentThread().SizeChanged += OnScreenSizeChanged;
 
-            BottomTriangle();
-            TopTriangle();
+            TreasureTriangle();
+            ExploringTriangle();
         }
 
-        private void BottomTriangle()
+        private void TreasureTriangle()
         {
+
             bottomTriangle = new Polygon();
 
             bottomTriangle.Points.Add(new Point(screenWidth, screenHeight));
             bottomTriangle.Points.Add(new Point(screenWidth, 0));
             bottomTriangle.Points.Add(new Point(0, screenHeight));
 
-            bottomTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
+            //bottomTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
+
+            // Image location: /Assets/treasure.jpg
+
+            var image = new ImageBrush();
+
+            image.ImageSource = new BitmapImage(new Uri("/Assets/treasure.jpg", UriKind.Relative));
+
+            //imgBrush.ImageSource = berriesBrush;
+
+
+            bottomTriangle.Fill = image;
 
             bottomTriangle.PointerEntered += thePointerEntered;
             bottomTriangle.PointerExited += thePointerExited;
@@ -77,7 +90,7 @@ namespace VisitRoskilde.View
             }
         }
 
-        private void TopTriangle()
+        private void ExploringTriangle()
         {
             topTriangle = new Polygon();
 
@@ -113,8 +126,8 @@ namespace VisitRoskilde.View
         {
             GetScreenSize();
             grid_main.Children.Clear();
-            TopTriangle();
-            BottomTriangle();
+            ExploringTriangle();
+            TreasureTriangle();
         }
 
         private void thePointerExited(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)

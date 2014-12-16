@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using Windows.Devices.Geolocation;
+using Windows.Foundation;
 using VisitRoskilde.DataCollectionModule;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
@@ -140,8 +141,8 @@ namespace VisitRoskilde.LocationServiceModule
                 {
                     Position = new Dictionary<string, string>();
                     var location = await locator.GetGeopositionAsync();
-                    Position["Latitude"] = location.Coordinate.Latitude.ToString();
-                    Position["Longitude"] = location.Coordinate.Longitude.ToString();
+                    Position["Latitude"] = location.Coordinate.Point.Position.Latitude.ToString();
+                    Position["Longitude"] = location.Coordinate.Point.Position.Longitude.ToString();
                     if (Position.Count == 0)
                     {
                         throw new Exception("Location was not found.");
