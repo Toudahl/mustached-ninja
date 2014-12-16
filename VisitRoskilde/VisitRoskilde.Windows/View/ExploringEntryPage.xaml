@@ -7,13 +7,41 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModel="using:VisitRoskilde.ViewModel"
     mc:Ignorable="d">
+    <Page.DataContext>
+        <viewModel:ExploreViewModel/>
+    </Page.DataContext>
     <Page.TopAppBar>
         <CommandBar>
+            <AppBarButton x:Name="appButton_fbUserButton" Icon="{Binding fbUserProfilePicture}" Label="{Binding fbUserName}"></AppBarButton>
+            <AppBarSeparator/>
             <AppBarButton x:Name="appbutton_entryPage" Content="Entry page" Label="Entry page" Icon="PreviewLink" Click="Appbutton_entryPage_OnClick"/>
             <AppBarButton x:Name="appbutton_goToExploring" Content="Exploring" Label="Exploring" Icon="PreviewLink" Click="Appbutton_goToExploring_OnClick"/>
             <AppBarButton x:Name="appbutton_goToTreasureHunt" Content="Hunting" Label="Treasure Hunts" Icon="PreviewLink" Click="Appbutton_goToTreasureHunt_OnClick"/>
         </CommandBar>
     </Page.TopAppBar>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="appbutton_updateUser" Content="Hunting" Label="Update UserInformation" Icon="People" Command="{Binding UpdateUserCommand}"/>
+            <AppBarButton x:Name="appbutton_fbLogIn" Content="Hunting" Label="Log In to Facebook" Icon="People" Command="{Binding fbLoginCommand}"/>
+        </CommandBar>
+    </Page.BottomAppBar>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="35"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="647*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+            <Image HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="75" Source="{Binding fbUserProfilePicture}" Stretch="UniformToFill"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding fbUserName, Mode=TwoWay}" VerticalAlignment="Top" FontSize="25" Margin="0,0,50,0"/>
+        </StackPanel>
+    </Grid>
 </Page>
