@@ -85,6 +85,12 @@
     <Compile Include="View\EntryPage.xaml.cs">
       <DependentUpon>EntryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\HuntFinalPage.xaml.cs">
+      <DependentUpon>HuntFinalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\HuntTaskCompletePage.xaml.cs">
+      <DependentUpon>HuntTaskCompletePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\TakePicturePage.xaml.cs">
       <DependentUpon>TakePicturePage.xaml</DependentUpon>
     </Compile>
@@ -93,6 +99,9 @@
     </Compile>
     <Compile Include="View\TreasureHuntQuestionsPage.xaml.cs">
       <DependentUpon>TreasureHuntQuestionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TreasureHuntSecondQuestionsPage.xaml.cs">
+      <DependentUpon>TreasureHuntSecondQuestionsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +131,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\HuntFinalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\HuntTaskCompletePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\TakePicturePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -131,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\TreasureHuntQuestionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TreasureHuntSecondQuestionsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

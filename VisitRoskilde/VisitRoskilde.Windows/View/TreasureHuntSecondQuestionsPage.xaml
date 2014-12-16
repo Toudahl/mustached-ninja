@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="VisitRoskilde.View.TreasureHuntSecondQuestionsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VisitRoskilde.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <CheckBox x:Name="chckbox_A1" Content="1154 AD" HorizontalAlignment="Left" Margin="779,271,0,0" VerticalAlignment="Top" Height="47" Width="235" IsChecked="False"/>
+        <CheckBox x:Name="chckbox_A2" Content="980AD" HorizontalAlignment="Left" Margin="779,353,0,0" VerticalAlignment="Top" Height="46" Width="235"/>
+        <CheckBox x:Name="chckbox_A3" Content="888 AD" HorizontalAlignment="Left" Margin="779,430,0,0" VerticalAlignment="Top" Height="47" Width="235"/>
+        <TextBlock HorizontalAlignment="Left" Margin="110,63,0,0" TextWrapping="Wrap" Text="Answer the question!" VerticalAlignment="Top" Style="{StaticResource HeaderTextBlockStyle}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="110,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="284" Width="316"  Style="{StaticResource SubheaderTextBlockStyle}">
+        	<Run Text="When did Harald Bluetooth moved  Denmark"/>
+        	<Run Text="'"/>
+        	<Run Text="s capital from Jelling to Roskilde?"/>
+        </TextBlock>
+        <Button x:Name="btn_proceed1" Content="Proceed" HorizontalAlignment="Left" Margin="1035,610,0,0" VerticalAlignment="Top" Height="95" Width="193" Click="Button_Click" PointerEntered="btn_proceed1_PointerEntered"/>
+
+    </Grid>
+</Page>

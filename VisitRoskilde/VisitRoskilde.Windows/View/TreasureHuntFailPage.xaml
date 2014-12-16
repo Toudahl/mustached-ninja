@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="VisitRoskilde.View.TreasureHuntFailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VisitRoskilde.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="24,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextBlockStyle}" Height="339" Width="565">
+        	<Run Text="What a shame..."/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="Wrong Answer"/>
+        </TextBlock>
+        <Button Content="Try Again" HorizontalAlignment="Left" Margin="663,415,0,0" VerticalAlignment="Top" Height="99" Width="197" Click="Button_Click"/>
+
+    </Grid>
+</Page>

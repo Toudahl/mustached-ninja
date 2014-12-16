@@ -2,28 +2,27 @@
 using System.Collections.Generic;
 using System.Text;
 
-
 namespace VisitRoskilde.Model
 {
-    class HuntTopicModel
+    public class HuntTopicModel
     {
-        private string _theme;
         private string _time;
-        private string _topic;
-        private string _reward;
-        private string _start;
         private string _end;
+        private string _start;
+        private string _topic;
+        private string _theme;
+        private string _reward;
 
-        public string End
+        public string Topic
         {
-            get { return _end; }
-            set { _end = value; }
+            get { return _topic; }
+            set { _topic = value; }
         }
 
-        public string Start
+        public string Theme
         {
-            get { return _start; }
-            set { _start = value; }
+            get { return _theme; }
+            set { _theme = value; }
         }
 
         public string Reward
@@ -32,22 +31,22 @@ namespace VisitRoskilde.Model
             set { _reward = value; }
         }
 
-        public string Topic
+        public string Start
         {
-            get { return _topic; }
-            set { _topic = value; }
+            get { return _start; }
+            set { _start = value; }
+        }
+
+        public string End
+        {
+            get { return _end; }
+            set { _end = value; }
         }
 
         public string Time
         {
             get { return _time; }
             set { _time = value; }
-        }
-
-        public string Theme
-        {
-            get { return _theme; }
-            set { _theme = value; }
         }
 
         public override string ToString()

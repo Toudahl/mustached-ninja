@@ -6,15 +6,16 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using VisitRoskilde.Annotations;
 using VisitRoskilde.Model;
+using VisitRoskilde.View;
 
 namespace VisitRoskilde.ViewModel
 {
-    class TreasureHuntEntryPageViewModel:INotifyPropertyChanged
+  public  class TreasureHuntEntryPageViewModel:INotifyPropertyChanged
     {
         private ObservableCollection<HuntTopicModel> _huntList;
         private HuntTopicModel _selectedHunt;
-
-        public HuntTopicModel SelectedHunt
+      //public static HuntTopicModel SelectedTopic { get; set; }
+        public  HuntTopicModel SelectedHunt
         {
             get { return _selectedHunt; }
             set

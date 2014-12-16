@@ -124,8 +124,14 @@
     <Compile Include="View\TreasureHuntEntryPage.xaml.cs">
       <DependentUpon>TreasureHuntEntryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\TreasureHuntFailPage.xaml.cs">
+      <DependentUpon>TreasureHuntFailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\TreasureHuntQuestionsPage.xaml.cs">
       <DependentUpon>TreasureHuntQuestionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TreasureHuntSecondQuestionsPage.xaml.cs">
+      <DependentUpon>TreasureHuntSecondQuestionsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -168,7 +174,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\TreasureHuntFailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\TreasureHuntQuestionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TreasureHuntSecondQuestionsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
