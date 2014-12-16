@@ -316,5 +316,33 @@ namespace VisitRoskilde.FacebookIntegrationModule
             }
         }
         #endregion
+
+        #region FacebookMapImplementation
+        private static ObservableCollection<FacebookLocationModel> locations = new ObservableCollection<FacebookLocationModel>();
+
+        public static ObservableCollection<FacebookLocationModel> Locations
+        {
+            get
+            {
+                return locations;
+            }
+        }
+
+        private static bool isRestaurantSelected = false;
+
+        public static bool IsRestaurantSelected
+        {
+            get
+            {
+                return isRestaurantSelected;
+            }
+            set
+            {
+                isRestaurantSelected = value;
+            }
+        }
+
+        public static FacebookLocationModel SelectedRestaurant { get; set; }
+        #endregion
     }
 }
