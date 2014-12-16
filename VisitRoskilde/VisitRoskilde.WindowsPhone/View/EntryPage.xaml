@@ -5,10 +5,102 @@
     xmlns:local="using:VisitRoskilde.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:viewModel="using:VisitRoskilde.ViewModel"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="appbutton_goToExploring" Content="Exploring" Label="Exploring" Icon="PreviewLink" Click="Appbutton_goToExploring_OnClick"/>
+            <AppBarButton x:Name="appbutton_goToTreasureHunt" Content="Hunting" Label="Treasure" Icon="PreviewLink" Click="Appbutton_goToTreasureHunt_OnClick"/>
 
-    <Grid>
+            <AppBarButton x:Name="appbutton_settings" Content="Settings" Label="Settings" Icon="PreviewLink">
+                <Button.Flyout>
+                    <Flyout>
+                        <Grid>
+                            <Grid.DataContext>
+                                <viewModel:SettingsViewModel/>
+                            </Grid.DataContext>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="Location Services:" Grid.Row="0" Grid.Column="0"/>
+                            <ToggleSwitch x:Name="toggleswitch_location" Grid.Row="0" Grid.Column="1" IsOn="{Binding LocationService, Mode=TwoWay}" ToolTipService.ToolTip="Enableing this will allow the app to better show you the nearby locations of interrest"/>
 
+                            <TextBlock Text="Anonymouse data collection:" Grid.Row="1" Grid.Column="0"/>
+                            <ToggleSwitch x:Name="toggleswitch_dataCollection" Grid.Row="1" Grid.Column="1" IsOn="{Binding DataCollection, Mode=TwoWay}" ToolTipService.ToolTip="Allowing this, will collect your location (if enabled), the weather and information from facebook regarding your home city and country"/>
+
+                            <TextBlock Text="Facebook: " Grid.Row="2" Grid.Column="0"/>
+                            <Image Source="{Binding FaceBookStatusImage}" Grid.Row="2" Grid.Column="1"/>
+                            <Button Opacity="0" Grid.Row="2" Grid.Column="1" Command="{Binding FacebookCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+                            <Button Content="Save settings" Command="{Binding SaveCommand, Mode=TwoWay}" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </Flyout>
+                </Button.Flyout>
+            </AppBarButton>
+            <AppBarButton Content="Weather" Label="Weather" Icon="PreviewLink">
+                <Button.Flyout>
+                    <Flyout>
+                        <Grid>
+                            <Grid.DataContext>
+                                <viewModel:WeatherViewModel/>
+                            </Grid.DataContext>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0">Temperature</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="0">Cloudiness</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="0">Wind</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="0">Humidity</TextBlock>
+                            <TextBlock Grid.Row="4" Grid.Column="0">Sunset</TextBlock>
+                            <TextBlock Grid.Row="5" Grid.Column="0">Sunrise</TextBlock>
+
+
+                            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Temperature, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Cloudiness, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Wind, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Humidity, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Sunset, Mode=TwoWay}"/>
+                            <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding Sunrise, Mode=TwoWay}"/>
+
+                        </Grid>
+                    </Flyout>
+                </Button.Flyout>
+            </AppBarButton>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="grid_main" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textblock_topTriangle" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"  IsHitTestVisible="False" Text="Exploring" Foreground="Black" FontSize="24"/>
+        <TextBlock x:Name="textblock_bottomTriangle" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Treasure Hunts" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" IsHitTestVisible="False" Foreground="Black" FontSize="24"/>
     </Grid>
 </Page>
