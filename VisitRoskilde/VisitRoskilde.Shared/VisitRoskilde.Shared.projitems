@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Enum\SettingsEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookIntegration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookUser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookViewBusinesses.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ICommandModule\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ImageHandelingModule\ImageCapture.cs" />

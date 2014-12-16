@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Dynamic;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.Security.Authentication.Web;
 using Windows.UI.Popups;
@@ -19,7 +21,7 @@ using VisitRoskilde.Interfaces;
 namespace VisitRoskilde.FacebookIntegrationModule
 {
     [DataContract]
-    class FacebookIntegration: ILoad, IDataCollectable, INotifyPropertyChanged
+    class FacebookIntegration: ILoad, IDataCollectable
     {
         #region Variables
         //AppID for testing app (localhost)
@@ -31,7 +33,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
         private string _longAccessToken;
         [DataMember]
         private string _userName;
-        private BitmapImage _userProfilePicture;
+        private string _userProfilePicture;
         [DataMember]
         private string _userHomeCity;
         [DataMember]
@@ -41,58 +43,61 @@ namespace VisitRoskilde.FacebookIntegrationModule
         private bool _status;
         FacebookClient _fbClient;
         private ICommand _loginCommand;
+        private ObservableCollection<FacebookUser> _userInfo;
         private static FacebookIntegration _singleFacebookHandler;
 
         #endregion
 
         #region Properties
+
+        public ObservableCollection<FacebookUser> userInfo
+        {
+            get { return _userInfo; }
+            set { _userInfo = value; }
+        }
+
         public string UserName
         {
             get { return _userName; }
             set
             {
                 _userName = value;
-                OnPropertyChanged("UserName");
             }
         }
 
-        public BitmapImage UserProfilePicture
+        public string UserProfilePicture
         {
             get { return _userProfilePicture; }
             set
             {
                 _userProfilePicture = value;
-                OnPropertyChanged("UserProfilePicture");
             }
         }
 
         public string UserHomeCity
         {
             get { return _userHomeCity; }
-            private set
+            set
             {
                 _userHomeCity = value;
-                OnPropertyChanged("UserHomeCity");
             }
         }
 
         public string UserGender
         {
             get { return _userGender; }
-            private set
+            set
             {
                 _userGender = value;
-                OnPropertyChanged("UserGender");
             }
         }
 
         public string UserAge
         {
             get { return _userAge; }
-            private set
+            set
             {
                 _userAge = value;
-                OnPropertyChanged("UserAge");
             }
         }
 
@@ -102,7 +107,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
         public bool Status
         {
             get { return _status; }
-            private set { _status = value; }
+            set { _status = value; }
         }
 
         public ICommand LoginCommand
@@ -118,7 +123,8 @@ namespace VisitRoskilde.FacebookIntegrationModule
         {
             //Instances FacebookClient class with the proper parameters
             CreateClient();
-            _loginCommand = new RelayCommand(LogIn);
+            //_loginCommand = new RelayCommand(LogIn);
+            userInfo = new ObservableCollection<FacebookUser>();
         }
         #endregion
 
@@ -168,7 +174,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
             return _fbClient;
         }
 
-        public async void LogIn()
+        public async Task LogIn()
         {
             var redirectUrl = "https://www.facebook.com/connect/login_success.html";
             try
@@ -243,15 +249,8 @@ namespace VisitRoskilde.FacebookIntegrationModule
 
         private async void LoginSucceded(string accessToken)
         {
-            try
-            {
-                UserProfilePicture = new BitmapImage(new Uri("http://i367.photobucket.com/albums/oo117/unclk/th_loading-gif-animation.gif"));
-            }
-            catch (Exception)
-            {
-                UserProfilePicture = null;
-            }
             GetUserInformation();
+            Status = true;
         }
 
         private async void GetUserInformation()
@@ -264,6 +263,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 try
                 {
                     UserName = (string)_result["name"];
+                    //userInfo[0].UserName = UserName;
                 }
                 catch (Exception)
                 {
@@ -272,6 +272,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 try
                 {
                     UserGender = (string)_result["gender"];
+                    //userInfo[0].UserGender = UserGender;
                 }
                 catch (Exception)
                 {
@@ -280,6 +281,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 try
                 {
                     UserAge = (string)_result["age_range"]["min"];
+                    //userInfo[0].UserAge = UserAge;
                 }
                 catch (Exception)
                 {
@@ -287,7 +289,9 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 }
                 try
                 {
+                    //TODO: Facebook is not returning hometown, find out why
                     UserHomeCity = (string)_result["hometown"]["name"];
+                    //userInfo[0].UserHomeCity = UserHomeCity;
                 }
                 catch (Exception)
                 {
@@ -296,8 +300,8 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 try
                 {
                     //TODO: _result.id is a very messy way to get the user id.
-                    string profilePictureUrl = string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", _result.id, "large", _fbClient.AccessToken);
-                    UserProfilePicture = new BitmapImage(new Uri(profilePictureUrl));
+                    UserProfilePicture = string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", _result.id, "large", _fbClient.AccessToken);
+                    //userInfo[0].UserProfileImage = UserProfilePicture;
                 }
                 catch (Exception)
                 {
@@ -312,14 +316,5 @@ namespace VisitRoskilde.FacebookIntegrationModule
             }
         }
         #endregion
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }
