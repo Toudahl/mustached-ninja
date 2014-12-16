@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="f730bba7-067c-4ee0-9d80-f120136c9e96" Publisher="CN=Morten" Version="1.0.0.0" />
+  <Identity Name="VisitRoskilde" Publisher="CN=Morten" Version="1.0.0.0" />
   <Properties>
-    <DisplayName>VisitRoskilde.Windows</DisplayName>
+    <DisplayName>Visit Roskilde</DisplayName>
     <PublisherDisplayName>Morten</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
