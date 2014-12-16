@@ -6,14 +6,18 @@ using System.Dynamic;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.ApplicationModel.Appointments.AppointmentsProvider;
+using Windows.Devices.Geolocation;
 using Windows.Security.Authentication.Web;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 using Facebook;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using TouristAppV4.Common;
 using VisitRoskilde.Annotations;
 using VisitRoskilde.Interfaces;
@@ -44,6 +48,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
         FacebookClient _fbClient;
         private ICommand _loginCommand;
         private ObservableCollection<FacebookUser> _userInfo;
+        private ObservableCollection<FacebookLocationModel> _fbLocation;
         private static FacebookIntegration _singleFacebookHandler;
 
         #endregion
@@ -54,6 +59,12 @@ namespace VisitRoskilde.FacebookIntegrationModule
         {
             get { return _userInfo; }
             set { _userInfo = value; }
+        }
+
+        public ObservableCollection<FacebookLocationModel> fbLocation
+        {
+            get { return _fbLocation; }
+            set { _fbLocation = value; }
         }
 
         public string UserName
@@ -125,6 +136,8 @@ namespace VisitRoskilde.FacebookIntegrationModule
             CreateClient();
             //_loginCommand = new RelayCommand(LogIn);
             userInfo = new ObservableCollection<FacebookUser>();
+            FacebookClient _fbMapClient = new FacebookClient();
+            fbLocation = new ObservableCollection<FacebookLocationModel>();
         }
         #endregion
 
@@ -314,10 +327,15 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 // handle error message
 
             }
+            setGeoLocator();
         }
         #endregion
 
         #region FacebookMapImplementation
+        // default location is Roskilde Station
+        static double latitude = 55.639533;
+        static double longitude = 12.088805;
+
         private static ObservableCollection<FacebookLocationModel> locations = new ObservableCollection<FacebookLocationModel>();
 
         public static ObservableCollection<FacebookLocationModel> Locations
@@ -342,7 +360,85 @@ namespace VisitRoskilde.FacebookIntegrationModule
             }
         }
 
+        async private void setGeoLocator()
+        {
+            Geolocator _geolocator = new Geolocator();
+            CancellationTokenSource _cts = new CancellationTokenSource();
+            CancellationToken token = _cts.Token;
+
+            // Carry out the operation
+            Geoposition pos = null;
+
+            try
+            {
+                // We will wait 100 milliseconds and accept locations up to 48 hours old before we give up
+                pos = await _geolocator.GetGeopositionAsync(new TimeSpan(48, 0, 0), new TimeSpan(0, 0, 0, 0, 100)).AsTask(token);
+            }
+            catch (Exception)
+            {
+                // this API can timeout, so no point breaking the code flow. Use
+                // default latitutde and longitude and continue on.
+            }
+
+            if (pos != null)
+            {
+                latitude = pos.Coordinate.Latitude;
+                longitude = pos.Coordinate.Longitude;
+            }
+            RestaurantList();
+        }
+
         public static FacebookLocationModel SelectedRestaurant { get; set; }
-        #endregion
+
+        
+
+        private async void RestaurantList()
+        {
+            dynamic restaurantsTaskResult = await _fbClient.GetTaskAsync("/search", new { q = "restaurant", type = "place", center = latitude.ToString() + "," + longitude.ToString(), distance = "1000" });
+            FacebookLocationModel place1 = new FacebookLocationModel();
+            foreach (JProperty property in restaurantsTaskResult)
+            {
+                foreach (JContainer array in property)
+                {
+                    foreach (JContainer container in array)
+                    {
+                        try
+                        {
+                            fbLocation.Add(new FacebookLocationModel
+                            {
+                                Street = (string)container["location"]["street"] ?? String.Empty,
+                                City = (string)container["location"]["city"] ?? String.Empty,
+                                Country = (string)container["location"]["country"] ?? String.Empty,
+                                Zip = (string)container["location"]["zip"] ?? String.Empty,
+                                Latitude = (string)container["location"]["latitude"] ?? String.Empty,
+                                Longitude = (string)container["location"]["longitude"] ?? String.Empty,
+
+                                Category = (string)container["category"] ?? String.Empty,
+                                Name = (string)container["name"] ?? String.Empty,
+                                Id = (string)container["id"] ?? String.Empty,
+                                PictureUri = new Uri(string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", (string)container["location"]["longtitude"], "large", _fbClient.AppId))
+
+                                //// these properties are at the top level in the object
+                                //Category = restaurant.ContainsKey("category") ? (string)restaurant["category"] : String.Empty,
+                                //Name = locations.Contains("name") ? (string)locations["name"] : String.Empty,
+                                //Id = locations.Contains("id") ? (string)locations["id"] : String.Empty,
+                                //PictureUri = new Uri(string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", (string)restaurant["id"], "square", _fbClient.AppId))
+                            });
+                        }
+                        catch (Exception)
+                        {
+                            
+                        }    
+                        
+                            
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
     }
+        #endregion
 }

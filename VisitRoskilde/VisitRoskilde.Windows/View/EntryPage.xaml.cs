@@ -60,18 +60,8 @@ namespace VisitRoskilde.View
             bottomTriangle.Points.Add(new Point(screenWidth, 0));
             bottomTriangle.Points.Add(new Point(0, screenHeight));
 
-            //bottomTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
+            bottomTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
 
-            // Image location: /Assets/treasure.jpg
-
-            var image = new ImageBrush();
-
-            image.ImageSource = new BitmapImage(new Uri("/Assets/treasure.jpg", UriKind.Relative));
-
-            //imgBrush.ImageSource = berriesBrush;
-
-
-            bottomTriangle.Fill = image;
 
             bottomTriangle.PointerEntered += thePointerEntered;
             bottomTriangle.PointerExited += thePointerExited;
