@@ -17,7 +17,6 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)DataCollectionModule\DataCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataCollectionModule\DataDelivery.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Enum\SettingsEnum.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookIntegration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookLocationModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FacebookIntegrationModule\FacebookRoute.cs" />
