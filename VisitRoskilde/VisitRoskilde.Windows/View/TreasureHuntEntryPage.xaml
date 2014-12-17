@@ -8,7 +8,7 @@
     x:Class="VisitRoskilde.View.TreasureHuntEntryPage"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="DarkOrange">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="49*"/>
             <ColumnDefinition Width="31*"/>
@@ -37,11 +37,17 @@
         <ListView HorizontalAlignment="Left" Height="240"   VerticalAlignment="Top" Width="242"  ItemsSource="{Binding HuntList, Mode=TwoWay}" SelectedItem="{Binding SelectedHunt,Mode=TwoWay}" Grid.ColumnSpan="2" Grid.Column="1" Grid.RowSpan="5" Grid.Row="1"/>
         <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Time}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="2"/>
         <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Theme}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="3" Grid.ColumnSpan="2"/>
-        <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Reward}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="5" Margin="0,0,0,36" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Reward}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="5" Margin="0,0,0,36" Grid.ColumnSpan="3" Grid.RowSpan="2"/>
         <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.Start}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="5" Margin="0,32,0,0" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
         <TextBlock  TextWrapping="Wrap" Text="{Binding SelectedHunt.End}" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="7" Grid.RowSpan="2" Margin="0,0,0,78" Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>
         <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="{Binding SelectedHunt.Topic}" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="5" Grid.Row="1"/>
-        <Button Content="Hunt!" HorizontalAlignment="Left" Margin="91,103,0,0" VerticalAlignment="Top" Height="90" Width="196" Click="Button_Click" Grid.RowSpan="3" Grid.ColumnSpan="3" Grid.Column="4" Grid.Row="8"/>
+        <Button Content="Hunt!" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="90" Width="196" Click="Button_Click" Grid.Column="5" Grid.Row="10"/>
+        <TextBlock Grid.Column="4" HorizontalAlignment="Left"  Grid.Row="2" TextWrapping="Wrap" Text="Time" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock Grid.Column="4" HorizontalAlignment="Left" 
+                   Grid.Row="3" TextWrapping="Wrap" Text="Theme" VerticalAlignment="Center" RenderTransformOrigin="-0.25,-0.462" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock Grid.Column="3" HorizontalAlignment="Center"  Grid.Row="5" TextWrapping="Wrap" Text="Reward" VerticalAlignment="Top" Style="{StaticResource SubheaderTextBlockStyle}" Grid.ColumnSpan="2" Width="89"/>
+        <TextBlock Grid.Column="4" HorizontalAlignment="Left"  Grid.Row="7" TextWrapping="Wrap" Text="Start" VerticalAlignment="Bottom" Style="{StaticResource SubheaderTextBlockStyle}"/>
+        <TextBlock Grid.Column="4" HorizontalAlignment="Left"  Grid.Row="8" TextWrapping="Wrap" Text="End" VerticalAlignment="Center" Style="{StaticResource SubheaderTextBlockStyle}"/>
 
     </Grid>
 </Page>

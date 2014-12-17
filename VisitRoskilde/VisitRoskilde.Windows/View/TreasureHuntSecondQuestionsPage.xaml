@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="DarkOrange">
         <CheckBox x:Name="chckbox_A1" Content="1154 AD" HorizontalAlignment="Left" Margin="779,271,0,0" VerticalAlignment="Top" Height="47" Width="235" IsChecked="False"/>
         <CheckBox x:Name="chckbox_A2" Content="980AD" HorizontalAlignment="Left" Margin="779,353,0,0" VerticalAlignment="Top" Height="46" Width="235"/>
         <CheckBox x:Name="chckbox_A3" Content="888 AD" HorizontalAlignment="Left" Margin="779,430,0,0" VerticalAlignment="Top" Height="47" Width="235"/>

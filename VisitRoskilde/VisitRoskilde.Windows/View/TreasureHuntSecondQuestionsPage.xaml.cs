@@ -31,18 +31,7 @@ namespace VisitRoskilde.View
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            
-            if (chckbox_A2.IsChecked == true) 
-            {
-                this.Frame.Navigate(typeof (HuntFinalPage));
-            }
-            else
-            {                
-                this.Frame.Navigate(typeof (TreasureHuntFailPage));
-
-            }
-            
+            this.Frame.Navigate(chckbox_A2.IsChecked == true ? typeof (HuntFinalPage) : typeof (TreasureHuntFailPage));
         }
 
         private void btn_proceed1_PointerEntered(object sender, PointerRoutedEventArgs e)

@@ -37,8 +37,13 @@ namespace VisitRoskilde.View
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-              var msg = new MessageDialog("Test hint");
+              var msg = new MessageDialog("It is somwehere in Roskilde");
               msg.ShowAsync();
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

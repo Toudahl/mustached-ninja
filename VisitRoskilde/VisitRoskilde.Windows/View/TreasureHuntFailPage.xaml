@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="DarkOrange">
         <TextBlock HorizontalAlignment="Left" Margin="24,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextBlockStyle}" Height="339" Width="565">
         	<Run Text="What a shame..."/>
         	<LineBreak/>
