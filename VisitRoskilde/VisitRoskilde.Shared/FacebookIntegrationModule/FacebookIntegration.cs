@@ -194,10 +194,25 @@ namespace VisitRoskilde.FacebookIntegrationModule
 
                 var endUri = new Uri(redirectUrl);
                 //This handles the real log-in action
-                WebAuthenticationResult WebAuthenticationResult = await WebAuthenticationBroker.AuthenticateAsync(
+                WebAuthenticationResult WebAuthenticationResult;
+                
+                WebAuthenticationResult = await WebAuthenticationBroker.AuthenticateAsync(
                                                         WebAuthenticationOptions.None,
                                                         loginUrl,
                                                         endUri);
+
+
+
+
+#if WINDOWS_PHONE_APP
+
+                WebAuthenticationResult = await WebAuthenticationBroker.AuthenticateSilentlyAsync(loginUrl, WebAuthenticationOptions.None);
+
+
+#endif
+
+
+
                 if (WebAuthenticationResult.ResponseStatus == WebAuthenticationStatus.Success)
                 {
                     var callbackUri = new Uri(WebAuthenticationResult.ResponseData.ToString());
