@@ -99,7 +99,7 @@
         <referencesInternal>
           <reference
             Id="738d964c-624b-401e-99ca-5ff480b4cb50"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETCore%2Fv4.5.1%2FSystem.Collections.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1)"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhoneApp%2Fv8.1%2FSystem.Collections.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1)"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -157,13 +157,209 @@
                 <referencesInternal>
                   <reference
                     Id="441f0d1d-a354-4490-a23c-5970c03f198c"
-                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETCore%2Fv4.5.1%2FSystem.Collections.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhoneApp%2Fv8.1%2FSystem.Collections.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1) ParameterIdentifier%3D0"
                     tag="ViewCode" />
                 </referencesInternal>
                 <ownedParameterableElement>
                   <class
                     Id="d28d3c2d-6f89-4c64-8c2a-37ff886030da"
                     name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="86a094af-8c13-494c-aff2-9bf5d0d5a9d0"
+        name="Dictionary&lt;String‎, String‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e8513fc1-6ba3-4f9c-88c9-171db9356199"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af268fc3-c71e-4a96-85c1-ef7f31bf4048">
+                <propertyInstance
+                  Id="fe255cbe-20d8-4d40-badd-b2c3edbc8128"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4d43833-e915-46f3-97d0-1f7b8eb5eb7c">
+                <propertyInstance
+                  Id="73befd71-55ad-43b3-bc25-07635c51c2e6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d85db73c-8958-4241-9393-02a1cb96ec7e">
+                <propertyInstance
+                  Id="a9a17cf4-86c0-4ac4-aa88-48f7ba64b010"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c1ae609-337c-4c48-b088-ad37fee4807b">
+                <propertyInstance
+                  Id="3932c87b-52b5-4d68-8099-fdf2e2bd3663"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3545609f-2355-4a60-862b-f7bfd40790aa">
+                <propertyInstance
+                  Id="52976c82-2ac6-412c-b56e-7eba8aab7348"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="2a08af85-5c6b-40e7-afd1-d3a3678dd5a2">
+            <redefinableTemplateSignatureMoniker
+              Id="b1936b17-0c6b-43cd-9e57-a62c388126f7"
+              LastKnownLocation="Package1_1224.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="bb4bc608-c593-403e-8d5f-31aa926e4c22">
+                  <actuals>
+                    <classMoniker
+                      Id="a507a680-6260-47df-b372-6560bf17d54f"
+                      LastKnownName="String"
+                      LastKnownLocation="Package2_1221.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="48594384-65d1-4ef8-8a24-16764ed6e2de"
+                      LastKnownLocation="Package1_1224.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="edbf7d9b-90ef-4760-bf3c-bfc6f7a30e8b">
+                  <actuals>
+                    <classMoniker
+                      Id="a507a680-6260-47df-b372-6560bf17d54f"
+                      LastKnownName="String"
+                      LastKnownLocation="Package2_1221.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="da3999a3-53f9-4c33-9504-b7a9d37543cd"
+                      LastKnownLocation="Package1_1224.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cede8e35-1456-44a2-9f90-4d031ecba904"
+        name="Dictionary"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="bd7ede11-4e3e-4c5b-b7bb-3c343e9d9303"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhoneApp%2Fv8.1%2FSystem.Collections.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="55fae54c-a49e-4aa5-a1b2-0f953e18e723"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7dd0802-2cef-4148-a115-be0183f410f3">
+                <propertyInstance
+                  Id="d0f800d6-8568-4b4a-8f0c-1409cf947c6e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="28387439-f4c5-4fd5-b80b-68e57ff85703">
+                <propertyInstance
+                  Id="72d71d73-0bc1-4458-afe6-a732f91db9c4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="87fd997e-df0e-476a-90f7-e61e1eebb4d0">
+                <propertyInstance
+                  Id="c5b493d6-27b9-4f56-ad88-b519b6f5abe9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c4a72d1f-cb54-40cd-bd22-9b674604ca6c">
+                <propertyInstance
+                  Id="5c058154-2208-47dd-8bcd-5c13e1c6c38a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1363d6e1-967b-4d08-b493-ed5dd548700b">
+                <propertyInstance
+                  Id="a35a95b4-ca94-45cc-852f-72485758b281"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="b1936b17-0c6b-43cd-9e57-a62c388126f7"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="48594384-65d1-4ef8-8a24-16764ed6e2de">
+                <referencesInternal>
+                  <reference
+                    Id="2e239446-896a-4adf-8cb7-b3be94e9621b"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhoneApp%2Fv8.1%2FSystem.Collections.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="78df8d20-8e57-4911-87bc-046ebc78d10c"
+                    name="TKey"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+              <classifierTemplateParameter
+                Id="da3999a3-53f9-4c33-9504-b7a9d37543cd">
+                <referencesInternal>
+                  <reference
+                    Id="7340e806-a811-455f-8bcb-358e80ed8ed7"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhoneApp%2Fv8.1%2FSystem.Collections.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2) ParameterIdentifier%3D1"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="eb9e2c7a-0684-4ef7-b539-1a1dfd2383d9"
+                    name="TValue"
                     isAbstract="false"
                     isLeaf="false"
                     isActiveClass="false" />

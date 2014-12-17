@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Text;
 using Windows.Data.Xml.Dom;
-using VisitRoskilde.Annotations;
-using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.WeatherModule
 {

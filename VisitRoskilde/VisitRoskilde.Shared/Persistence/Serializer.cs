@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
-using System.Text;
 using Windows.Storage;
-using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.Persistence
 {

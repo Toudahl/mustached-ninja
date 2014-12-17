@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace VisitRoskilde.Navigation
+﻿namespace VisitRoskilde.Navigation
 {
     static class Navigator
     {

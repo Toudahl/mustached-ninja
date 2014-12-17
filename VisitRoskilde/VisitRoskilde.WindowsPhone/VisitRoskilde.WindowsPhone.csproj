@@ -89,8 +89,23 @@
     <Compile Include="View\ExploringEntryPage.xaml.cs">
       <DependentUpon>ExploringEntryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\HuntFinalPage.xaml.cs">
+      <DependentUpon>HuntFinalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\HuntTaskCompletePage.xaml.cs">
+      <DependentUpon>HuntTaskCompletePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TakePicturePage.xaml.cs">
+      <DependentUpon>TakePicturePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\TreasureHuntEntryPage.xaml.cs">
       <DependentUpon>TreasureHuntEntryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TreasureHuntQuestionsPage.xaml.cs">
+      <DependentUpon>TreasureHuntQuestionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TreasureHuntSecondQuestionsPage.xaml.cs">
+      <DependentUpon>TreasureHuntSecondQuestionsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +114,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Roskilde_Hall.jpg" />
     <Reference Include="Facebook">
       <HintPath>..\..\packages\Facebook.7.0.0-alpha\lib\portable-win81+wpa81\Facebook.dll</HintPath>
     </Reference>
@@ -114,11 +130,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ExploringEntryPage.xaml">
+    <Page Include="View\HuntFinalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\HuntTaskCompletePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TakePicturePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\TreasureHuntEntryPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TreasureHuntQuestionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TreasureHuntSecondQuestionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ExploringEntryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

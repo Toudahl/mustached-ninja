@@ -1,26 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Dynamic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Windows.ApplicationModel.Appointments.AppointmentsProvider;
 using Windows.Devices.Geolocation;
 using Windows.Security.Authentication.Web;
 using Windows.UI.Popups;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media.Imaging;
 using Facebook;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using TouristAppV4.Common;
-using VisitRoskilde.Annotations;
 using VisitRoskilde.Interfaces;
 
 namespace VisitRoskilde.FacebookIntegrationModule
@@ -210,10 +200,25 @@ namespace VisitRoskilde.FacebookIntegrationModule
 
                 var endUri = new Uri(redirectUrl);
                 //This handles the real log-in action
-                WebAuthenticationResult WebAuthenticationResult = await WebAuthenticationBroker.AuthenticateAsync(
+                WebAuthenticationResult WebAuthenticationResult;
+                
+                WebAuthenticationResult = await WebAuthenticationBroker.AuthenticateAsync(
                                                         WebAuthenticationOptions.None,
                                                         loginUrl,
                                                         endUri);
+
+
+
+
+#if WINDOWS_PHONE_APP
+
+                WebAuthenticationResult = await WebAuthenticationBroker.AuthenticateSilentlyAsync(loginUrl, WebAuthenticationOptions.None);
+
+
+#endif
+
+
+
                 if (WebAuthenticationResult.ResponseStatus == WebAuthenticationStatus.Success)
                 {
                     var callbackUri = new Uri(WebAuthenticationResult.ResponseData.ToString());
@@ -389,8 +394,8 @@ namespace VisitRoskilde.FacebookIntegrationModule
 
             if (pos != null)
             {
-                latitude = pos.Coordinate.Latitude;
-                longitude = pos.Coordinate.Longitude;
+                latitude = pos.Coordinate.Point.Position.Latitude;
+                longitude = pos.Coordinate.Point.Position.Longitude;
             }
             RestaurantList();
         }

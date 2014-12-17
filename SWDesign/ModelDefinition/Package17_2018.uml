@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5381802c-943a-4dff-b653-f9697d363c4b"
+  name="Facebook"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b5239b2d-8a38-400d-84d1-efd848214e74"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DFacebook"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d463617d-d715-45bc-b23e-9e62a6c52842"
+        name="FacebookClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7dd81f1b-f2cb-4ff2-b543-23e8107d1b2a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2Fpackages%2FFacebook.7.0.0-alpha%2Flib%2Fportable-win81%2Bwpa81%2FFacebook.dll&quot; Namespace%3DFacebook Type%3DFacebookClient"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="38c2ba6a-d1eb-465f-bc82-79869045ba41"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="35b4c29e-5617-457b-b7ee-2e7f07a431d7">
+                <propertyInstance
+                  Id="f4e95463-851e-461a-840d-c078e91b214d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cb976b7-2e6f-4125-a49e-d268b366d520">
+                <propertyInstance
+                  Id="d2c13432-b93c-499b-a2be-58e57c353ff1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bd669c7b-8b25-43f6-97d5-d024ef77d117">
+                <propertyInstance
+                  Id="bbb1888f-9f91-474e-b46b-6bef3369cf43"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9020db5f-e937-477d-8e57-3d61ce1be3f9">
+                <propertyInstance
+                  Id="e925146f-5901-4795-aa9b-31ac52d2b94e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5845afc4-33a7-4221-b99a-faaef60d3e09">
+                <propertyInstance
+                  Id="ac387acc-2465-4a8f-b957-d8929cccdfb3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

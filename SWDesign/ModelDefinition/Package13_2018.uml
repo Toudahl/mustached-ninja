@@ -1,0 +1,1501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e19ae006-e645-4a86-aeb5-e20921af780f"
+  name="Model"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="78112373-118d-4178-a21c-1e2c6df79acc"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVisitRoskilde.Model"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6a54fe4b-e3f5-4fbe-9a1d-74a01cf8a89d"
+        name="HuntTopicModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d6a33e6e-b663-4a27-8517-1c5a3e1bf723"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1e231bc5-7331-4338-bc07-14a338481ada"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="108550c5-da43-4428-8794-87ef3527b77b">
+                <propertyInstance
+                  Id="570c7fb1-cddf-4c9d-a1e8-8e90127e89f6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cef7a92a-ff0d-4269-8b95-a7f6c1887651">
+                <propertyInstance
+                  Id="f745de61-4bc0-4208-9552-10df5cd98032"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1d95b6fe-8294-427c-9b60-62bd72329b6c">
+                <propertyInstance
+                  Id="f0c6f8e0-9c9c-4b08-a08d-250ed2edc651"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2ff19922-27af-4ef8-b75b-024523b05de8">
+                <propertyInstance
+                  Id="e2e9637a-1a33-4350-97dd-065ba62118b6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b75b97f2-f132-4be3-93ed-5c333f29f6f5">
+                <propertyInstance
+                  Id="33983aad-2a70-43c1-8351-9587b18fc004"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="03406e8e-bc05-4cb7-87c0-d6b22560d6ee"
+            isDerived="false"
+            sourceEndRoleName="HuntTopicModel"
+            targetEndRoleName="Topic"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a507a680-6260-47df-b372-6560bf17d54f"
+              LastKnownName="String"
+              LastKnownLocation="Package2_1221.uml" />
+            <description>Property Topic references type String.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9032fdcd-bb17-4c78-b192-5e05deb5bfaf"
+                  name="HuntTopicModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e3400e85-7380-4b24-ad46-5b8ba8bd210b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e55c080a-5495-40eb-af22-8c61d0d66a1a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52a62e69-f932-4bfe-9cc9-2b6472dff3c4"
+                  name="Topic"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="07075b3c-dd48-4040-aad3-890b50bee7ca"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2472c006-2b5a-4a8b-9219-b16b4da6230d"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2195750a-bae7-4a58-84e1-3f0cca4b4d49"
+            isDerived="false"
+            sourceEndRoleName="HuntTopicModel"
+            targetEndRoleName="Time"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a507a680-6260-47df-b372-6560bf17d54f"
+              LastKnownName="String"
+              LastKnownLocation="Package2_1221.uml" />
+            <description>Property Time references type String.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f25b26c-897f-474d-b408-fbe1a86d6709"
+                  name="HuntTopicModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="395ef252-7fb3-4d37-a7bc-7bac61a820ce"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6cd39014-05a9-4a62-8dc7-85d09987d9c0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b7c749a-4960-4367-b3f6-f6f9364c6e21"
+                  name="Time"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c1a8d884-21aa-4702-aab1-fb0d30ed95c1"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2478ea7e-9339-4e17-abe4-1c9060877911"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="88e70fbe-c8ff-464f-a3f7-c9cc64e84bd2"
+            isDerived="false"
+            sourceEndRoleName="HuntTopicModel"
+            targetEndRoleName="Theme"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a507a680-6260-47df-b372-6560bf17d54f"
+              LastKnownName="String"
+              LastKnownLocation="Package2_1221.uml" />
+            <description>Property Theme references type String.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35e57232-dbdc-437b-bffe-4f096fcd34a7"
+                  name="HuntTopicModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7192c633-9a56-4b36-92ae-10fe1142b375"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0756d84b-ba5a-4305-915a-7949f6650d09"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff09f6bd-8c6a-4eac-aa53-5951c1b86cc6"
+                  name="Theme"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="21f83402-f86c-418e-9ed4-e4d7c92a707b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fb01c376-8941-4d7a-8090-229a8c3c10cf"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="458734d5-364f-430f-b92b-a256d03834fe"
+            isDerived="false"
+            sourceEndRoleName="HuntTopicModel"
+            targetEndRoleName="Reward"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a507a680-6260-47df-b372-6560bf17d54f"
+              LastKnownName="String"
+              LastKnownLocation="Package2_1221.uml" />
+            <description>Property Reward references type String.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7337667f-ece8-4909-8b73-ead61d441758"
+                  name="HuntTopicModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1ef726f3-d172-4136-a8b1-0517ff47b574"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4d996878-71ff-4150-86f4-83bc9f6e3137"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98bc436d-5437-4f6b-bcee-052ed4239f44"
+                  name="Reward"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b5be09a7-2a8f-41af-a939-d49d11e80191"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="227a1b80-e7d7-43f0-9d9d-ee0023a23ef1"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="668ae34d-56e5-4df7-8d2e-ec69246a1b38"
+            isDerived="false"
+            sourceEndRoleName="HuntTopicModel"
+            targetEndRoleName="Start"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a507a680-6260-47df-b372-6560bf17d54f"
+              LastKnownName="String"
+              LastKnownLocation="Package2_1221.uml" />
+            <description>Property Start references type String.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2691194e-85b3-4c21-b8a7-562985798c93"
+                  name="HuntTopicModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5ea2dc6a-fc48-4437-8e15-40154b35296f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bd69361f-88a8-45a8-a25b-9c090e688630"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02cf2fd0-c1af-4744-a66a-39c3c19a985f"
+                  name="Start"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9e2db6a3-c2cc-4764-a1c8-884586fb2205"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="87d7541e-9d74-4c46-9013-3b50d34f9fe3"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="71135d8d-320f-4168-bf49-665b45e05806"
+            isDerived="false"
+            sourceEndRoleName="HuntTopicModel"
+            targetEndRoleName="End"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a507a680-6260-47df-b372-6560bf17d54f"
+              LastKnownName="String"
+              LastKnownLocation="Package2_1221.uml" />
+            <description>Property End references type String.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="293b19a6-b92e-45ac-b44c-2cf649117c43"
+                  name="HuntTopicModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="19cbd239-c78b-45b1-ada4-e74c112e3143"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="76071bcb-08d4-48ae-8db2-a1ad81ba30e9"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05bcbeea-19e8-412e-a0cd-694cfd436078"
+                  name="End"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b339d803-9ace-41da-ad35-5abc03d6f998"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="68ae3827-3a5f-4082-8454-16d45795c966"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2e70b391-fbb3-4da8-b2a6-ad0dc7165768"
+            name="Topic"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c43b3e98-24b4-49a0-b612-f731f1e23e3f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3DTopic"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="20cb1b11-194e-4ad6-9884-97359d336148"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08c327b8-dfa5-43df-a982-b19dcc233825">
+                    <propertyInstance
+                      Id="dac787e0-bcd0-4f9f-a0a1-5bd147aaad3f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d23fd53-a254-47e9-bb5e-f828badb2d60">
+                    <propertyInstance
+                      Id="b85117a9-5675-4cc1-9bdb-a43fbbf4b181"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de036a96-b805-4143-9a1f-0042c931aab4">
+                    <propertyInstance
+                      Id="1112f274-a2e8-41d4-867f-4a57a4c2d087"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd4a7ef6-f144-4ddd-b264-f2d4011dabc0">
+                    <propertyInstance
+                      Id="2f8b2c3a-e110-495c-b639-f14978730635"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af920589-9e79-4dc8-bca7-aa305c127714">
+                    <propertyInstance
+                      Id="09b6dd64-cc8b-48d2-ad92-dc58b10093f8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5de24a1b-7954-4cd2-97e0-33462ada550e">
+                    <propertyInstance
+                      Id="cb1a9166-3804-41db-8932-e2563753d506"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aeee6783-3643-449b-8372-5e12ce7f6a09">
+                    <propertyInstance
+                      Id="74d0209e-cca1-4497-a188-b70ff064a8dd"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="49c308b4-b8b4-4739-a3e0-5fa4dbed578b"
+            name="Time"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1d857eed-c134-44a1-bd25-a44944b49001"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3DTime"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f98f36af-5458-4de2-b6de-0224422bd2f0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a500b906-72d8-4074-b37a-14f637bea0ed">
+                    <propertyInstance
+                      Id="a2c15815-e74a-447a-aced-9707a5106cc1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea8b8b60-df06-4e96-bda7-ece58462073b">
+                    <propertyInstance
+                      Id="4c4aaf1b-d708-4da4-9d8b-a82107146dbc"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a9489f4-50bd-40d3-b75c-b891f118c5a4">
+                    <propertyInstance
+                      Id="8e052bad-2c51-4369-9ffd-e0555662a15c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="837fa5eb-5568-463f-a1d3-cafe5e617c40">
+                    <propertyInstance
+                      Id="2814e6f2-354a-4c06-904a-e01ac485bb5a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53ad9cb3-7475-41cc-b3b1-ea85b99cbb9b">
+                    <propertyInstance
+                      Id="198f6b38-c439-41aa-b7bf-4260dd4619b6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1dbd53dc-0ee5-441c-8cd5-6e64472ed8b5">
+                    <propertyInstance
+                      Id="99afe590-e1ff-4e7a-92d0-3dc51ea531d1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02224b9b-aa64-4e85-9260-bedd79bb7b10">
+                    <propertyInstance
+                      Id="2d8e1e1a-8dfe-47ef-9ba8-a222f80d72af"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="033bdf28-c403-45e6-b5aa-023d41a32bd1"
+            name="Theme"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d2c9fe23-c789-4ada-98c9-9679e92489ff"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3DTheme"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2421f672-0a7a-46ba-9c4d-1a9235f3ea5b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bafe5d2c-841d-418d-a18d-299dc64ea7c2">
+                    <propertyInstance
+                      Id="9cf068ae-b103-4db3-89a8-1e35cbb01973"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d844603e-830b-4d4c-bf60-229a9761cb23">
+                    <propertyInstance
+                      Id="caf948c3-81c5-424e-9069-64b185ed07f1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc7f135e-24c5-42b8-9be6-dc9899d66552">
+                    <propertyInstance
+                      Id="fdbf56d2-7e44-417f-9ccb-d43295900d1d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aecda7af-7729-4d41-8e10-ea26c37c04bb">
+                    <propertyInstance
+                      Id="2a464127-c451-4260-81c1-9a37cf6d41df"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53e6f794-e7d8-4624-a9a3-44fa23ff8137">
+                    <propertyInstance
+                      Id="b0d356cf-a3cb-4e9c-9e60-8375fe79ed39"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97fd7577-5493-4366-adfc-7a6ec853ee41">
+                    <propertyInstance
+                      Id="292a578d-e8ce-4203-a215-3fb8ee534102"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e5298de-75d7-4a10-8caa-2186521ecfe0">
+                    <propertyInstance
+                      Id="45a9b48d-0335-4620-96b9-85332023290a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="caf2a56a-c6d9-406a-86cf-d0f9c411adb6"
+            name="Reward"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8c51fe0c-0b4e-40b6-bef4-8b9aa5c7cf0f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3DReward"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="66fb3c1d-cd2b-4334-8431-446b1fd1c4a2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aee8af6a-f783-4ba1-a742-e69a6362bc57">
+                    <propertyInstance
+                      Id="b9d39efa-23a5-4b9e-a423-ee3be0e3f7da"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd7851ad-23f2-44a2-acc9-4a9f6c4ed945">
+                    <propertyInstance
+                      Id="280bb93f-c78b-49fe-bab7-c7dec56be818"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dee6907c-05bc-41db-aaa3-fa61e45a14f5">
+                    <propertyInstance
+                      Id="287088c9-7ecd-4c87-8df7-2e68e18f91c1"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="818c1cac-6f64-477a-a879-c3617b090def">
+                    <propertyInstance
+                      Id="c4cc5d70-0da3-4584-85f3-17d135bd8299"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95659477-dc30-4b88-954d-f6e0da7e6aef">
+                    <propertyInstance
+                      Id="b9f35840-3477-4df2-abf8-d7a5ffe34966"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08a6c97d-896f-47eb-b504-a1defe15a9ae">
+                    <propertyInstance
+                      Id="2368b408-6bd7-44e1-b6c8-c829ddb5d76c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91d2e5b6-59e3-4b4e-b9bf-8608a368d340">
+                    <propertyInstance
+                      Id="0e2cbc77-9c55-41e6-b757-98f4e3d66adf"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="794d6775-471e-4077-883b-a9fbeb8e8bab"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="aa91fe80-a67c-4cf9-a65f-03c7f0a5ce3a"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3DStart"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b4c95336-9a46-484e-ac4d-a27824d02669"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="006ca979-32cf-4ee1-94b5-829943b67681">
+                    <propertyInstance
+                      Id="a1961162-37a5-41f3-9e98-123af9d1fd7b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="608702b0-a982-4e2b-ba7c-f2b8d4ba56e1">
+                    <propertyInstance
+                      Id="a05fb604-faf4-4354-b954-70906b66d2a1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1e5a383-dca0-4dc7-a1cd-c1c5d6db784d">
+                    <propertyInstance
+                      Id="c3c3de44-f9ca-414d-80f4-888fe5ceb0fc"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bff50ac-0309-43bc-8cee-d756a52bf765">
+                    <propertyInstance
+                      Id="31281079-e078-4fa8-84cf-a97add9f68af"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35fa050d-7c52-4773-8747-9547b194b2bb">
+                    <propertyInstance
+                      Id="483f1e23-849e-4934-a586-e6a61ceb5d69"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="540a92d6-ffe0-4bb9-8b37-a371fdb3b0eb">
+                    <propertyInstance
+                      Id="46da3638-9a4d-4e81-a11d-eb9260798593"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38f56933-505a-4fe7-8be8-d2b5e8518b6a">
+                    <propertyInstance
+                      Id="329f9fef-b9b8-4c7e-ad4c-a52a2f68c137"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="aec29699-4837-4325-916b-ee8d0965bd84"
+            name="End"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="62a20b0f-4af7-46c1-87ee-b5ecd119ddb0"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3DEnd"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45fc289d-eae4-4a3b-85b9-225a224acd4c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e565735-3ddc-4352-b9a6-6609b62d00ae">
+                    <propertyInstance
+                      Id="c5e86051-55a1-4002-8f35-45d4614395d9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc0b0702-24da-474a-8c08-4461a4a98aec">
+                    <propertyInstance
+                      Id="8c48664f-8d61-43c4-a7a4-dfcc2d64cbb6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b60919a-e22b-42c8-8804-94816c523d14">
+                    <propertyInstance
+                      Id="14c4ec65-f844-42b1-b01b-bfe66e0c71c9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92b2f585-0605-4297-8d60-2eeacdb8aa18">
+                    <propertyInstance
+                      Id="77ddc1a5-7776-48b8-80af-26732d133429"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a9018bf-91e7-4ff5-bbbb-8ce9e3dd3bfa">
+                    <propertyInstance
+                      Id="d1d92870-cc9d-4283-8225-9d82c2095779"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8345a68-2c30-43ab-bef3-a803a3249e7b">
+                    <propertyInstance
+                      Id="af8b5535-0b65-4f16-abd8-20469ff0019e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5afabb2b-d889-4f09-8857-187ab943cfb7">
+                    <propertyInstance
+                      Id="52260815-3721-49cd-a4d1-8e0e9f14ae29"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4318c6a1-10b0-4a4f-9170-ce323af139a3"
+            name="_time"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1de8ccf9-8fa9-4874-8e59-8b62998204e0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3D_time"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cf7f5148-a425-4797-aceb-0d826ce95817"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfa78820-e135-4b89-8429-9239f1d4bf2c">
+                    <propertyInstance
+                      Id="42add4bc-2a7d-443e-b7a8-b6ac3b261e92"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e43d349f-27a3-42de-92ec-daccfc2af326">
+                    <propertyInstance
+                      Id="f2ae9ba1-ca63-4f7b-b5a8-80135cdb36e9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="def41b01-5260-4dce-b915-791bdb794ff2">
+                    <propertyInstance
+                      Id="2241e772-9e92-48cc-a21e-50027d5400b3"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b6fb27b-9d71-4e8e-a86b-bdc4f248264c">
+                    <propertyInstance
+                      Id="7ce0d54e-1ae3-4a09-949f-32743d848c34"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8301d369-e672-4a74-b462-85b6500d8a88">
+                    <propertyInstance
+                      Id="fae7ddc1-beb8-4824-9fdb-4d27911633fd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="03809f0e-832d-4c09-afc4-2ca26b861924"
+            name="_end"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8888e6b4-c913-423a-b12b-b0685a759fb8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3D_end"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e3e1b44f-acbd-4638-b758-4d48225f0c19"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65481247-904f-40cf-a064-93893adee580">
+                    <propertyInstance
+                      Id="a897de05-16d6-42aa-955e-fa9984e32fcd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4adc1f00-637b-4644-856d-5fc2c82534f8">
+                    <propertyInstance
+                      Id="bd28a6af-cad5-40fe-8602-9ff78d36f0e1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10d129e1-3b44-4b12-9bda-f0ad31e3e856">
+                    <propertyInstance
+                      Id="f9651079-2243-4735-9bc0-288b29754db0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51c7bdba-ce83-4ec2-a6fe-eba59e95f77f">
+                    <propertyInstance
+                      Id="ed13b6c9-e70b-45b5-97a9-16560a2d6323"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3724c51a-c2a9-4f4e-8571-1fdb4f05251c">
+                    <propertyInstance
+                      Id="0b0622d4-3b8a-4f68-a6b3-bc4ee4b02771"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d23ba5c9-bd12-4363-9d68-a3f35d68a214"
+            name="_start"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e44b6374-19bd-435e-b0d8-1873fb35b39b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3D_start"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7b46ff19-b69a-4ef6-a57b-d469b4ef7552"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c590f268-997e-40e8-9af1-b1e88b02d360">
+                    <propertyInstance
+                      Id="9e10671b-c92c-4534-b37b-f4f3b364fd0c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc1ba4be-9aa7-4864-b2e7-282bf5f60ee2">
+                    <propertyInstance
+                      Id="a2a8fbb9-6f08-406e-92c2-212e5502c861"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b75f62df-9236-4f98-b43b-39f926788f84">
+                    <propertyInstance
+                      Id="e14f7309-73e1-4a21-b3a3-58650fc58c82"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45bdee40-daba-4e2c-9f28-ae791e2c1799">
+                    <propertyInstance
+                      Id="63466215-2e30-4871-9bed-e2984ccb81bb"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c106315-226a-40e0-9d85-238f3b66e1fc">
+                    <propertyInstance
+                      Id="08d5e277-92cd-46c1-ab67-e1205ec9cd87"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0409b032-fa93-4283-a103-c1c9b3b6536d"
+            name="_topic"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="20705c0a-4202-4dea-b1eb-27abb7485288"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3D_topic"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b63de5d1-be66-40e2-949a-bda59c006ed0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39d2c7db-bf7f-41be-ab51-7dc6500b60ca">
+                    <propertyInstance
+                      Id="9ab1107b-2f29-47e5-b330-f871b4c1e571"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5e5194f-1f01-4833-bcdf-b535e03c2e40">
+                    <propertyInstance
+                      Id="b80da971-6a39-44cb-9892-3f1bd9582b6e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c5670da-3cf3-4f1c-8ab9-ea126372670f">
+                    <propertyInstance
+                      Id="c35bcb1d-f8c8-421d-8ed0-85a03ae34169"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce2c3ddd-f3a2-4883-a677-dae17f01f483">
+                    <propertyInstance
+                      Id="ff1d790c-cbfb-4a4e-af2f-e460f5edb619"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef26b3fd-a221-4a08-a885-26d25c0a7c86">
+                    <propertyInstance
+                      Id="86fc013a-65c9-45e5-b418-abc779bca330"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="96a85b93-488b-4014-9af2-ec0088fd5bf1"
+            name="_theme"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dc5f232c-dd57-4802-9c18-795e3377fdee"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3D_theme"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b7328b6d-eedd-41cf-8fc7-3a1f9dfa2a3e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4185f82e-72e9-4310-90e0-cdb6f01afb2e">
+                    <propertyInstance
+                      Id="835d5dfd-363f-4c88-bc23-1a0f4641fcfd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73e54614-7ea9-4244-98dd-bf05f8eed37a">
+                    <propertyInstance
+                      Id="99032c2e-d087-4cf0-960c-214f84668107"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e123b79-6d13-40e4-901b-e2eaedb3adff">
+                    <propertyInstance
+                      Id="574025be-981d-4573-8043-81a0bf78aa83"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c25d219-3a1e-41a7-9582-de8ceb048535">
+                    <propertyInstance
+                      Id="3e2c9279-7936-443a-af8d-8cbc5850a7ff"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="286bd0b8-57e5-4390-9c05-86ace893a4eb">
+                    <propertyInstance
+                      Id="21b397a2-d1d4-4768-a807-98cb40c6e34e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="adbe12ed-3112-4bf5-a6ad-06e404903f5d"
+            name="_reward"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="21917375-7366-4c01-884d-c71cecaa606e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3D_reward"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47bfdb1b-84d8-4599-a20d-1778345b8412"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ca93a2f-233f-432e-a8db-a69602fc4f53">
+                    <propertyInstance
+                      Id="7b64a5e7-3923-4fc2-a33e-2652ae49e205"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81ee20d5-4784-4e5e-8052-c1a134831417">
+                    <propertyInstance
+                      Id="c8edee4d-5e0e-40a5-9cbe-c21a638118d6"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c83ed87-2bb9-4028-8f93-d9a7dfe77a5c">
+                    <propertyInstance
+                      Id="fdaf38ce-04ff-4f7f-bd90-a3437211c8c7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1e59829-ec9a-4f93-8d1d-b99cf83897c0">
+                    <propertyInstance
+                      Id="90069dad-8ded-4584-95ce-946c2adafef6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8704b57-aa68-4904-a9f3-5554a0678136">
+                    <propertyInstance
+                      Id="6ab287a7-fe56-49a5-ae5e-df46c666138f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="31aaf5c9-9468-4c74-9cbe-2ff783bc00c7"
+            name="HuntTopicModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b41230f6-e684-46ce-a76d-9d0d5c5a73cf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ed91da06-c85f-4f72-b7ba-650fcfce8572"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77b02b8a-9689-4e3c-b080-4c78fa8daf70">
+                    <propertyInstance
+                      Id="a793a87d-969c-4de0-84ad-531deffb1deb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee9c6fe3-df71-4544-b533-d5bc44928bc7">
+                    <propertyInstance
+                      Id="64f538cf-8bdf-4d46-bb91-56a3b0932de0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0436d5ea-5da5-4c1a-87a4-e4314d5458a8">
+                    <propertyInstance
+                      Id="8ba99583-6c59-4e20-909d-2510728a84af"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f82c6c4-d2b8-47c0-9965-8025ecd8f6cc">
+                    <propertyInstance
+                      Id="0de09bb1-8183-479d-af41-a0635d587779"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="998d7bad-4330-4cbd-b8fb-2caa220c9253">
+                    <propertyInstance
+                      Id="f6b0d893-dbce-4b7e-85c2-5109ec9078ad"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3eb90b96-f1ef-4283-8d69-ed3ec8ed19ab">
+                    <propertyInstance
+                      Id="907bf852-ef87-477b-ac33-84cab6b343b4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="00afe2ba-8822-4553-b4f2-62d299bea738"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e61e7732-05ce-4312-bdb2-6ed111fa9dcb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Model Type%3DHuntTopicModel Member%3DToString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="adfe8c8a-5523-40d0-a2ec-60d7bd413e9b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6c726a1-a0d2-414f-abe0-cc9a82678dbb">
+                    <propertyInstance
+                      Id="e32c8146-de93-4aac-8f9a-5a6e546c8a05"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3304931e-9f57-44d6-b905-056fd41675ef">
+                    <propertyInstance
+                      Id="81084d84-e86b-48f4-b8f9-9d7c32bb5eb6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7e7f193-4bdc-4d27-a901-70837e10b779">
+                    <propertyInstance
+                      Id="5c49d98c-088c-4887-9de1-609130853c2c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac12a585-940a-42a9-88e1-dab8af5112b2">
+                    <propertyInstance
+                      Id="065d234e-9e13-48f0-8d6d-7a3cc3236085"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f40fd75-b087-49c6-9cfe-5903e1252392">
+                    <propertyInstance
+                      Id="dfd6816b-e139-4589-84db-8384f6c6c2ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4236081a-1d08-4a7d-b6c8-5bd63f2bf434">
+                    <propertyInstance
+                      Id="1d4ab8e0-5866-46ca-96d8-9d65daac689a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83181f2b-a93c-4ebe-a3f0-585b2aa33738"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a507a680-6260-47df-b372-6560bf17d54f"
+                      LastKnownName="String"
+                      LastKnownLocation="Package2_1221.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

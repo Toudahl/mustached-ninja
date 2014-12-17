@@ -3860,6 +3860,24 @@
         Id="1b0229ec-1fcb-4f6a-9621-d1fe2280bfd6"
         name="ExecutionEvent" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fd218b74-8648-4a2e-afd6-b427e15e0b66"
+        LastKnownName="Windows"
+        LastKnownLocation="Package1_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5381802c-943a-4dff-b653-f9697d363c4b"
+        LastKnownName="Facebook"
+        LastKnownLocation="Package17_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="75fb20ff-aab2-4f1a-9a35-af193dd35673"
+        LastKnownName="TouristAppV4"
+        LastKnownLocation="Package18_2018.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
