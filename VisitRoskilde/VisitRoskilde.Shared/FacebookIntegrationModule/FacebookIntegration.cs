@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Dynamic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
 using System.Text;
@@ -36,14 +37,14 @@ namespace VisitRoskilde.FacebookIntegrationModule
         private string _shortAccessToken;
         private string _longAccessToken;
         [DataMember]
-        private string _userName;
-        private string _userProfilePicture;
+        private ObservableCollection<string> _userName;
+        private ObservableCollection<string> _userProfilePicture;
         [DataMember]
-        private string _userHomeCity;
+        private ObservableCollection<string> _userHomeCity;
         [DataMember]
-        private string _userGender;
+        private ObservableCollection<string> _userGender;
         [DataMember]
-        private string _userAge;
+        private ObservableCollection<string> _userAge;
         private bool _status;
         FacebookClient _fbClient;
         private ICommand _loginCommand;
@@ -67,7 +68,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
             set { _fbLocation = value; }
         }
 
-        public string UserName
+        public ObservableCollection<string> UserName
         {
             get { return _userName; }
             set
@@ -76,7 +77,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
             }
         }
 
-        public string UserProfilePicture
+        public ObservableCollection<string> UserProfilePicture
         {
             get { return _userProfilePicture; }
             set
@@ -85,7 +86,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
             }
         }
 
-        public string UserHomeCity
+        public ObservableCollection<string> UserHomeCity
         {
             get { return _userHomeCity; }
             set
@@ -94,7 +95,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
             }
         }
 
-        public string UserGender
+        public ObservableCollection<string> UserGender
         {
             get { return _userGender; }
             set
@@ -103,7 +104,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
             }
         }
 
-        public string UserAge
+        public ObservableCollection<string> UserAge
         {
             get { return _userAge; }
             set
@@ -138,6 +139,11 @@ namespace VisitRoskilde.FacebookIntegrationModule
             userInfo = new ObservableCollection<FacebookUser>();
             FacebookClient _fbMapClient = new FacebookClient();
             fbLocation = new ObservableCollection<FacebookLocationModel>();
+            UserName= new ObservableCollection<string>();
+            UserAge = new ObservableCollection<string>();
+            UserGender = new ObservableCollection<string>();
+            UserHomeCity = new ObservableCollection<string>();
+            UserProfilePicture = new ObservableCollection<string>();
         }
         #endregion
 
@@ -275,7 +281,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 //TODO: Clean these try methods up. Problem is that when value is null it breaks, these is a workaround in the SerializerSettings. We also should give loader more time to get the information.
                 try
                 {
-                    UserName = (string)_result["name"];
+                    UserName.Add((string)_result["name"]);
                     //userInfo[0].UserName = UserName;
                 }
                 catch (Exception)
@@ -284,7 +290,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 }
                 try
                 {
-                    UserGender = (string)_result["gender"];
+                    UserGender.Add((string)_result["gender"]);
                     //userInfo[0].UserGender = UserGender;
                 }
                 catch (Exception)
@@ -293,7 +299,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 }
                 try
                 {
-                    UserAge = (string)_result["age_range"]["min"];
+                    UserAge.Add((string)_result["age_range"]["min"]);
                     //userInfo[0].UserAge = UserAge;
                 }
                 catch (Exception)
@@ -303,7 +309,7 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 try
                 {
                     //TODO: Facebook is not returning hometown, find out why
-                    UserHomeCity = (string)_result["hometown"]["name"];
+                    UserHomeCity.Add((string) _result["hometown"]["name"]);
                     //userInfo[0].UserHomeCity = UserHomeCity;
                 }
                 catch (Exception)
@@ -313,7 +319,8 @@ namespace VisitRoskilde.FacebookIntegrationModule
                 try
                 {
                     //TODO: _result.id is a very messy way to get the user id.
-                    UserProfilePicture = string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", _result.id, "large", _fbClient.AccessToken);
+                    UserProfilePicture.Clear();
+                    UserProfilePicture.Add(string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", _result.id, "large", _fbClient.AccessToken));
                     //userInfo[0].UserProfileImage = UserProfilePicture;
                 }
                 catch (Exception)
@@ -424,6 +431,12 @@ namespace VisitRoskilde.FacebookIntegrationModule
                                 //Id = locations.Contains("id") ? (string)locations["id"] : String.Empty,
                                 //PictureUri = new Uri(string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", (string)restaurant["id"], "square", _fbClient.AppId))
                             });
+                            int test1 = fbLocation.Count() - 1;
+                            string test2 = fbLocation[fbLocation.Count() - 1].Category;
+                            if (fbLocation[fbLocation.Count() - 1].Category == "Local business")
+                            {
+                                fbLocation[fbLocation.Count() - 1].Category = null;
+                            }
                         }
                         catch (Exception)
                         {
