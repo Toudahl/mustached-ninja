@@ -23,7 +23,7 @@ namespace VisitRoskilde.View
     /// </summary>
     public sealed partial class TreasureHuntEntryPage : Page
     {
-        
+
         public TreasureHuntEntryPage()
         {
             this.InitializeComponent();
@@ -38,11 +38,17 @@ namespace VisitRoskilde.View
         {
             this.Frame.Navigate(typeof(TreasureHuntEntryPage));
         }
+
         private void Appbutton_entryPage_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(EntryPage));
+        }
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //TreasureHuntEntryPageViewModel.SelectedTopic = (HuntTopicModel) ((Button) sender).Content;
-            this.Frame.Navigate(typeof (TreasureHuntQuestionsPage));
+            this.Frame.Navigate(typeof(TreasureHuntQuestionsPage));
         }
     }
 }

@@ -382,8 +382,8 @@ namespace VisitRoskilde.FacebookIntegrationModule
 
             if (pos != null)
             {
-                latitude = pos.Coordinate.Latitude;
-                longitude = pos.Coordinate.Longitude;
+                latitude = pos.Coordinate.Point.Position.Latitude;
+                longitude = pos.Coordinate.Point.Position.Longitude;
             }
             RestaurantList();
         }

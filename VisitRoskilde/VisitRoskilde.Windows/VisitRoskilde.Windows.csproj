@@ -115,6 +115,7 @@
     </Compile>
     <Compile Include="View\HuntFinalPage.xaml.cs">
       <DependentUpon>HuntFinalPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ExploringEntryPage.xaml.cs">
       <DependentUpon>ExploringEntryPage.xaml</DependentUpon>
     </Compile>
@@ -199,10 +200,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ExploringEntryPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\TreasureHuntEntryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

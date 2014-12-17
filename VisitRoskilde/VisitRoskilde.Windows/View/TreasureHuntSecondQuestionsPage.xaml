@@ -6,7 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+    <Page.TopAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="appbutton_entryPage" Content="Entry page" Label="Entry page" Icon="PreviewLink" Click="Appbutton_entryPage_OnClick"/>
+            <AppBarButton x:Name="appbutton_goToExploring" Content="Exploring" Label="Exploring" Icon="PreviewLink" Click="Appbutton_goToExploring_OnClick"/>
+            <AppBarButton x:Name="appbutton_goToTreasureHunt" Content="Hunting" Label="Treasure Hunts" Icon="PreviewLink" Click="Appbutton_goToTreasureHunt_OnClick"/>
+        </CommandBar>
+    </Page.TopAppBar>
     <Grid Background="DarkOrange">
         <CheckBox x:Name="chckbox_A1" Content="1154 AD" HorizontalAlignment="Left" Margin="779,271,0,0" VerticalAlignment="Top" Height="47" Width="235" IsChecked="False"/>
         <CheckBox x:Name="chckbox_A2" Content="980AD" HorizontalAlignment="Left" Margin="779,353,0,0" VerticalAlignment="Top" Height="46" Width="235"/>
