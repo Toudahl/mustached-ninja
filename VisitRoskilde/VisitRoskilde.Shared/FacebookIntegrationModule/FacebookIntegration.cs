@@ -207,17 +207,12 @@ namespace VisitRoskilde.FacebookIntegrationModule
                                                         loginUrl,
                                                         endUri);
 
-
-
-
 #if WINDOWS_PHONE_APP
 
                 WebAuthenticationResult = await WebAuthenticationBroker.AuthenticateSilentlyAsync(loginUrl, WebAuthenticationOptions.None);
 
 
 #endif
-
-
 
                 if (WebAuthenticationResult.ResponseStatus == WebAuthenticationStatus.Success)
                 {
