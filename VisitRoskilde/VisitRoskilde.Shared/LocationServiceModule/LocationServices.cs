@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 using Windows.Devices.Geolocation;
-using Windows.Foundation;
 using VisitRoskilde.DataCollectionModule;
 using VisitRoskilde.Interfaces;
-using VisitRoskilde.Persistence;
 using VisitRoskilde.SettingsModule;
 
 namespace VisitRoskilde.LocationServiceModule

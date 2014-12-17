@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace VisitRoskilde.Model
+﻿namespace VisitRoskilde.Model
 {
     public class HuntTopicModel
     {

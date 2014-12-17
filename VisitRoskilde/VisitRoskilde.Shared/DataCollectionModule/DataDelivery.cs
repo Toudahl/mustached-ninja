@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Runtime.Serialization;
-using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
-using Windows.Data.Xml.Dom;
 using Windows.Storage;
 using VisitRoskilde.Interfaces;
 using VisitRoskilde.Persistence;
