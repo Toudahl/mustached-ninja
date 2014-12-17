@@ -1,74 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
-  Id="f9716ea2-5bae-499f-9997-229ce1311825"
-  name="Navigation"
+  Id="0bd6cee6-e7da-45ca-8791-48757ca9cbcd"
+  name="Input"
   visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <referencesInternal>
     <reference
-      Id="bd6117b6-0a3e-40c6-8b92-0a46e0cf3030"
-      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVisitRoskilde.Navigation"
+      Id="97681812-7de0-44e0-9410-1d9bca02f9a0"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Windows.Input"
       tag="ViewCode" />
   </referencesInternal>
   <packagedElements>
     <packageHasNamedElement>
-      <class
-        Id="397385ba-8ea2-46d9-8357-d805932f7653"
-        name="Navigator"
-        visibility="Package"
+      <Interface
+        Id="1b5a3f38-e466-4433-9170-b68184f38f7f"
+        name="ICommand"
         isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
+        isLeaf="false">
         <referencesInternal>
           <reference
-            Id="2714c6e9-fe3b-4e05-bc2c-a69a3fc756a5"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Navigation Type%3DNavigator"
+            Id="3d1b447e-f1f6-439f-9426-783f859cd011"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhoneApp%2Fv8.1%2FSystem.ObjectModel.dll&quot; Namespace%3DSystem.Windows.Input Type%3DICommand"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
           <stereotypeInstance
-            Id="c58bc1e5-0d3f-4e0d-965d-4eb6c6253c72"
-            name="class"
+            Id="4caab94d-9baa-4190-8e8e-de20f7442c35"
+            name="interface"
             profile="CSharpProfile">
             <propertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="3d43d4ca-ce6c-41bc-ba57-7b5471a2b9f4">
+                Id="f228ed87-e81b-4f7f-90b2-abb36a807bb7">
                 <propertyInstance
-                  Id="1293fb74-ddfb-4359-9c2b-710e57dad019"
+                  Id="db454030-e221-444d-94f1-f4fd037a9329"
                   name="ClrAttributes" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="66e29f06-766c-444d-902a-86f8d12b5c34">
+                Id="99b6d31b-6b3c-4fec-ae0a-8a693d53c311">
                 <propertyInstance
-                  Id="61308d29-f93d-4aac-95b1-34ae58fd6f07"
+                  Id="ec78fce5-05dd-46d6-a450-18308549151e"
                   name="IsPartial"
                   value="false" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="a5df1f78-ed51-4d64-9b18-d57475deb6a4">
+                Id="73340751-7e68-4538-b5f0-e85ca6d6b6d4">
                 <propertyInstance
-                  Id="8e4a75fa-f0ce-4b09-8951-587f7ce69f86"
-                  name="IsStatic"
-                  value="True" />
-              </stereotypeInstanceHasPropertyInstances>
-              <stereotypeInstanceHasPropertyInstances
-                Id="3a65e4df-1e0e-4abd-8dc6-595528effe80">
-                <propertyInstance
-                  Id="e7e22714-da0e-446c-8c96-c58c355009ce"
+                  Id="79629095-94e0-46b7-9044-03eb4814640e"
                   name="IsUnsafe"
                   value="false" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="0780c7d5-a40c-41e7-9da3-c1f7e0b2df9d">
+                Id="4d54335c-4480-4d4a-9918-f1d975ad5a44">
                 <propertyInstance
-                  Id="88b54dfa-ab47-45ec-9083-84f966cca403"
+                  Id="1efd1aaa-ee5c-4129-8b82-18ed03b2d159"
                   name="PackageVisibility"
                   value="internal" />
               </stereotypeInstanceHasPropertyInstances>
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
-      </class>
+      </Interface>
     </packageHasNamedElement>
   </packagedElements>
 </package>

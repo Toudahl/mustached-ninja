@@ -1,67 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
-  Id="f9716ea2-5bae-499f-9997-229ce1311825"
-  name="Navigation"
+  Id="76f75e31-4abe-45c2-ae8d-b095052f6c11"
+  name="Geolocation"
   visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <referencesInternal>
     <reference
-      Id="bd6117b6-0a3e-40c6-8b92-0a46e0cf3030"
-      handle="viewcode://./CodeSchema_Namespace?Namespace%3DVisitRoskilde.Navigation"
+      Id="7abec5f8-0260-485e-9cc3-063a2c1fd6cf"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWindows.Devices.Geolocation"
       tag="ViewCode" />
   </referencesInternal>
   <packagedElements>
     <packageHasNamedElement>
       <class
-        Id="397385ba-8ea2-46d9-8357-d805932f7653"
-        name="Navigator"
-        visibility="Package"
+        Id="762edc9a-69ee-4f28-92b1-19cdd8c5b2f3"
+        name="Geolocator"
         isAbstract="false"
-        isLeaf="false"
+        isLeaf="true"
         isActiveClass="false">
         <referencesInternal>
           <reference
-            Id="2714c6e9-fe3b-4e05-bc2c-a69a3fc756a5"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Navigation Type%3DNavigator"
+            Id="53641e31-51d3-477c-a313-a31d1c78b665"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FWindows Phone Kits%2F8.1%2FReferences%2FCommonConfiguration%2FNeutral%2FWindows.winmd&quot; Namespace%3DWindows.Devices.Geolocation Type%3DGeolocator"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
           <stereotypeInstance
-            Id="c58bc1e5-0d3f-4e0d-965d-4eb6c6253c72"
+            Id="be4ee736-2fbc-47ee-ad63-6a542c927691"
             name="class"
             profile="CSharpProfile">
             <propertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="3d43d4ca-ce6c-41bc-ba57-7b5471a2b9f4">
+                Id="2619ca31-5390-4506-8dcd-86a46f58c7a7">
                 <propertyInstance
-                  Id="1293fb74-ddfb-4359-9c2b-710e57dad019"
+                  Id="0fc4050d-2e50-4371-80b1-581426470851"
                   name="ClrAttributes" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="66e29f06-766c-444d-902a-86f8d12b5c34">
+                Id="6a615f75-f4f9-45aa-882d-81fd5bd3d481">
                 <propertyInstance
-                  Id="61308d29-f93d-4aac-95b1-34ae58fd6f07"
+                  Id="41358ccc-3893-4b34-ad05-07018d6761e7"
                   name="IsPartial"
                   value="false" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="a5df1f78-ed51-4d64-9b18-d57475deb6a4">
+                Id="d17edce9-4350-4204-b391-30915e287d4d">
                 <propertyInstance
-                  Id="8e4a75fa-f0ce-4b09-8951-587f7ce69f86"
+                  Id="cb1c7f13-b9e6-4e16-95cc-f11e0f29c228"
                   name="IsStatic"
-                  value="True" />
+                  value="False" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="3a65e4df-1e0e-4abd-8dc6-595528effe80">
+                Id="b14b22dd-f721-4899-a293-1aea47956258">
                 <propertyInstance
-                  Id="e7e22714-da0e-446c-8c96-c58c355009ce"
+                  Id="5eca79c3-6326-41ac-a57e-471759ff5792"
                   name="IsUnsafe"
                   value="false" />
               </stereotypeInstanceHasPropertyInstances>
               <stereotypeInstanceHasPropertyInstances
-                Id="0780c7d5-a40c-41e7-9da3-c1f7e0b2df9d">
+                Id="2c73951d-6be0-4612-aa1c-af717ff5983d">
                 <propertyInstance
-                  Id="88b54dfa-ab47-45ec-9083-84f966cca403"
+                  Id="c9f3dde1-faa5-46b8-b7b5-ed2071c1ee2f"
                   name="PackageVisibility"
                   value="internal" />
               </stereotypeInstanceHasPropertyInstances>

@@ -77,5 +77,53 @@
         LastKnownName="Weather"
         LastKnownLocation="Package10_1221.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f622c7d8-2848-4c69-a92d-9974730f4677"
+        LastKnownName="ViewModel"
+        LastKnownLocation="Package_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="40770225-e0af-4eaf-a9be-23c2559772fd"
+        LastKnownName="FacebookIntegrationModule"
+        LastKnownLocation="Package7_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6b0bddf7-9e9a-466a-b46b-6b37dade459b"
+        LastKnownName="LocationServiceModule"
+        LastKnownLocation="Package10_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b81c7f3b-b68a-457f-816b-ea0847c636ab"
+        LastKnownName="SettingsModule"
+        LastKnownLocation="Package11_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e19ae006-e645-4a86-aeb5-e20921af780f"
+        LastKnownName="Model"
+        LastKnownLocation="Package13_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5ec0b938-615d-44f2-9c02-a31908031aa3"
+        LastKnownName="WeatherModule"
+        LastKnownLocation="Package14_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7bde1924-ccd1-4ab7-91c3-8e0730a75149"
+        LastKnownName="DataCollectionModule"
+        LastKnownLocation="Package20_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d773ed7e-7962-432b-8d38-0d5120513ddc"
+        LastKnownName="ImageHandelingModule"
+        LastKnownLocation="Package21_2018.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

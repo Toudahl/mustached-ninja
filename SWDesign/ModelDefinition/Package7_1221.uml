@@ -268,13 +268,13 @@
         Id="a54552b8-ab3e-45ce-b1bd-c3798595a59e"
         name="Serializer"
         visibility="Package"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <referencesInternal>
           <reference
             Id="55c591e8-b494-4724-a360-11c3ccd225eb"
-            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1)"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1)"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -332,7 +332,7 @@
                 <referencesInternal>
                   <reference
                     Id="9cd29cf6-07ed-4e35-a3d5-ad736da994ce"
-                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) ParameterIdentifier%3D0"
                     tag="ViewCode" />
                 </referencesInternal>
                 <ownedParameterableElement>
@@ -347,194 +347,281 @@
             </ownedParameters>
           </redefinableTemplateSignature>
         </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="510f52fc-ec40-42ae-8201-c84a72fff05b"
+            name="_storageFolder"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="97d9e152-9691-4d17-8ef2-78f44193dc04"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D_storageFolder"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8ad245aa-9a37-48df-af54-46b478587f4f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3fdb045-21d5-411b-88ab-c8b5a2aef44b">
+                    <propertyInstance
+                      Id="e178fae5-c61a-4cbd-84a8-a3e4e76b54d0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d95e521-fd6a-4d68-9aa0-9ea0fa5e3719">
+                    <propertyInstance
+                      Id="6a812032-d7c5-4d1b-b079-17b4ec95db36"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ed9a13e-bb9b-41ae-baa2-21a7f918ecc3">
+                    <propertyInstance
+                      Id="71479cd0-4874-4ce6-b183-85ce50dc6263"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba355d6f-f740-40c1-a0a9-c114272b733f">
+                    <propertyInstance
+                      Id="e05080ee-b72c-4f61-931f-b2952913003e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eaf5a362-92e5-466e-b531-c7fa71add7e3">
+                    <propertyInstance
+                      Id="3307514c-8f34-4e7b-8907-e88630bf3d86"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2a53e835-3198-4b67-b39d-b17c898d81f8"
+                LastKnownName="StorageFolder"
+                LastKnownLocation="Package24_2018.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c3a6df47-ae20-4c07-957d-19fefe95c30c"
+            name="_fileName"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d7bfef62-3ab0-411b-8269-3cf16e13ab48"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D_fileName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8ea7da24-9dfd-4176-981c-b838a74d95ac"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fcb06e6-5e45-4066-93f5-606f902916ac">
+                    <propertyInstance
+                      Id="4d51f0a0-f06d-4468-b14f-df03c1ea8cc5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03ff35b9-609a-4012-a8cb-5cee30946494">
+                    <propertyInstance
+                      Id="f9ac22d1-50f9-4867-a16f-0d562b23e4e9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98f044eb-5c7f-4f25-9ada-8c9f9cef55e6">
+                    <propertyInstance
+                      Id="f3d74351-b027-4102-aa10-45752adcf661"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2b3899a-7689-48a0-92bb-af675a738075">
+                    <propertyInstance
+                      Id="c77189d0-0aab-442d-bb9a-6e8867b509c9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a1cbff2-5aba-432f-986a-dd37a497bebf">
+                    <propertyInstance
+                      Id="88ecf44b-a5cd-4123-86c2-d3220d15177a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a507a680-6260-47df-b372-6560bf17d54f"
+                LastKnownName="String"
+                LastKnownLocation="Package2_1221.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1fea2ea9-a52f-490e-ad11-46b93452d7f3"
+            name="_serializer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3f9b3360-34a3-42b4-a829-df5dd6eb441a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D_serializer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="20b55701-139a-4bb1-9fdf-e42e2d4c7f61"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e73fddc3-c97f-4c75-9ecc-073defea58b9">
+                    <propertyInstance
+                      Id="cccf887f-4f5b-41d5-931d-3ab2be470545"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01fc1885-d56d-4c5c-9705-6e7c4ecafa0f">
+                    <propertyInstance
+                      Id="a3d5016c-2827-4f91-aef4-b5273c0e1d9a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7d24b02-f0ef-4e05-bc2a-83a1599d7670">
+                    <propertyInstance
+                      Id="d4c6ee54-e9f7-41c7-b09b-1ff782619cd1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3211b1a6-5818-46fa-8b17-c9ede8af3d5b">
+                    <propertyInstance
+                      Id="50005928-fc8c-43ab-8ea2-e760924c1781"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9c11dfc-c123-45d1-a452-1fbc487046f8">
+                    <propertyInstance
+                      Id="3f662f54-d43d-49e4-adb3-be815bea785d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="32e1dbc9-3f81-4f38-9dcf-303e226ba27c"
+                LastKnownName="DataContractSerializer"
+                LastKnownLocation="Package26_2018.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9a99fe30-3bdd-4e87-b986-ff1b2ca79e5e"
+            name="_restoredObject"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5a451e38-fd95-4a6b-a11b-573f4e8223e8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D_restoredObject"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8e81401d-3eff-4955-adc4-458c4a5bafe8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0297b75-2f77-4140-a0d9-e63f343db4d3">
+                    <propertyInstance
+                      Id="b0551a49-ebc4-4c97-9ace-5630df9e58c8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bc7da4b-52d1-4c1a-aeaf-1eac04504322">
+                    <propertyInstance
+                      Id="0a20bf4e-227b-40e6-be8c-aa202f977ea1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17fffa48-cac2-4b94-be77-ae055491c4de">
+                    <propertyInstance
+                      Id="771c4129-50dc-4c64-b060-dfca60e9b5d8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cfd33e5-3d41-4d51-bc20-d5d312c97304">
+                    <propertyInstance
+                      Id="2beebd0e-532a-416d-9cbf-df8739efae65"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8eb1f417-f18f-4bf1-804e-f7f2f7d804ca">
+                    <propertyInstance
+                      Id="c12059f1-d549-45d1-b713-9507d785c576"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="571e28c2-bc9a-4adb-82b5-2870b7329404"
+                LastKnownName="T"
+                LastKnownLocation="Package7_1221.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="eb541161-b05b-4d29-9d1d-7f291a57f84e"
-            name="Serialize"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="9a13da23-1d88-42af-8353-365590e43fa0"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="60e405d6-f787-4132-80f0-26000d30cd6f"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="14e58340-c44b-4b0f-adab-bcd402df1897">
-                    <propertyInstance
-                      Id="fa4ca9b5-1dec-42f4-8515-e082e5521a55"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bc919fda-db0b-4388-b770-cfc8c4b43d2c">
-                    <propertyInstance
-                      Id="c738403f-1353-49c3-9690-ffc418c78200"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="69360262-2e6b-4d00-99c7-af26f0010817">
-                    <propertyInstance
-                      Id="1b4ce17e-7009-4dbe-a408-18bb152f4772"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8a2c99b2-5f5c-4021-909c-8443039f0b67">
-                    <propertyInstance
-                      Id="ea150679-5bfc-4972-b922-9a237f242d0d"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fbd8301b-7a5c-451e-a3ef-66a31cc0f103">
-                    <propertyInstance
-                      Id="7f9a2b2e-03f8-4d55-ae64-d2820ed6e0a6"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="093fd5d9-f119-47df-8a63-8fe1c6c5fd93">
-                    <propertyInstance
-                      Id="f65eaa7e-168b-4e63-a765-4652add932ba"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d91e5af5-ec00-4f76-a535-f074b96f1e10"
-                  name="objectForSaving"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="26bd52dc-1028-4693-b389-38601cff1bcf"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D(Name%3DSerialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3DobjectForSaving"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="571e28c2-bc9a-4adb-82b5-2870b7329404"
-                      LastKnownName="T"
-                      LastKnownLocation="Package7_1221.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="acdcdb39-dcb7-42c8-917c-eb8ba3b4317c"
-            name="Deserialize"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <referencesInternal>
-              <reference
-                Id="7eff0395-59b9-42e8-a514-f8fd204d4d02"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D(Name%3DDeserialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
-                tag="ViewCode" />
-            </referencesInternal>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="9895ddd8-1a56-4324-86b8-ac2781306e6f"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f8833135-3790-4e94-b6d7-0f47ab509bbb">
-                    <propertyInstance
-                      Id="404ee378-be85-4357-a1aa-d6cb83242e76"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2b1447ea-389e-4592-8d86-3bd499116bb3">
-                    <propertyInstance
-                      Id="a2f2ce11-82c5-436c-92aa-5416f496403d"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fbb6d7b4-4377-4384-90eb-059c6b6a8c6a">
-                    <propertyInstance
-                      Id="16f6bf1e-af3d-44d6-ab19-acfa997e016b"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="52ddda71-4c65-4db2-a252-906eee834722">
-                    <propertyInstance
-                      Id="c69379f2-0109-4dba-8178-ead236022578"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0dae6596-3750-466a-89be-f01ad9d54fae">
-                    <propertyInstance
-                      Id="e0b8fffa-b242-4378-8ee5-05de647647aa"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="59343d75-2b94-483f-bb84-bbaadc08596a">
-                    <propertyInstance
-                      Id="5bff5e97-3bcc-40f2-bc8f-d9e169556118"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e792ebb2-8745-4831-bacc-cee958f92bf0"
-                  direction="Return">
-                  <type_NamedElement>
-                    <interfaceMoniker
-                      Id="5069d31d-2089-4c97-b901-f516a3c39333"
-                      LastKnownName="IMyDataPersists"
-                      LastKnownLocation="Package3_1221.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0878bf7e-b2c8-4621-88c2-efff1811ef0a"
-                  name="objectForRestoring"
-                  direction="In">
-                  <referencesInternal>
-                    <reference
-                      Id="eb99ab98-e7c9-4e30-94d4-262f8eb9c025"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D(Name%3DDeserialize OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3DobjectForRestoring"
-                      tag="ViewCode" />
-                  </referencesInternal>
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="571e28c2-bc9a-4adb-82b5-2870b7329404"
-                      LastKnownName="T"
-                      LastKnownLocation="Package7_1221.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="f4cf19fb-1017-41a0-9011-4f5af9cbbe23"
+            Id="92c2efaf-3813-419c-b6ad-2df6daaee98f"
             name="Serializer"
+            visibility="Protected"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -542,54 +629,186 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="2b453236-4af8-481b-bf9c-7fc6fde70adb"
-                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FD:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.Windows%2Fbin%2FDebug%2FVisitRoskilde.Windows.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D.ctor"
+                Id="e1e5f521-ad8b-406b-993d-3cf24345d5b6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="afd6b4e1-4c89-4db7-9766-897209339738"
+                Id="20a9d96d-42a8-42aa-b638-c99008c9c43a"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="2b2a5287-6d5e-406a-ac52-31b5794109f6">
+                    Id="3c7d3368-509b-4748-a97f-aa100814a069">
                     <propertyInstance
-                      Id="629fded3-8642-48cd-b1c7-09054c8ad430"
+                      Id="bb20d19f-8553-4f48-96e1-e8bbf81abf40"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="0b8d37ee-2189-4686-845a-57fb1461de03">
+                    Id="720466e6-972a-47f9-9291-f311bcb2ccfb">
                     <propertyInstance
-                      Id="04e78114-8628-46de-9ab1-ac383a37edd7"
+                      Id="b57d23a1-9d98-473a-b856-4b0890f20afd"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="7dd15aef-ba69-4fec-b2da-4dd466ab06b7">
+                    Id="4437b0c8-483a-4bd5-a332-54fdc48061ab">
                     <propertyInstance
-                      Id="e6e9b1ff-3826-4ef0-897a-feacc1da07a7"
+                      Id="9b2edef0-42b3-4f44-bf9f-cf55a537327b"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="18ae0ac6-1ad3-4426-b651-f88a1a986487">
+                    Id="b52d9d9d-04eb-4ca5-90ac-26ef260192c4">
                     <propertyInstance
-                      Id="f4a71295-f0f3-4191-824c-e4f39f47b473"
+                      Id="83015a80-76f6-46c2-8dd2-86f15a1999c4"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="f6d6b7c5-04b2-49f8-9c04-6f450ad3672e">
+                    Id="5864bac8-5e3c-4abb-b901-19c60334c6b7">
                     <propertyInstance
-                      Id="92c11879-1e6b-4892-a134-739900d275bf"
+                      Id="4478ff49-f854-4b82-916f-413c3157bab9"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="89112d37-fe76-4962-b7be-826a34b0d8eb">
+                    Id="94322a43-704a-494a-818b-8c06c7d6c568">
                     <propertyInstance
-                      Id="4cad82e5-c852-4c2a-bc7c-fa28efffbb46"
+                      Id="f5e1a2be-d10a-45ec-8bf2-a50294f5271b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="3e2ae533-55ef-43ff-a266-1c49fb9eb23c"
+            name="Serialize"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="38fdb0d1-8e3b-4273-915f-c7d1a177e4cb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3DSerialize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="281afdca-fc48-4a61-95dc-0c20ba4faebb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7da81d25-10de-4e15-8d7b-4a573334d046">
+                    <propertyInstance
+                      Id="e2e09516-70d9-4b81-be4a-e1121ae90ae4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c3a0266-3700-4956-b786-ee9d8fe0f782">
+                    <propertyInstance
+                      Id="e2a7043f-2981-4e18-b209-dd51bc1399c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dec18660-19a5-4309-9217-5ee4f9c6bb68">
+                    <propertyInstance
+                      Id="1253ff32-0da4-4c01-84b7-9ca46ca03dfa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4ee0a1c-5146-49c5-841e-8e5cf909c630">
+                    <propertyInstance
+                      Id="cedadb65-0709-42ad-a2c4-bb76747406fb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6faf4c73-49fe-4130-a38e-840f3a5e916d">
+                    <propertyInstance
+                      Id="3be00e6c-f052-4af8-9363-c52148866d1b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5463f748-3be0-4a79-8f6e-568b1b88e6d1">
+                    <propertyInstance
+                      Id="afbb8353-a36b-44fa-8554-e1b568fdd24d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="93663506-d190-4d13-b951-9c4a53070ef4"
+            name="Deserialize"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ef9741aa-6d6e-46c3-b631-bd1736fd1b11"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2Fd:%2FDokumenter%2FVisual Studio 2013%2FProjects%2FTouristApps%2FVisitRoskilde%2FVisitRoskilde%2FVisitRoskilde.WindowsPhone%2Fbin%2FDebug%2FVisitRoskilde.WindowsPhone.exe&quot; Namespace%3DVisitRoskilde.Persistence Type%3D(Name%3DSerializer GenericParameterCount%3D1) Member%3DDeserialize"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4216abde-9518-4b60-9426-6b8bfd5bb8f3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f05f5786-877c-4548-b87c-75bd029ef74e">
+                    <propertyInstance
+                      Id="0caecd7e-2a38-44a3-afbd-c8bfd7582692"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd6bfd56-f60b-47a9-b94c-121f5b29d2d8">
+                    <propertyInstance
+                      Id="34c70048-1c0c-4648-99f3-a0e6306509fe"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac1380fb-d280-4d80-aea8-a8d114e12255">
+                    <propertyInstance
+                      Id="6b8add5f-5492-40af-a425-dbba6974b81b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="706b32f7-7e44-40bf-8b70-5934352d1707">
+                    <propertyInstance
+                      Id="dc3c0fb2-9e9f-4ffe-a691-a724732fd8e9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f9c8850-610b-4383-ae25-6cc5922f352a">
+                    <propertyInstance
+                      Id="61aba7cd-6952-4e7a-99d4-2dc87b566cf6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6365b38-48f9-4571-b84d-f60da4f18c45">
+                    <propertyInstance
+                      Id="af4ecd20-e70c-46c1-850b-4aa165ac55b4"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -598,6 +817,243 @@
             </appliedStereotypesInternal>
           </operation>
         </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="810fd8c4-070c-49dd-ade5-18dad01b003b"
+        name="Serializer&lt;DataDelivery‎&gt;"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ba147c4c-bede-4ac9-b2a1-26ad10c775b5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="92114d6b-5b92-4991-afe7-75eed1fbe510">
+                <propertyInstance
+                  Id="d85d45b4-135d-48ec-9dbc-07e223b8b702"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13ee04f8-ad83-4748-bba6-e0620bcaa775">
+                <propertyInstance
+                  Id="01544edd-577a-4bc3-9ef7-0cdfc74ace01"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e55d668-6055-408e-8568-e2724122387d">
+                <propertyInstance
+                  Id="a3c20719-4ec2-4a4a-8c7c-7966c5416020"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="40f56601-db70-4ca1-9b36-f36da3eb3fd9">
+                <propertyInstance
+                  Id="fbff3a2d-3167-4843-898c-ce3de7054291"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7a3ab97a-ff17-4038-84c7-5010a88191db">
+                <propertyInstance
+                  Id="45ce293d-0312-4b1c-85dd-b081df2c8c21"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="668907f8-ad78-4ff7-8047-d31c56472bc0">
+            <redefinableTemplateSignatureMoniker
+              Id="a3c08e40-5f23-4daf-a18c-cb938301821c"
+              LastKnownLocation="Package7_1221.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="fde49722-926b-4cfc-bcfa-ab0aa5330a56">
+                  <actuals>
+                    <classMoniker
+                      Id="26630f11-7dd2-4821-bd76-dace5d41f111"
+                      LastKnownName="DataDelivery"
+                      LastKnownLocation="Package20_2018.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="e12b3ecf-4ae2-4692-b562-ea1cb1e00ff3"
+                      LastKnownLocation="Package7_1221.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="035db400-f4ab-4bda-a9b1-85f1cd770785"
+        name="Serializer&lt;Settings‎&gt;"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="aa7a67cb-3ee8-4db3-a1cf-f396f6e1f264"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="264bb447-5639-474f-976e-69a94945d4ea">
+                <propertyInstance
+                  Id="e7bcac19-6408-48f1-985a-a4e8ecffe188"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5fbb3fe8-787b-4a3a-ad32-3231a7f4e446">
+                <propertyInstance
+                  Id="826f2cf2-960f-44d7-985f-ca6d584da903"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="719bb437-6481-46e8-932f-5e5324c12e3d">
+                <propertyInstance
+                  Id="ea18e5d4-07d6-4438-b14a-78e6550d1813"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60ddca08-4cd9-46e6-b6e0-38bb13d85677">
+                <propertyInstance
+                  Id="4cdabb2a-0a55-440c-83f6-61e7a71f8470"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e88b34a1-e3d4-4c40-a8a2-004d23c38120">
+                <propertyInstance
+                  Id="16cb985e-be84-427b-a4b3-df5897b36778"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="41fb7b90-c4be-4f73-9c91-0d1e8d40314d">
+            <redefinableTemplateSignatureMoniker
+              Id="a3c08e40-5f23-4daf-a18c-cb938301821c"
+              LastKnownLocation="Package7_1221.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="24b896f7-265c-4f18-9403-e3f040004925">
+                  <actuals>
+                    <classMoniker
+                      Id="05ee17b5-f9d0-4b31-afc9-ec8f29a7d5bc"
+                      LastKnownName="Settings"
+                      LastKnownLocation="Package11_2018.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="e12b3ecf-4ae2-4692-b562-ea1cb1e00ff3"
+                      LastKnownLocation="Package7_1221.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="38154681-1766-4544-9a9e-4405e78ebe07"
+        name="Serializer&lt;Weather‎&gt;"
+        visibility="Package"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4d848916-81ef-44bb-8eb3-e08157413f4a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3970e05-79d0-4968-8356-dcff1849f3d0">
+                <propertyInstance
+                  Id="a05f21bc-d902-4e93-a03f-a14ae66bedff"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36f8957f-b7cf-48d9-9619-adad677aa432">
+                <propertyInstance
+                  Id="abb8131d-2acb-4252-b3d9-6c54d3073c72"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="270238d6-b352-42f6-b71b-27ae024afbb9">
+                <propertyInstance
+                  Id="a0551518-79b3-4168-a93b-fe3e8dd7ac35"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af98b0dc-a8e6-417a-9564-12b0c059595e">
+                <propertyInstance
+                  Id="5850dade-a25a-462b-ac75-4b34285ced05"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17e1faa2-a6a5-4539-8d54-c382210d1184">
+                <propertyInstance
+                  Id="d61c5cfb-221c-4c59-aa4e-ce825571f9d5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="59f095d9-9568-4c6e-9273-c54ce8e20e9b">
+            <redefinableTemplateSignatureMoniker
+              Id="a3c08e40-5f23-4daf-a18c-cb938301821c"
+              LastKnownLocation="Package7_1221.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="38ea9609-ebc7-4047-a21b-d0862ceed75c">
+                  <actuals>
+                    <classMoniker
+                      Id="ad831b8f-a1a5-4ea9-a945-a5220afcbbff"
+                      LastKnownName="Weather"
+                      LastKnownLocation="Package14_2018.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="e12b3ecf-4ae2-4692-b562-ea1cb1e00ff3"
+                      LastKnownLocation="Package7_1221.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
       </class>
     </packageHasNamedElement>
   </packagedElements>

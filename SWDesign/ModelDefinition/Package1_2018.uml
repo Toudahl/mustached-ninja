@@ -1,27 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
-  Id="4e974090-7e27-4cb5-9c82-02a58e27b239"
-  name="Collections"
+  Id="fd218b74-8648-4a2e-afd6-b427e15e0b66"
+  name="Windows"
   visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <referencesInternal>
     <reference
-      Id="79aef20b-483e-48d6-81ed-40712e0c7243"
-      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Collections"
+      Id="61753a69-2415-4e07-825e-e0608d04ba40"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWindows"
       tag="ViewCode" />
   </referencesInternal>
   <packagedElements>
     <packageHasNamedElement>
       <packageMoniker
-        Id="8971a347-12e0-4fbd-8f88-abf944a1e69e"
-        LastKnownName="Generic"
-        LastKnownLocation="Package1_1224.uml" />
+        Id="baee5e98-7703-4651-9a32-5ef58629ae46"
+        LastKnownName="UI"
+        LastKnownLocation="Package2_2018.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
-        Id="438b4875-27e2-4438-816b-5518c420e3a8"
-        LastKnownName="ObjectModel"
-        LastKnownLocation="Package6_2018.uml" />
+        Id="5acb747e-80d1-411a-8bdc-425cf120839d"
+        LastKnownName="Devices"
+        LastKnownLocation="Package22_2018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="da34dba3-7b52-4b14-bd58-50f18507fcc1"
+        LastKnownName="Storage"
+        LastKnownLocation="Package24_2018.uml" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

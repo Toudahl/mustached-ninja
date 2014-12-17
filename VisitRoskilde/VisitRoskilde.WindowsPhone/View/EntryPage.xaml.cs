@@ -31,7 +31,6 @@ namespace VisitRoskilde.View
         private Polygon bottomTriangle;
         double screenHeight;
         double screenWidth;
-        private BitmapImage bitmap;
 
 
         public EntryPage()

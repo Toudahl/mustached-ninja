@@ -25,6 +25,36 @@
     <Content Include="ModelDefinition\Package10_1221.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package10_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package11_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package12_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package13_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package14_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package15_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package16_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package17_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package18_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package19_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package1_1220.uml">
       <SubType>Content</SubType>
     </Content>
@@ -34,28 +64,76 @@
     <Content Include="ModelDefinition\Package1_1224.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package1_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package20_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package21_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package22_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package23_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package24_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package25_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package26_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package2_1221.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2018.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package3_1221.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package3_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package4_1221.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2018.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package5_1221.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package5_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package6_1221.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2018.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package7_1221.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package7_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package8_1221.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package8_2018.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package9_1221.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package9_2018.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_1220.uml">
@@ -72,6 +150,9 @@
       <DependentUpon>Classes.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Package_1224.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2018.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="SSDFacebook.sequencediagram">

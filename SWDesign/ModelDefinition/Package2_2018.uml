@@ -1,27 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
-  Id="4e974090-7e27-4cb5-9c82-02a58e27b239"
-  name="Collections"
+  Id="baee5e98-7703-4651-9a32-5ef58629ae46"
+  name="UI"
   visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <referencesInternal>
     <reference
-      Id="79aef20b-483e-48d6-81ed-40712e0c7243"
-      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Collections"
+      Id="ecacae44-bf98-4ea4-8e36-e4f78d18460a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWindows.UI"
       tag="ViewCode" />
   </referencesInternal>
   <packagedElements>
     <packageHasNamedElement>
       <packageMoniker
-        Id="8971a347-12e0-4fbd-8f88-abf944a1e69e"
-        LastKnownName="Generic"
-        LastKnownLocation="Package1_1224.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <packageMoniker
-        Id="438b4875-27e2-4438-816b-5518c420e3a8"
-        LastKnownName="ObjectModel"
-        LastKnownLocation="Package6_2018.uml" />
+        Id="0d9cc531-1785-401a-af38-685560aebb2c"
+        LastKnownName="Xaml"
+        LastKnownLocation="Package3_2018.uml" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
