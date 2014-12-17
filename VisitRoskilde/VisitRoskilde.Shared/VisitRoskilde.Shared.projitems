@@ -32,17 +32,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IMyDataPersists.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ISave.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)LocationServiceModule\LocationServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HuntTopicModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Navigation\Navigator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\Serializer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SettingsModule\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TreasureHuntModule\TreasureHunt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ExploreViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TreasureHuntEntryPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SettingsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\WeatherViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WeatherModule\Weather.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WeatherModule\WeatherRetriever.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
   </ItemGroup>
 </Project>
