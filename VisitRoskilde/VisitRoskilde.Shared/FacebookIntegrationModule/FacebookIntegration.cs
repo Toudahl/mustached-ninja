@@ -211,7 +211,6 @@ namespace VisitRoskilde.FacebookIntegrationModule
 
                 WebAuthenticationResult = await WebAuthenticationBroker.AuthenticateSilentlyAsync(loginUrl, WebAuthenticationOptions.None);
 
-
 #endif
 
                 if (WebAuthenticationResult.ResponseStatus == WebAuthenticationStatus.Success)
@@ -419,17 +418,10 @@ namespace VisitRoskilde.FacebookIntegrationModule
                                 Zip = (string)container["location"]["zip"] ?? String.Empty,
                                 Latitude = (string)container["location"]["latitude"] ?? String.Empty,
                                 Longitude = (string)container["location"]["longitude"] ?? String.Empty,
-
                                 Category = (string)container["category"] ?? String.Empty,
                                 Name = (string)container["name"] ?? String.Empty,
                                 Id = (string)container["id"] ?? String.Empty,
                                 PictureUri = new Uri(string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", (string)container["location"]["longtitude"], "large", _fbClient.AppId))
-
-                                //// these properties are at the top level in the object
-                                //Category = restaurant.ContainsKey("category") ? (string)restaurant["category"] : String.Empty,
-                                //Name = locations.Contains("name") ? (string)locations["name"] : String.Empty,
-                                //Id = locations.Contains("id") ? (string)locations["id"] : String.Empty,
-                                //PictureUri = new Uri(string.Format("https://graph.facebook.com/{0}/picture?type={1}&access_token={2}", (string)restaurant["id"], "square", _fbClient.AppId))
                             });
                             int test1 = fbLocation.Count() - 1;
                             string test2 = fbLocation[fbLocation.Count() - 1].Category;
