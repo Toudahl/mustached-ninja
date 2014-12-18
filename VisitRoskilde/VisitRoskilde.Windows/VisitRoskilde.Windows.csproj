@@ -146,6 +146,7 @@
     <None Include="VisitRoskilde.Windows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\exploringBG.png" />
     <Content Include="Assets\Facebook\LogIn.jpg" />
     <Content Include="Assets\Facebook\LogOut.jpg" />
     <Content Include="Assets\Roskilde_Hall.jpg" />
@@ -156,6 +157,7 @@
     <Content Include="Assets\Square70x70Logo.scale-180.png" />
     <Content Include="Assets\StoreLogo.scale-180.png" />
     <Content Include="Assets\treasure.jpg" />
+    <Content Include="Assets\treasureHuntBG.png" />
     <Content Include="Assets\Wide310x150Logo.scale-180.png" />
   </ItemGroup>
   <ItemGroup>
