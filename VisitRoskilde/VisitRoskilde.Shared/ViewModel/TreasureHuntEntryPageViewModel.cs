@@ -17,7 +17,7 @@ namespace VisitRoskilde.ViewModel
             set
             {
                 _selectedHunt = value;
-                OnPropertyChanged("SelectedHunt");
+                OnPropertyChanged();
             }
         }
 

@@ -47,7 +47,7 @@ namespace VisitRoskilde.View
             bottomTriangle.Points.Add(new Point(screenWidth, 0));
             bottomTriangle.Points.Add(new Point(0, screenHeight));
 
-            bottomTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
+            bottomTriangle.Fill = new SolidColorBrush(Colors.WhiteSmoke);
 
 
             bottomTriangle.PointerEntered += thePointerEntered;
@@ -75,7 +75,7 @@ namespace VisitRoskilde.View
             topTriangle.Points.Add(new Point(screenWidth, 0));
             topTriangle.Points.Add(new Point(0, screenHeight));
 
-            topTriangle.Fill = new SolidColorBrush(Colors.DarkOrange);
+            topTriangle.Fill = new SolidColorBrush(Colors.WhiteSmoke);
 
             topTriangle.PointerEntered += thePointerEntered;
             topTriangle.PointerExited += thePointerExited;
@@ -110,13 +110,13 @@ namespace VisitRoskilde.View
         private void thePointerExited(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
         {
             var triangle = sender as Polygon;
-            triangle.Fill = new SolidColorBrush(Colors.DarkOrange);
+            triangle.Fill = new SolidColorBrush(Colors.WhiteSmoke);
         }
 
         private void thePointerEntered(object sender, PointerRoutedEventArgs pointerRoutedEventArgs)
         {
             var triangle = sender as Polygon;
-            triangle.Fill = new SolidColorBrush(Colors.Orange);
+            triangle.Fill = new SolidColorBrush(Colors.White);
         }
 
         private void Appbutton_goToExploring_OnClick(object sender, RoutedEventArgs e)
