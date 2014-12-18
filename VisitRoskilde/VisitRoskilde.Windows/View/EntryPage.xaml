@@ -107,6 +107,7 @@
         <Image HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" Source="ms-appx:///Assets/exploringBG.png" Stretch="None" IsHitTestVisible="False"/>
         <TextBlock x:Name="textblock_topTriangle" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"  IsHitTestVisible="False" Text="Exploring" Foreground="Black" FontSize="24"/>
 
+        
         <Image HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Source="ms-appx:///Assets/treasureHuntBG.png" Stretch="None" IsHitTestVisible="False"/>
         <TextBlock x:Name="textblock_bottomTriangle" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Treasure Hunts" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" IsHitTestVisible="False" Foreground="Black" FontSize="24"/>
     </Grid>
