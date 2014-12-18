@@ -15,18 +15,21 @@ namespace VisitRoskilde.ViewModel
     class ExploreViewModel : INotifyPropertyChanged
     {
         #region Variables
-        private bool _status;
         FacebookIntegration fbHandler = FacebookIntegration.GetInstance();
         LocationServices locationHandler;
         Settings settingsHandler;
+        //ICommands
         private ICommand _fbLoginCommand;
         private ICommand _updateuser;
-        private string _fbUserName;
-        private BitmapImage _fbUserProfilePicture;
-        private string _fbUserAge;
-        private string _fbUserGender;
-        private string _fbUserHomeCity;
+        //UserInformation
+        private bool _status;
+        private ObservableCollection<string> _fbUserName;
+        private ObservableCollection<BitmapImage> _fbUserProfilePicture;
+        private ObservableCollection<string> _fbUserAge;
+        private ObservableCollection<string> _fbUserGender;
+        private ObservableCollection<string> _fbUserHomeCity;
         private ObservableCollection<FacebookLocationModel> _listofLocations;
+        private FacebookLocationModel _selectedLocation;
 
         #endregion
 
@@ -40,7 +43,7 @@ namespace VisitRoskilde.ViewModel
             private set { fbHandler.Status = value; }
         }
 
-        public string fbUserName
+        public ObservableCollection<string> fbUserName
         {
             get
             {   return fbHandler.UserName;  }
@@ -51,12 +54,13 @@ namespace VisitRoskilde.ViewModel
             }
         }
 
-        public BitmapImage fbUserProfilePicture
+        public ObservableCollection<BitmapImage> fbUserProfilePicture
         {
             get {
                 if (fbHandler.UserProfilePicture != null)
                 {
-                    return new BitmapImage(new Uri(fbHandler.UserProfilePicture));
+                    _fbUserProfilePicture.Add(new BitmapImage(new Uri(fbHandler.UserProfilePicture[0])));
+                    return _fbUserProfilePicture;
                 }
                 else
                 {
@@ -70,7 +74,7 @@ namespace VisitRoskilde.ViewModel
             }
         }
 
-        public string fbUserHomeCity
+        public ObservableCollection<string> fbUserHomeCity
         {
             get
             {   return fbHandler.UserHomeCity;  }
@@ -81,7 +85,7 @@ namespace VisitRoskilde.ViewModel
             }
         }
 
-        public string fbUserGender
+        public ObservableCollection<string> fbUserGender
         {
             get
             {
@@ -94,7 +98,7 @@ namespace VisitRoskilde.ViewModel
             }
         }
 
-        public string fbUserAge
+        public ObservableCollection<string> fbUserAge
         {
             get
             {   return fbHandler.UserAge;   }
@@ -112,6 +116,19 @@ namespace VisitRoskilde.ViewModel
             {
                 fbHandler.fbLocation = value; 
                 OnPropertyChanged("ListofLocations");
+            }
+        }
+
+        public FacebookLocationModel SelectedLocation
+        {
+            get
+            {
+                    return _selectedLocation;
+            }
+            set
+            {
+                _selectedLocation = value; 
+                OnPropertyChanged("SelectedLocation");
             }
         }
 
@@ -133,12 +150,12 @@ namespace VisitRoskilde.ViewModel
             LocationServices locationHandler = new LocationServices();
             _fbLoginCommand = new RelayCommand(fbLogin);
             _updateuser = new RelayCommand(updateuser);
+            fbUserProfilePicture = new ObservableCollection<BitmapImage>();
         }
         #endregion
 
         public void fbLogin()
         {
-            fbUserProfilePicture = new BitmapImage(new Uri("http://i367.photobucket.com/albums/oo117/unclk/th_loading-gif-animation.gif"));
             fbHandler.LogIn();
         }
 
@@ -149,16 +166,9 @@ namespace VisitRoskilde.ViewModel
                 fbUserName = fbHandler.UserName;
                 fbUserGender = fbHandler.UserGender;
                 fbUserHomeCity = fbHandler.UserHomeCity;
-                fbUserProfilePicture = new BitmapImage(new Uri(fbHandler.UserProfilePicture));
-            }
-            catch (Exception)
-            {
-                updateuser();
-                throw;
-            }
-            try
-            {
-                updateLocations();
+                fbUserProfilePicture.Add(new BitmapImage(new Uri(fbHandler.UserProfilePicture[0])));
+                OnPropertyChanged("fbUserProfilePicture");
+                OnPropertyChanged("fbUserName");
             }
             catch (Exception)
             {
